@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11A511" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Apache" representedClassName="Apache">
+        <attribute name="authn_anon_module" optional="YES" attributeType="Boolean"/>
+        <attribute name="authn_dbm_modle" optional="YES" attributeType="Boolean"/>
+        <attribute name="authn_file_module" optional="YES" attributeType="Boolean"/>
+        <attribute name="pathToLog" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="MongoDB" representedClassName="MongoDB"/>
+    <entity name="MySQL" representedClassName="MySQL">
+        <attribute name="enableOutsideAccess" optional="YES" attributeType="Boolean"/>
+        <attribute name="pathToLog" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Nginx" representedClassName="Nginx">
+        <attribute name="defaultPort" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="PHP" representedClassName="PHP">
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Server" representedClassName="Server">
+        <attribute name="group" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="startOnStartup" optional="YES" attributeType="Boolean"/>
+        <attribute name="user" optional="YES" attributeType="String"/>
+        <relationship name="ServerToApache" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Apache"/>
+        <relationship name="ServerToMongoDB" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MongoDB"/>
+        <relationship name="ServerToMySQL" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MySQL"/>
+        <relationship name="ServerToNginx" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Nginx"/>
+        <relationship name="ServerToPHP" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHP"/>
+        <relationship name="ServerToVhost" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Vhost"/>
+    </entity>
+    <entity name="Vhost" representedClassName="Vhost">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="path" optional="YES" attributeType="String"/>
+        <attribute name="port" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="ssl" optional="YES" attributeType="Boolean"/>
+        <attribute name="sslPathToCertFile" optional="YES" attributeType="String"/>
+        <attribute name="sslPathToKeyFile" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Server" positionX="160" positionY="192" width="128" height="195"/>
+        <element name="PHP" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Nginx" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Vhost" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="Apache" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="MySQL" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="MongoDB" positionX="160" positionY="192" width="128" height="45"/>
+    </elements>
+</model>
