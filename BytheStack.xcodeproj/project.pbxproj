@@ -7,34 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E3CE81813EBE1BE00EC69E8 /* TaskWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE81713EBE1BE00EC69E8 /* TaskWrapper.m */; };
-		7E3CE82513EBFCB400EC69E8 /* openssl in Resources */ = {isa = PBXBuildFile; fileRef = 7E3CE82413EBFCB400EC69E8 /* openssl */; };
-		7E404C4A13EB80FB00596A91 /* ServerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E404C4913EB80FB00596A91 /* ServerView.xib */; };
-		7E404CA713EBA14200596A91 /* conf-defaults in Resources */ = {isa = PBXBuildFile; fileRef = 7E404CA613EBA14200596A91 /* conf-defaults */; };
-		7E404CAB13EBABCF00596A91 /* BaseInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E404CAA13EBABCF00596A91 /* BaseInstaller.m */; };
-		7E404CAE13EBADD000596A91 /* PHPInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E404CAD13EBADD000596A91 /* PHPInstaller.m */; };
+		7E3C118113EC710E00EC69E8 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C117113EC710E00EC69E8 /* ASIDataCompressor.m */; };
+		7E3C118213EC710E00EC69E8 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C117313EC710E00EC69E8 /* ASIDataDecompressor.m */; };
+		7E3C118313EC710E00EC69E8 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C117513EC710E00EC69E8 /* ASIDownloadCache.m */; };
+		7E3C118413EC710E00EC69E8 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C117713EC710E00EC69E8 /* ASIFormDataRequest.m */; };
+		7E3C118513EC710E00EC69E8 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C117913EC710E00EC69E8 /* ASIHTTPRequest.m */; };
+		7E3C118613EC710E00EC69E8 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C117D13EC710E00EC69E8 /* ASIInputStream.m */; };
+		7E3C118713EC710E00EC69E8 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C117F13EC710E00EC69E8 /* ASINetworkQueue.m */; };
+		7E3C118B13EC719400EC69E8 /* ServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C118913EC719400EC69E8 /* ServerController.m */; };
+		7E3C118C13EC719400EC69E8 /* ServerController-show.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C118A13EC719400EC69E8 /* ServerController-show.xib */; };
+		7E3C11A413EC777200EC69E8 /* Nginx.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11A313EC777200EC69E8 /* Nginx.m */; };
+		7E3C11A713EC777300EC69E8 /* Vhost.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11A613EC777300EC69E8 /* Vhost.m */; };
+		7E3C11AA13EC777300EC69E8 /* MySQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11A913EC777300EC69E8 /* MySQL.m */; };
+		7E3C11AD13EC777300EC69E8 /* PHP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11AC13EC777300EC69E8 /* PHP.m */; };
+		7E3C11B013EC777300EC69E8 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11AF13EC777300EC69E8 /* Server.m */; };
+		7E3C11B313EC777300EC69E8 /* Apache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11B213EC777300EC69E8 /* Apache.m */; };
+		7E3C11B613EC777300EC69E8 /* MongoDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11B513EC777300EC69E8 /* MongoDB.m */; };
+		7E3C11B813EC780300EC69E8 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C11B713EC780300EC69E8 /* config.plist */; };
+		7E3C11C813EC78BF00EC69E8 /* BytheStackTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C11C313EC78BF00EC69E8 /* BytheStackTests-Info.plist */; };
+		7E3C11C913EC78BF00EC69E8 /* BytheStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11C513EC78BF00EC69E8 /* BytheStackTests.m */; };
+		7E3C11CA13EC78BF00EC69E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C11C613EC78BF00EC69E8 /* InfoPlist.strings */; };
+		7E3CFD4A13EC704A00EC69E8 /* BytheStackAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE82813EC702000EC69E8 /* BytheStackAppDelegate.m */; };
+		7E3CFD4B13EC704A00EC69E8 /* default.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3CE82E13EC702000EC69E8 /* default.xib */; };
+		7E3CFD4E13EC704A00EC69E8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7E3CE83413EC702000EC69E8 /* Credits.rtf */; };
+		7E3CFD4F13EC704A00EC69E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E3CE83613EC702000EC69E8 /* InfoPlist.strings */; };
+		7E3CFD5013EC704A00EC69E8 /* BytheStack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE83913EC702000EC69E8 /* BytheStack.xcdatamodeld */; };
+		7E3CFD5113EC704A00EC69E8 /* BaseInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE84013EC702100EC69E8 /* BaseInstaller.m */; };
+		7E3CFD5213EC704A00EC69E8 /* NginxInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE84513EC702100EC69E8 /* NginxInstaller.m */; };
+		7E3CFD5313EC704A00EC69E8 /* PHPInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE84913EC702100EC69E8 /* PHPInstaller.m */; };
+		7E3CFD5413EC704A00EC69E8 /* TaskWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE84C13EC702100EC69E8 /* TaskWrapper.m */; };
+		7E3CFD5513EC704A00EC69E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE84D13EC702100EC69E8 /* main.m */; };
 		7E5A925413EB6246006498C3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5A925313EB6246006498C3 /* Cocoa.framework */; };
-		7E5A925E13EB6246006498C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A925C13EB6246006498C3 /* InfoPlist.strings */; };
-		7E5A926013EB6246006498C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A925F13EB6246006498C3 /* main.m */; };
-		7E5A926413EB6246006498C3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A926213EB6246006498C3 /* Credits.rtf */; };
-		7E5A926713EB6246006498C3 /* BytheStackAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A926613EB6246006498C3 /* BytheStackAppDelegate.m */; };
-		7E5A926A13EB6246006498C3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A926813EB6246006498C3 /* MainMenu.xib */; };
-		7E5A926D13EB6246006498C3 /* BytheStack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A926B13EB6246006498C3 /* BytheStack.xcdatamodeld */; };
 		7E5A927513EB6246006498C3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5A927413EB6246006498C3 /* SenTestingKit.framework */; };
 		7E5A927613EB6246006498C3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5A925313EB6246006498C3 /* Cocoa.framework */; };
-		7E5A927E13EB6246006498C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A927C13EB6246006498C3 /* InfoPlist.strings */; };
-		7E5A928013EB6246006498C3 /* BytheStackTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A927F13EB6246006498C3 /* BytheStackTests.h */; };
-		7E5A928213EB6246006498C3 /* BytheStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A928113EB6246006498C3 /* BytheStackTests.m */; };
 		7E5A92E113EB639B006498C3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5A92E013EB639B006498C3 /* libz.dylib */; };
-		7E5AA17013EB6DA5006498C3 /* git-core in Resources */ = {isa = PBXBuildFile; fileRef = 7E5AA16F13EB6DA5006498C3 /* git-core */; };
-		7E5AA1E513EB73B1006498C3 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA19613EB73B1006498C3 /* ASIDataCompressor.m */; };
-		7E5AA1E613EB73B1006498C3 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA19813EB73B1006498C3 /* ASIDataDecompressor.m */; };
-		7E5AA1E713EB73B1006498C3 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA19A13EB73B1006498C3 /* ASIDownloadCache.m */; };
-		7E5AA1E813EB73B1006498C3 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA19C13EB73B1006498C3 /* ASIFormDataRequest.m */; };
-		7E5AA1E913EB73B1006498C3 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA19E13EB73B1006498C3 /* ASIHTTPRequest.m */; };
-		7E5AA1EA13EB73B1006498C3 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA1A213EB73B1006498C3 /* ASIInputStream.m */; };
-		7E5AA1EB13EB73B1006498C3 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA1A413EB73B1006498C3 /* ASINetworkQueue.m */; };
-		7E5AA20E13EB7462006498C3 /* NginxInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA20D13EB7462006498C3 /* NginxInstaller.m */; };
 		7E5AA21013EB7542006498C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,58 +69,71 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7E3CE81613EBE1BE00EC69E8 /* TaskWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskWrapper.h; sourceTree = "<group>"; };
-		7E3CE81713EBE1BE00EC69E8 /* TaskWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWrapper.m; sourceTree = "<group>"; };
-		7E3CE82413EBFCB400EC69E8 /* openssl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = openssl; path = Library/homebrew/Cellar/openssl; sourceTree = "<group>"; };
-		7E404C4913EB80FB00596A91 /* ServerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerView.xib; sourceTree = "<group>"; };
-		7E404CA613EBA14200596A91 /* conf-defaults */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "conf-defaults"; path = "Library/conf-defaults"; sourceTree = "<group>"; };
-		7E404CA913EBABCF00596A91 /* BaseInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInstaller.h; sourceTree = "<group>"; };
-		7E404CAA13EBABCF00596A91 /* BaseInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseInstaller.m; sourceTree = "<group>"; };
-		7E404CAC13EBADD000596A91 /* PHPInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHPInstaller.h; path = php/PHPInstaller.h; sourceTree = "<group>"; };
-		7E404CAD13EBADD000596A91 /* PHPInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHPInstaller.m; path = php/PHPInstaller.m; sourceTree = "<group>"; };
+		7E3C116F13EC710E00EC69E8 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = Classes/ASICacheDelegate.h; sourceTree = "<group>"; };
+		7E3C117013EC710E00EC69E8 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = Classes/ASIDataCompressor.h; sourceTree = "<group>"; };
+		7E3C117113EC710E00EC69E8 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = Classes/ASIDataCompressor.m; sourceTree = "<group>"; };
+		7E3C117213EC710E00EC69E8 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = Classes/ASIDataDecompressor.h; sourceTree = "<group>"; };
+		7E3C117313EC710E00EC69E8 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = Classes/ASIDataDecompressor.m; sourceTree = "<group>"; };
+		7E3C117413EC710E00EC69E8 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = Classes/ASIDownloadCache.h; sourceTree = "<group>"; };
+		7E3C117513EC710E00EC69E8 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = Classes/ASIDownloadCache.m; sourceTree = "<group>"; };
+		7E3C117613EC710E00EC69E8 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = Classes/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		7E3C117713EC710E00EC69E8 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = Classes/ASIFormDataRequest.m; sourceTree = "<group>"; };
+		7E3C117813EC710E00EC69E8 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = Classes/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		7E3C117913EC710E00EC69E8 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = Classes/ASIHTTPRequest.m; sourceTree = "<group>"; };
+		7E3C117A13EC710E00EC69E8 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = Classes/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		7E3C117B13EC710E00EC69E8 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = Classes/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		7E3C117C13EC710E00EC69E8 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = Classes/ASIInputStream.h; sourceTree = "<group>"; };
+		7E3C117D13EC710E00EC69E8 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = Classes/ASIInputStream.m; sourceTree = "<group>"; };
+		7E3C117E13EC710E00EC69E8 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = Classes/ASINetworkQueue.h; sourceTree = "<group>"; };
+		7E3C117F13EC710E00EC69E8 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = Classes/ASINetworkQueue.m; sourceTree = "<group>"; };
+		7E3C118013EC710E00EC69E8 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = Classes/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		7E3C118813EC719400EC69E8 /* ServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerController.h; sourceTree = "<group>"; };
+		7E3C118913EC719400EC69E8 /* ServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerController.m; sourceTree = "<group>"; };
+		7E3C118A13EC719400EC69E8 /* ServerController-show.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "ServerController-show.xib"; path = "../../controllers/ServerController-show.xib"; sourceTree = "<group>"; };
+		7E3C11A213EC777200EC69E8 /* Nginx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nginx.h; sourceTree = "<group>"; };
+		7E3C11A313EC777200EC69E8 /* Nginx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nginx.m; sourceTree = "<group>"; };
+		7E3C11A513EC777300EC69E8 /* Vhost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vhost.h; sourceTree = "<group>"; };
+		7E3C11A613EC777300EC69E8 /* Vhost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vhost.m; sourceTree = "<group>"; };
+		7E3C11A813EC777300EC69E8 /* MySQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQL.h; sourceTree = "<group>"; };
+		7E3C11A913EC777300EC69E8 /* MySQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQL.m; sourceTree = "<group>"; };
+		7E3C11AB13EC777300EC69E8 /* PHP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHP.h; sourceTree = "<group>"; };
+		7E3C11AC13EC777300EC69E8 /* PHP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHP.m; sourceTree = "<group>"; };
+		7E3C11AE13EC777300EC69E8 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		7E3C11AF13EC777300EC69E8 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		7E3C11B113EC777300EC69E8 /* Apache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apache.h; sourceTree = "<group>"; };
+		7E3C11B213EC777300EC69E8 /* Apache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apache.m; sourceTree = "<group>"; };
+		7E3C11B413EC777300EC69E8 /* MongoDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoDB.h; sourceTree = "<group>"; };
+		7E3C11B513EC777300EC69E8 /* MongoDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoDB.m; sourceTree = "<group>"; };
+		7E3C11B713EC780300EC69E8 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		7E3C11C313EC78BF00EC69E8 /* BytheStackTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BytheStackTests-Info.plist"; sourceTree = "<group>"; };
+		7E3C11C413EC78BF00EC69E8 /* BytheStackTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BytheStackTests.h; sourceTree = "<group>"; };
+		7E3C11C513EC78BF00EC69E8 /* BytheStackTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BytheStackTests.m; sourceTree = "<group>"; };
+		7E3C11C713EC78BF00EC69E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E3CE82713EC702000EC69E8 /* BytheStackAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BytheStackAppDelegate.h; sourceTree = "<group>"; };
+		7E3CE82813EC702000EC69E8 /* BytheStackAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BytheStackAppDelegate.m; sourceTree = "<group>"; };
+		7E3CE82E13EC702000EC69E8 /* default.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = default.xib; sourceTree = "<group>"; };
+		7E3CE83213EC702000EC69E8 /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
+		7E3CE83513EC702000EC69E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7E3CE83713EC702000EC69E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E3CE83A13EC702100EC69E8 /* BytheStack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BytheStack.xcdatamodel; sourceTree = "<group>"; };
+		7E3CE83F13EC702100EC69E8 /* BaseInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInstaller.h; sourceTree = "<group>"; };
+		7E3CE84013EC702100EC69E8 /* BaseInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseInstaller.m; sourceTree = "<group>"; };
+		7E3CE84413EC702100EC69E8 /* NginxInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxInstaller.h; sourceTree = "<group>"; };
+		7E3CE84513EC702100EC69E8 /* NginxInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxInstaller.m; sourceTree = "<group>"; };
+		7E3CE84813EC702100EC69E8 /* PHPInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHPInstaller.h; sourceTree = "<group>"; };
+		7E3CE84913EC702100EC69E8 /* PHPInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHPInstaller.m; sourceTree = "<group>"; };
+		7E3CE84B13EC702100EC69E8 /* TaskWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskWrapper.h; sourceTree = "<group>"; };
+		7E3CE84C13EC702100EC69E8 /* TaskWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWrapper.m; sourceTree = "<group>"; };
+		7E3CE84D13EC702100EC69E8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E5A924F13EB6245006498C3 /* BytheStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BytheStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5A925313EB6246006498C3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7E5A925613EB6246006498C3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7E5A925713EB6246006498C3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7E5A925813EB6246006498C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7E5A925B13EB6246006498C3 /* BytheStack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BytheStack-Info.plist"; sourceTree = "<group>"; };
-		7E5A925D13EB6246006498C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7E5A925F13EB6246006498C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7E5A926113EB6246006498C3 /* BytheStack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BytheStack-Prefix.pch"; sourceTree = "<group>"; };
-		7E5A926313EB6246006498C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		7E5A926513EB6246006498C3 /* BytheStackAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BytheStackAppDelegate.h; sourceTree = "<group>"; };
-		7E5A926613EB6246006498C3 /* BytheStackAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BytheStackAppDelegate.m; sourceTree = "<group>"; };
-		7E5A926913EB6246006498C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		7E5A926C13EB6246006498C3 /* BytheStack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BytheStack.xcdatamodel; sourceTree = "<group>"; };
 		7E5A927313EB6246006498C3 /* BytheStackTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BytheStackTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5A927413EB6246006498C3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		7E5A927B13EB6246006498C3 /* BytheStackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BytheStackTests-Info.plist"; sourceTree = "<group>"; };
-		7E5A927D13EB6246006498C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7E5A927F13EB6246006498C3 /* BytheStackTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BytheStackTests.h; sourceTree = "<group>"; };
-		7E5A928113EB6246006498C3 /* BytheStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BytheStackTests.m; sourceTree = "<group>"; };
 		7E5A92E013EB639B006498C3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		7E5AA16F13EB6DA5006498C3 /* git-core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "git-core"; path = "Library/homebrew/Cellar/git/1.7.6/libexec/git-core"; sourceTree = "<group>"; };
-		7E5AA19413EB73B1006498C3 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
-		7E5AA19513EB73B1006498C3 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
-		7E5AA19613EB73B1006498C3 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
-		7E5AA19713EB73B1006498C3 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
-		7E5AA19813EB73B1006498C3 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
-		7E5AA19913EB73B1006498C3 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
-		7E5AA19A13EB73B1006498C3 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
-		7E5AA19B13EB73B1006498C3 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
-		7E5AA19C13EB73B1006498C3 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
-		7E5AA19D13EB73B1006498C3 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
-		7E5AA19E13EB73B1006498C3 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
-		7E5AA19F13EB73B1006498C3 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
-		7E5AA1A013EB73B1006498C3 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
-		7E5AA1A113EB73B1006498C3 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
-		7E5AA1A213EB73B1006498C3 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
-		7E5AA1A313EB73B1006498C3 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
-		7E5AA1A413EB73B1006498C3 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
-		7E5AA1A513EB73B1006498C3 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
-		7E5AA20D13EB7462006498C3 /* NginxInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxInstaller.m; sourceTree = "<group>"; };
 		7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		7E5AA21213EB757C006498C3 /* NginxInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxInstaller.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,33 +159,297 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7E404C4713EB80DD00596A91 /* Views */ = {
+		7E3C11C213EC78BF00EC69E8 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				7E404C4913EB80FB00596A91 /* ServerView.xib */,
+				7E3C11C313EC78BF00EC69E8 /* BytheStackTests-Info.plist */,
+				7E3C11C413EC78BF00EC69E8 /* BytheStackTests.h */,
+				7E3C11C513EC78BF00EC69E8 /* BytheStackTests.m */,
+				7E3C11C613EC78BF00EC69E8 /* InfoPlist.strings */,
 			);
-			path = Views;
+			path = test;
 			sourceTree = "<group>";
 		};
-		7E404CAF13EBADED00596A91 /* PHP */ = {
+		7E3CE82613EC702000EC69E8 /* app */ = {
 			isa = PBXGroup;
 			children = (
-				7E404CAC13EBADD000596A91 /* PHPInstaller.h */,
-				7E404CAD13EBADD000596A91 /* PHPInstaller.m */,
+				7E3CE82713EC702000EC69E8 /* BytheStackAppDelegate.h */,
+				7E3CE82813EC702000EC69E8 /* BytheStackAppDelegate.m */,
+				7E3CE82913EC702000EC69E8 /* controllers */,
+				7E3CE82A13EC702000EC69E8 /* helpers */,
+				7E3CE82B13EC702000EC69E8 /* models */,
+				7E3CE82C13EC702000EC69E8 /* views */,
 			);
-			name = PHP;
+			path = app;
+			sourceTree = "<group>";
+		};
+		7E3CE82913EC702000EC69E8 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E3C118813EC719400EC69E8 /* ServerController.h */,
+				7E3C118913EC719400EC69E8 /* ServerController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		7E3CE82A13EC702000EC69E8 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		7E3CE82B13EC702000EC69E8 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7E3C11B113EC777300EC69E8 /* Apache.h */,
+				7E3C11B213EC777300EC69E8 /* Apache.m */,
+				7E3C11AE13EC777300EC69E8 /* Server.h */,
+				7E3C11AF13EC777300EC69E8 /* Server.m */,
+				7E3C11AB13EC777300EC69E8 /* PHP.h */,
+				7E3C11AC13EC777300EC69E8 /* PHP.m */,
+				7E3C11B413EC777300EC69E8 /* MongoDB.h */,
+				7E3C11B513EC777300EC69E8 /* MongoDB.m */,
+				7E3C11A813EC777300EC69E8 /* MySQL.h */,
+				7E3C11A913EC777300EC69E8 /* MySQL.m */,
+				7E3C11A513EC777300EC69E8 /* Vhost.h */,
+				7E3C11A613EC777300EC69E8 /* Vhost.m */,
+				7E3C11A213EC777200EC69E8 /* Nginx.h */,
+				7E3C11A313EC777200EC69E8 /* Nginx.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		7E3CE82C13EC702000EC69E8 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7E3CE82D13EC702000EC69E8 /* layouts */,
+				7E3CE82F13EC702000EC69E8 /* server */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		7E3CE82D13EC702000EC69E8 /* layouts */ = {
+			isa = PBXGroup;
+			children = (
+				7E3CE82E13EC702000EC69E8 /* default.xib */,
+			);
+			path = layouts;
+			sourceTree = "<group>";
+		};
+		7E3CE82F13EC702000EC69E8 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				7E3C118A13EC719400EC69E8 /* ServerController-show.xib */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		7E3CE83313EC702000EC69E8 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				7E3C11B713EC780300EC69E8 /* config.plist */,
+				7E3CE83413EC702000EC69E8 /* Credits.rtf */,
+				7E3CE83613EC702000EC69E8 /* InfoPlist.strings */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		7E3CE83813EC702000EC69E8 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				7E3CE83913EC702000EC69E8 /* BytheStack.xcdatamodeld */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		7E3CE83B13EC702100EC69E8 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		7E3CE83C13EC702100EC69E8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7E3CE83D13EC702100EC69E8 /* installer */,
+				7E3CE84A13EC702100EC69E8 /* task */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		7E3CE83D13EC702100EC69E8 /* installer */ = {
+			isa = PBXGroup;
+			children = (
+				7E3CE83E13EC702100EC69E8 /* apache */,
+				7E3CE83F13EC702100EC69E8 /* BaseInstaller.h */,
+				7E3CE84013EC702100EC69E8 /* BaseInstaller.m */,
+				7E3CE84113EC702100EC69E8 /* mongo */,
+				7E3CE84213EC702100EC69E8 /* mysql */,
+				7E3CE84313EC702100EC69E8 /* nginx */,
+				7E3CE84613EC702100EC69E8 /* node */,
+				7E3CE84713EC702100EC69E8 /* php */,
+			);
+			path = installer;
+			sourceTree = "<group>";
+		};
+		7E3CE83E13EC702100EC69E8 /* apache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = apache;
+			sourceTree = "<group>";
+		};
+		7E3CE84113EC702100EC69E8 /* mongo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mongo;
+			sourceTree = "<group>";
+		};
+		7E3CE84213EC702100EC69E8 /* mysql */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mysql;
+			sourceTree = "<group>";
+		};
+		7E3CE84313EC702100EC69E8 /* nginx */ = {
+			isa = PBXGroup;
+			children = (
+				7E3CE84413EC702100EC69E8 /* NginxInstaller.h */,
+				7E3CE84513EC702100EC69E8 /* NginxInstaller.m */,
+			);
+			path = nginx;
+			sourceTree = "<group>";
+		};
+		7E3CE84613EC702100EC69E8 /* node */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = node;
+			sourceTree = "<group>";
+		};
+		7E3CE84713EC702100EC69E8 /* php */ = {
+			isa = PBXGroup;
+			children = (
+				7E3CE84813EC702100EC69E8 /* PHPInstaller.h */,
+				7E3CE84913EC702100EC69E8 /* PHPInstaller.m */,
+			);
+			path = php;
+			sourceTree = "<group>";
+		};
+		7E3CE84A13EC702100EC69E8 /* task */ = {
+			isa = PBXGroup;
+			children = (
+				7E3CE84B13EC702100EC69E8 /* TaskWrapper.h */,
+				7E3CE84C13EC702100EC69E8 /* TaskWrapper.m */,
+			);
+			path = task;
+			sourceTree = "<group>";
+		};
+		7E3CE84E13EC702100EC69E8 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E3CE84F13EC702100EC69E8 /* etc */,
+				7E3CE85313EC702100EC69E8 /* img */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		7E3CE84F13EC702100EC69E8 /* etc */ = {
+			isa = PBXGroup;
+			children = (
+				7E3CE85013EC702100EC69E8 /* mongodb */,
+				7E3CE85113EC702100EC69E8 /* nginx */,
+				7E3CE85213EC702100EC69E8 /* php */,
+			);
+			path = etc;
+			sourceTree = "<group>";
+		};
+		7E3CE85013EC702100EC69E8 /* mongodb */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mongodb;
+			sourceTree = "<group>";
+		};
+		7E3CE85113EC702100EC69E8 /* nginx */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = nginx;
+			sourceTree = "<group>";
+		};
+		7E3CE85213EC702100EC69E8 /* php */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = php;
+			sourceTree = "<group>";
+		};
+		7E3CE85313EC702100EC69E8 /* img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		7E3CE85413EC702100EC69E8 /* script */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = script;
+			sourceTree = "<group>";
+		};
+		7E3CE85B13EC702100EC69E8 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				7E3CE85C13EC702100EC69E8 /* asi-http-request */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		7E3CE85C13EC702100EC69E8 /* asi-http-request */ = {
+			isa = PBXGroup;
+			children = (
+				7E3C116F13EC710E00EC69E8 /* ASICacheDelegate.h */,
+				7E3C117013EC710E00EC69E8 /* ASIDataCompressor.h */,
+				7E3C117113EC710E00EC69E8 /* ASIDataCompressor.m */,
+				7E3C117213EC710E00EC69E8 /* ASIDataDecompressor.h */,
+				7E3C117313EC710E00EC69E8 /* ASIDataDecompressor.m */,
+				7E3C117413EC710E00EC69E8 /* ASIDownloadCache.h */,
+				7E3C117513EC710E00EC69E8 /* ASIDownloadCache.m */,
+				7E3C117613EC710E00EC69E8 /* ASIFormDataRequest.h */,
+				7E3C117713EC710E00EC69E8 /* ASIFormDataRequest.m */,
+				7E3C117813EC710E00EC69E8 /* ASIHTTPRequest.h */,
+				7E3C117913EC710E00EC69E8 /* ASIHTTPRequest.m */,
+				7E3C117A13EC710E00EC69E8 /* ASIHTTPRequestConfig.h */,
+				7E3C117B13EC710E00EC69E8 /* ASIHTTPRequestDelegate.h */,
+				7E3C117C13EC710E00EC69E8 /* ASIInputStream.h */,
+				7E3C117D13EC710E00EC69E8 /* ASIInputStream.m */,
+				7E3C117E13EC710E00EC69E8 /* ASINetworkQueue.h */,
+				7E3C117F13EC710E00EC69E8 /* ASINetworkQueue.m */,
+				7E3C118013EC710E00EC69E8 /* ASIProgressDelegate.h */,
+			);
+			path = "asi-http-request";
 			sourceTree = "<group>";
 		};
 		7E5A924413EB6245006498C3 = {
 			isa = PBXGroup;
 			children = (
-				7E3CE82413EBFCB400EC69E8 /* openssl */,
-				7E404CA613EBA14200596A91 /* conf-defaults */,
-				7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */,
-				7E5AA16F13EB6DA5006498C3 /* git-core */,
-				7E5A928B13EB6314006498C3 /* Library */,
-				7E5A925913EB6246006498C3 /* BytheStack */,
-				7E5A927913EB6246006498C3 /* BytheStackTests */,
+				7E3CE82613EC702000EC69E8 /* app */,
+				7E3CE83213EC702000EC69E8 /* prefix.pch */,
+				7E3CE83313EC702000EC69E8 /* config */,
+				7E3CE83813EC702000EC69E8 /* db */,
+				7E3CE83B13EC702100EC69E8 /* doc */,
+				7E3CE83C13EC702100EC69E8 /* lib */,
+				7E3CE84D13EC702100EC69E8 /* main.m */,
+				7E3CE84E13EC702100EC69E8 /* resources */,
+				7E3CE85413EC702100EC69E8 /* script */,
+				7E3C11C213EC78BF00EC69E8 /* test */,
+				7E3CE85B13EC702100EC69E8 /* vendor */,
 				7E5A925213EB6245006498C3 /* Frameworks */,
 				7E5A925013EB6245006498C3 /* Products */,
 			);
@@ -184,6 +467,7 @@
 		7E5A925213EB6245006498C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */,
 				7E5A92E013EB639B006498C3 /* libz.dylib */,
 				7E5A925313EB6246006498C3 /* Cocoa.framework */,
 				7E5A927413EB6246006498C3 /* SenTestingKit.framework */,
@@ -202,140 +486,6 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		7E5A925913EB6246006498C3 /* BytheStack */ = {
-			isa = PBXGroup;
-			children = (
-				7E5AA21313EB7812006498C3 /* ViewControllers */,
-				7E404C4713EB80DD00596A91 /* Views */,
-				7E5AA20913EB741D006498C3 /* Classes */,
-				7E5A926513EB6246006498C3 /* BytheStackAppDelegate.h */,
-				7E5A926613EB6246006498C3 /* BytheStackAppDelegate.m */,
-				7E5A926813EB6246006498C3 /* MainMenu.xib */,
-				7E5A926B13EB6246006498C3 /* BytheStack.xcdatamodeld */,
-				7E5A925A13EB6246006498C3 /* Supporting Files */,
-			);
-			path = BytheStack;
-			sourceTree = "<group>";
-		};
-		7E5A925A13EB6246006498C3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7E5A925B13EB6246006498C3 /* BytheStack-Info.plist */,
-				7E5A925C13EB6246006498C3 /* InfoPlist.strings */,
-				7E5A925F13EB6246006498C3 /* main.m */,
-				7E5A926113EB6246006498C3 /* BytheStack-Prefix.pch */,
-				7E5A926213EB6246006498C3 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7E5A927913EB6246006498C3 /* BytheStackTests */ = {
-			isa = PBXGroup;
-			children = (
-				7E5A927F13EB6246006498C3 /* BytheStackTests.h */,
-				7E5A928113EB6246006498C3 /* BytheStackTests.m */,
-				7E5A927A13EB6246006498C3 /* Supporting Files */,
-			);
-			path = BytheStackTests;
-			sourceTree = "<group>";
-		};
-		7E5A927A13EB6246006498C3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7E5A927B13EB6246006498C3 /* BytheStackTests-Info.plist */,
-				7E5A927C13EB6246006498C3 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7E5A928B13EB6314006498C3 /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				7E5AA19113EB73B1006498C3 /* ASIHTTPRequest */,
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
-		7E5AA19113EB73B1006498C3 /* ASIHTTPRequest */ = {
-			isa = PBXGroup;
-			children = (
-				7E5AA19413EB73B1006498C3 /* ASICacheDelegate.h */,
-				7E5AA19513EB73B1006498C3 /* ASIDataCompressor.h */,
-				7E5AA19613EB73B1006498C3 /* ASIDataCompressor.m */,
-				7E5AA19713EB73B1006498C3 /* ASIDataDecompressor.h */,
-				7E5AA19813EB73B1006498C3 /* ASIDataDecompressor.m */,
-				7E5AA19913EB73B1006498C3 /* ASIDownloadCache.h */,
-				7E5AA19A13EB73B1006498C3 /* ASIDownloadCache.m */,
-				7E5AA19B13EB73B1006498C3 /* ASIFormDataRequest.h */,
-				7E5AA19C13EB73B1006498C3 /* ASIFormDataRequest.m */,
-				7E5AA19D13EB73B1006498C3 /* ASIHTTPRequest.h */,
-				7E5AA19E13EB73B1006498C3 /* ASIHTTPRequest.m */,
-				7E5AA19F13EB73B1006498C3 /* ASIHTTPRequestConfig.h */,
-				7E5AA1A013EB73B1006498C3 /* ASIHTTPRequestDelegate.h */,
-				7E5AA1A113EB73B1006498C3 /* ASIInputStream.h */,
-				7E5AA1A213EB73B1006498C3 /* ASIInputStream.m */,
-				7E5AA1A313EB73B1006498C3 /* ASINetworkQueue.h */,
-				7E5AA1A413EB73B1006498C3 /* ASINetworkQueue.m */,
-				7E5AA1A513EB73B1006498C3 /* ASIProgressDelegate.h */,
-			);
-			name = ASIHTTPRequest;
-			path = "asi-http-request/Classes";
-			sourceTree = "<group>";
-		};
-		7E5AA20913EB741D006498C3 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				7E5AA20A13EB743C006498C3 /* Installers */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		7E5AA20A13EB743C006498C3 /* Installers */ = {
-			isa = PBXGroup;
-			children = (
-				7E3CE81613EBE1BE00EC69E8 /* TaskWrapper.h */,
-				7E3CE81713EBE1BE00EC69E8 /* TaskWrapper.m */,
-				7E404CAF13EBADED00596A91 /* PHP */,
-				7E5AA20B13EB743C006498C3 /* nginx */,
-				7E404CA913EBABCF00596A91 /* BaseInstaller.h */,
-				7E404CAA13EBABCF00596A91 /* BaseInstaller.m */,
-			);
-			path = Installers;
-			sourceTree = "<group>";
-		};
-		7E5AA20B13EB743C006498C3 /* nginx */ = {
-			isa = PBXGroup;
-			children = (
-				7E5AA21213EB757C006498C3 /* NginxInstaller.h */,
-				7E5AA20D13EB7462006498C3 /* NginxInstaller.m */,
-			);
-			path = nginx;
-			sourceTree = "<group>";
-		};
-		7E5AA21313EB7812006498C3 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				7E5AA21413EB782F006498C3 /* Installers */,
-			);
-			name = ViewControllers;
-			path = BytheStack/ViewControllers;
-			sourceTree = SOURCE_ROOT;
-		};
-		7E5AA21413EB782F006498C3 /* Installers */ = {
-			isa = PBXGroup;
-			children = (
-				7E5AA21513EB782F006498C3 /* Nginx */,
-			);
-			path = Installers;
-			sourceTree = "<group>";
-		};
-		7E5AA21513EB782F006498C3 /* Nginx */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Nginx;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
@@ -345,7 +495,7 @@
 			buildConfigurationList = 7E3CE82013EBFB5900EC69E8 /* Build configuration list for PBXLegacyTarget "OpenSSL" */;
 			buildPhases = (
 			);
-			buildToolPath = Library/homebrew/bin/brew;
+			buildToolPath = vendor/homebrew/bin/brew;
 			buildWorkingDirectory = "";
 			dependencies = (
 			);
@@ -359,7 +509,7 @@
 			buildConfigurationList = 7E5AA16A13EB6A9D006498C3 /* Build configuration list for PBXLegacyTarget "Git" */;
 			buildPhases = (
 			);
-			buildToolPath = Library/homebrew/bin/brew;
+			buildToolPath = vendor/homebrew/bin/brew;
 			buildWorkingDirectory = "";
 			dependencies = (
 			);
@@ -422,6 +572,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 7E5A924413EB6245006498C3;
 			productRefGroup = 7E5A925013EB6245006498C3 /* Products */;
@@ -441,13 +592,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E3CE82513EBFCB400EC69E8 /* openssl in Resources */,
-				7E404CA713EBA14200596A91 /* conf-defaults in Resources */,
-				7E5AA17013EB6DA5006498C3 /* git-core in Resources */,
-				7E5A925E13EB6246006498C3 /* InfoPlist.strings in Resources */,
-				7E5A926413EB6246006498C3 /* Credits.rtf in Resources */,
-				7E5A926A13EB6246006498C3 /* MainMenu.xib in Resources */,
-				7E404C4A13EB80FB00596A91 /* ServerView.xib in Resources */,
+				7E3CFD4B13EC704A00EC69E8 /* default.xib in Resources */,
+				7E3CFD4E13EC704A00EC69E8 /* Credits.rtf in Resources */,
+				7E3CFD4F13EC704A00EC69E8 /* InfoPlist.strings in Resources */,
+				7E3C118C13EC719400EC69E8 /* ServerController-show.xib in Resources */,
+				7E3C11B813EC780300EC69E8 /* config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,8 +604,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E5A927E13EB6246006498C3 /* InfoPlist.strings in Resources */,
-				7E5A928013EB6246006498C3 /* BytheStackTests.h in Resources */,
+				7E3C11C813EC78BF00EC69E8 /* BytheStackTests-Info.plist in Resources */,
+				7E3C11CA13EC78BF00EC69E8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,20 +632,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E5A926013EB6246006498C3 /* main.m in Sources */,
-				7E5A926713EB6246006498C3 /* BytheStackAppDelegate.m in Sources */,
-				7E5A926D13EB6246006498C3 /* BytheStack.xcdatamodeld in Sources */,
-				7E5AA1E513EB73B1006498C3 /* ASIDataCompressor.m in Sources */,
-				7E5AA1E613EB73B1006498C3 /* ASIDataDecompressor.m in Sources */,
-				7E5AA1E713EB73B1006498C3 /* ASIDownloadCache.m in Sources */,
-				7E5AA1E813EB73B1006498C3 /* ASIFormDataRequest.m in Sources */,
-				7E5AA1E913EB73B1006498C3 /* ASIHTTPRequest.m in Sources */,
-				7E5AA1EA13EB73B1006498C3 /* ASIInputStream.m in Sources */,
-				7E5AA1EB13EB73B1006498C3 /* ASINetworkQueue.m in Sources */,
-				7E5AA20E13EB7462006498C3 /* NginxInstaller.m in Sources */,
-				7E404CAB13EBABCF00596A91 /* BaseInstaller.m in Sources */,
-				7E404CAE13EBADD000596A91 /* PHPInstaller.m in Sources */,
-				7E3CE81813EBE1BE00EC69E8 /* TaskWrapper.m in Sources */,
+				7E3CFD4A13EC704A00EC69E8 /* BytheStackAppDelegate.m in Sources */,
+				7E3CFD5013EC704A00EC69E8 /* BytheStack.xcdatamodeld in Sources */,
+				7E3CFD5113EC704A00EC69E8 /* BaseInstaller.m in Sources */,
+				7E3CFD5213EC704A00EC69E8 /* NginxInstaller.m in Sources */,
+				7E3CFD5313EC704A00EC69E8 /* PHPInstaller.m in Sources */,
+				7E3CFD5413EC704A00EC69E8 /* TaskWrapper.m in Sources */,
+				7E3CFD5513EC704A00EC69E8 /* main.m in Sources */,
+				7E3C118113EC710E00EC69E8 /* ASIDataCompressor.m in Sources */,
+				7E3C118213EC710E00EC69E8 /* ASIDataDecompressor.m in Sources */,
+				7E3C118313EC710E00EC69E8 /* ASIDownloadCache.m in Sources */,
+				7E3C118413EC710E00EC69E8 /* ASIFormDataRequest.m in Sources */,
+				7E3C118513EC710E00EC69E8 /* ASIHTTPRequest.m in Sources */,
+				7E3C118613EC710E00EC69E8 /* ASIInputStream.m in Sources */,
+				7E3C118713EC710E00EC69E8 /* ASINetworkQueue.m in Sources */,
+				7E3C118B13EC719400EC69E8 /* ServerController.m in Sources */,
+				7E3C11A413EC777200EC69E8 /* Nginx.m in Sources */,
+				7E3C11A713EC777300EC69E8 /* Vhost.m in Sources */,
+				7E3C11AA13EC777300EC69E8 /* MySQL.m in Sources */,
+				7E3C11AD13EC777300EC69E8 /* PHP.m in Sources */,
+				7E3C11B013EC777300EC69E8 /* Server.m in Sources */,
+				7E3C11B313EC777300EC69E8 /* Apache.m in Sources */,
+				7E3C11B613EC777300EC69E8 /* MongoDB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +661,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E5A928213EB6246006498C3 /* BytheStackTests.m in Sources */,
+				7E3C11C913EC78BF00EC69E8 /* BytheStackTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,34 +686,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7E5A925C13EB6246006498C3 /* InfoPlist.strings */ = {
+		7E3C11C613EC78BF00EC69E8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7E5A925D13EB6246006498C3 /* en */,
+				7E3C11C713EC78BF00EC69E8 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		7E5A926213EB6246006498C3 /* Credits.rtf */ = {
+		7E3CE83413EC702000EC69E8 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7E5A926313EB6246006498C3 /* en */,
+				7E3CE83513EC702000EC69E8 /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		7E5A926813EB6246006498C3 /* MainMenu.xib */ = {
+		7E3CE83613EC702000EC69E8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7E5A926913EB6246006498C3 /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		7E5A927C13EB6246006498C3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E5A927D13EB6246006498C3 /* en */,
+				7E3CE83713EC702000EC69E8 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -634,8 +783,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BytheStack/BytheStack-Prefix.pch";
-				INFOPLIST_FILE = "BytheStack/BytheStack-Info.plist";
+				GCC_PREFIX_HEADER = prefix.pch;
+				INFOPLIST_FILE = config/config.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/vendor/homebrew/Cellar/openssl/0.9.8r/lib/engines\"",
+					"\"$(SRCROOT)/vendor/homebrew/Cellar/openssl/0.9.8r/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -645,8 +799,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BytheStack/BytheStack-Prefix.pch";
-				INFOPLIST_FILE = "BytheStack/BytheStack-Info.plist";
+				GCC_PREFIX_HEADER = prefix.pch;
+				INFOPLIST_FILE = config/config.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/vendor/homebrew/Cellar/openssl/0.9.8r/lib/engines\"",
+					"\"$(SRCROOT)/vendor/homebrew/Cellar/openssl/0.9.8r/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -751,12 +910,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7E5A926B13EB6246006498C3 /* BytheStack.xcdatamodeld */ = {
+		7E3CE83913EC702000EC69E8 /* BytheStack.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7E5A926C13EB6246006498C3 /* BytheStack.xcdatamodel */,
+				7E3CE83A13EC702100EC69E8 /* BytheStack.xcdatamodel */,
 			);
-			currentVersion = 7E5A926C13EB6246006498C3 /* BytheStack.xcdatamodel */;
+			currentVersion = 7E3CE83A13EC702100EC69E8 /* BytheStack.xcdatamodel */;
 			path = BytheStack.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
