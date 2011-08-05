@@ -77,4 +77,8 @@
     NSLog(@"%lld",bytes);
 }
 
+- (void)requestFinished:(ASIHTTPRequest *)request {
+    [self performSelector:@selector(sourceDownloadComplete)];
+}
+
 @end

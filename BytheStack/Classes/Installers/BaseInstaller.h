@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 
 #import "ASIHTTPRequest.h"
+#import "TaskWrapper.h"
 
-@interface BaseInstaller : NSObject <ASIHTTPRequestDelegate, ASIProgressDelegate> {
+@interface BaseInstaller : NSObject <ASIHTTPRequestDelegate, ASIProgressDelegate, TaskWrapperDelegate> {
     NSString *tempPath;
     NSString *version;
     NSString *filename;
@@ -22,5 +23,5 @@
 }
 
 - (void)installVersion:(NSString*)version;
-
+- (NSString *)applicationFilesDirectory;
 @end

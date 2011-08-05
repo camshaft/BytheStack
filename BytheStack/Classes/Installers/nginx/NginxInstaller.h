@@ -8,6 +8,10 @@
 
 #import "BaseInstaller.h"
 
-@interface NginxInstaller : BaseInstaller <ASIHTTPRequestDelegate, ASIProgressDelegate>
+@interface NginxInstaller : BaseInstaller <ASIHTTPRequestDelegate, ASIProgressDelegate> {
+    TaskWrapper *tarTask;
+    TaskWrapper *configureTask;
+    TaskWrapper *makeTask;
+}
 
 @end

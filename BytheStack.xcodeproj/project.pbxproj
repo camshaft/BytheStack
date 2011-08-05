@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3CE81813EBE1BE00EC69E8 /* TaskWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE81713EBE1BE00EC69E8 /* TaskWrapper.m */; };
+		7E3CE82513EBFCB400EC69E8 /* openssl in Resources */ = {isa = PBXBuildFile; fileRef = 7E3CE82413EBFCB400EC69E8 /* openssl */; };
 		7E404C4A13EB80FB00596A91 /* ServerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E404C4913EB80FB00596A91 /* ServerView.xib */; };
 		7E404CA713EBA14200596A91 /* conf-defaults in Resources */ = {isa = PBXBuildFile; fileRef = 7E404CA613EBA14200596A91 /* conf-defaults */; };
 		7E404CAB13EBABCF00596A91 /* BaseInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E404CAA13EBABCF00596A91 /* BaseInstaller.m */; };
@@ -37,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7E3CE82213EBFB7000EC69E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E5A924613EB6245006498C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E3CE81D13EBFB5900EC69E8;
+			remoteInfo = OpenSSL;
+		};
 		7E5A927713EB6246006498C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7E5A924613EB6245006498C3 /* Project object */;
@@ -54,6 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E3CE81613EBE1BE00EC69E8 /* TaskWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskWrapper.h; sourceTree = "<group>"; };
+		7E3CE81713EBE1BE00EC69E8 /* TaskWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskWrapper.m; sourceTree = "<group>"; };
+		7E3CE82413EBFCB400EC69E8 /* openssl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = openssl; path = Library/homebrew/Cellar/openssl; sourceTree = "<group>"; };
 		7E404C4913EB80FB00596A91 /* ServerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerView.xib; sourceTree = "<group>"; };
 		7E404CA613EBA14200596A91 /* conf-defaults */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "conf-defaults"; path = "Library/conf-defaults"; sourceTree = "<group>"; };
 		7E404CA913EBABCF00596A91 /* BaseInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInstaller.h; sourceTree = "<group>"; };
@@ -148,6 +160,7 @@
 		7E5A924413EB6245006498C3 = {
 			isa = PBXGroup;
 			children = (
+				7E3CE82413EBFCB400EC69E8 /* openssl */,
 				7E404CA613EBA14200596A91 /* conf-defaults */,
 				7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */,
 				7E5AA16F13EB6DA5006498C3 /* git-core */,
@@ -280,6 +293,8 @@
 		7E5AA20A13EB743C006498C3 /* Installers */ = {
 			isa = PBXGroup;
 			children = (
+				7E3CE81613EBE1BE00EC69E8 /* TaskWrapper.h */,
+				7E3CE81713EBE1BE00EC69E8 /* TaskWrapper.m */,
 				7E404CAF13EBADED00596A91 /* PHP */,
 				7E5AA20B13EB743C006498C3 /* nginx */,
 				7E404CA913EBABCF00596A91 /* BaseInstaller.h */,
@@ -324,6 +339,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
+		7E3CE81D13EBFB5900EC69E8 /* OpenSSL */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "install openssl";
+			buildConfigurationList = 7E3CE82013EBFB5900EC69E8 /* Build configuration list for PBXLegacyTarget "OpenSSL" */;
+			buildPhases = (
+			);
+			buildToolPath = Library/homebrew/bin/brew;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = OpenSSL;
+			passBuildSettingsInEnvironment = 1;
+			productName = OpenSSL;
+		};
 		7E5AA16913EB6A9D006498C3 /* Git */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "install git";
@@ -352,6 +381,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7E3CE82313EBFB7000EC69E8 /* PBXTargetDependency */,
 				7E5AA16E13EB6D43006498C3 /* PBXTargetDependency */,
 			);
 			name = BytheStack;
@@ -401,6 +431,7 @@
 				7E5A924E13EB6245006498C3 /* BytheStack */,
 				7E5A927213EB6246006498C3 /* BytheStackTests */,
 				7E5AA16913EB6A9D006498C3 /* Git */,
+				7E3CE81D13EBFB5900EC69E8 /* OpenSSL */,
 			);
 		};
 /* End PBXProject section */
@@ -410,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3CE82513EBFCB400EC69E8 /* openssl in Resources */,
 				7E404CA713EBA14200596A91 /* conf-defaults in Resources */,
 				7E5AA17013EB6DA5006498C3 /* git-core in Resources */,
 				7E5A925E13EB6246006498C3 /* InfoPlist.strings in Resources */,
@@ -464,6 +496,7 @@
 				7E5AA20E13EB7462006498C3 /* NginxInstaller.m in Sources */,
 				7E404CAB13EBABCF00596A91 /* BaseInstaller.m in Sources */,
 				7E404CAE13EBADD000596A91 /* PHPInstaller.m in Sources */,
+				7E3CE81813EBE1BE00EC69E8 /* TaskWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +511,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7E3CE82313EBFB7000EC69E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E3CE81D13EBFB5900EC69E8 /* OpenSSL */;
+			targetProxy = 7E3CE82213EBFB7000EC69E8 /* PBXContainerItemProxy */;
+		};
 		7E5A927813EB6246006498C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7E5A924E13EB6245006498C3 /* BytheStack */;
@@ -526,6 +564,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7E3CE81E13EBFB5900EC69E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7E3CE81F13EBFB5900EC69E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		7E5A928313EB6246006498C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -645,6 +704,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E3CE82013EBFB5900EC69E8 /* Build configuration list for PBXLegacyTarget "OpenSSL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3CE81E13EBFB5900EC69E8 /* Debug */,
+				7E3CE81F13EBFB5900EC69E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7E5A924913EB6245006498C3 /* Build configuration list for PBXProject "BytheStack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
