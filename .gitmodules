@@ -1,0 +1,6 @@
+[submodule "Library/homebrew"]
+	path = Library/homebrew
+	url = git://github.com/mxcl/homebrew.git
+[submodule "Library/asi-http-request"]
+	path = Library/asi-http-request
+	url = git://github.com/pokeb/asi-http-request.git

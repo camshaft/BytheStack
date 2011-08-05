@@ -141,6 +141,11 @@
     }
 }
 
+- (IBAction)installNginx:(id)sender {
+    PHPInstaller *installer = [[PHPInstaller alloc] init];
+    [installer installVersion:@"5.3.6"];
+}
+
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
 
     // Save changes in the application's managed object context before the application terminates.

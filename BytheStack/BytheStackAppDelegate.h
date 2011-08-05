@@ -8,6 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "NginxInstaller.h"
+#import "PHPInstaller.h"
+
 @interface BytheStackAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
     NSPersistentStoreCoordinator *__persistentStoreCoordinator;
@@ -22,5 +25,7 @@
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)saveAction:(id)sender;
+
+- (IBAction)installNginx:(id)sender;
 
 @end

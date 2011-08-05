@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E404C4A13EB80FB00596A91 /* ServerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E404C4913EB80FB00596A91 /* ServerView.xib */; };
+		7E404CA713EBA14200596A91 /* conf-defaults in Resources */ = {isa = PBXBuildFile; fileRef = 7E404CA613EBA14200596A91 /* conf-defaults */; };
+		7E404CAB13EBABCF00596A91 /* BaseInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E404CAA13EBABCF00596A91 /* BaseInstaller.m */; };
+		7E404CAE13EBADD000596A91 /* PHPInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E404CAD13EBADD000596A91 /* PHPInstaller.m */; };
 		7E5A925413EB6246006498C3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5A925313EB6246006498C3 /* Cocoa.framework */; };
 		7E5A925E13EB6246006498C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A925C13EB6246006498C3 /* InfoPlist.strings */; };
 		7E5A926013EB6246006498C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A925F13EB6246006498C3 /* main.m */; };
@@ -19,6 +23,17 @@
 		7E5A927E13EB6246006498C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A927C13EB6246006498C3 /* InfoPlist.strings */; };
 		7E5A928013EB6246006498C3 /* BytheStackTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A927F13EB6246006498C3 /* BytheStackTests.h */; };
 		7E5A928213EB6246006498C3 /* BytheStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A928113EB6246006498C3 /* BytheStackTests.m */; };
+		7E5A92E113EB639B006498C3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5A92E013EB639B006498C3 /* libz.dylib */; };
+		7E5AA17013EB6DA5006498C3 /* git-core in Resources */ = {isa = PBXBuildFile; fileRef = 7E5AA16F13EB6DA5006498C3 /* git-core */; };
+		7E5AA1E513EB73B1006498C3 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA19613EB73B1006498C3 /* ASIDataCompressor.m */; };
+		7E5AA1E613EB73B1006498C3 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA19813EB73B1006498C3 /* ASIDataDecompressor.m */; };
+		7E5AA1E713EB73B1006498C3 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA19A13EB73B1006498C3 /* ASIDownloadCache.m */; };
+		7E5AA1E813EB73B1006498C3 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA19C13EB73B1006498C3 /* ASIFormDataRequest.m */; };
+		7E5AA1E913EB73B1006498C3 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA19E13EB73B1006498C3 /* ASIHTTPRequest.m */; };
+		7E5AA1EA13EB73B1006498C3 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA1A213EB73B1006498C3 /* ASIInputStream.m */; };
+		7E5AA1EB13EB73B1006498C3 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA1A413EB73B1006498C3 /* ASINetworkQueue.m */; };
+		7E5AA20E13EB7462006498C3 /* NginxInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA20D13EB7462006498C3 /* NginxInstaller.m */; };
+		7E5AA21013EB7542006498C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,29 +44,65 @@
 			remoteGlobalIDString = 7E5A924E13EB6245006498C3;
 			remoteInfo = BytheStack;
 		};
+		7E5AA16D13EB6D43006498C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E5A924613EB6245006498C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E5AA16913EB6A9D006498C3;
+			remoteInfo = Git;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E404C4913EB80FB00596A91 /* ServerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerView.xib; sourceTree = "<group>"; };
+		7E404CA613EBA14200596A91 /* conf-defaults */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "conf-defaults"; path = "Library/conf-defaults"; sourceTree = "<group>"; };
+		7E404CA913EBABCF00596A91 /* BaseInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInstaller.h; sourceTree = "<group>"; };
+		7E404CAA13EBABCF00596A91 /* BaseInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseInstaller.m; sourceTree = "<group>"; };
+		7E404CAC13EBADD000596A91 /* PHPInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHPInstaller.h; path = php/PHPInstaller.h; sourceTree = "<group>"; };
+		7E404CAD13EBADD000596A91 /* PHPInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHPInstaller.m; path = php/PHPInstaller.m; sourceTree = "<group>"; };
 		7E5A924F13EB6245006498C3 /* BytheStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BytheStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5A925313EB6246006498C3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7E5A925613EB6246006498C3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7E5A925713EB6246006498C3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7E5A925813EB6246006498C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7E5A925B13EB6246006498C3 /* BytheStack-Info.plist */ = {isa = PBXFileReference; path = "BytheStack-Info.plist"; sourceTree = "<group>"; };
+		7E5A925B13EB6246006498C3 /* BytheStack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BytheStack-Info.plist"; sourceTree = "<group>"; };
 		7E5A925D13EB6246006498C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E5A925F13EB6246006498C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7E5A926113EB6246006498C3 /* BytheStack-Prefix.pch */ = {isa = PBXFileReference; path = "BytheStack-Prefix.pch"; sourceTree = "<group>"; };
+		7E5A926113EB6246006498C3 /* BytheStack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BytheStack-Prefix.pch"; sourceTree = "<group>"; };
 		7E5A926313EB6246006498C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		7E5A926513EB6246006498C3 /* BytheStackAppDelegate.h */ = {isa = PBXFileReference; path = BytheStackAppDelegate.h; sourceTree = "<group>"; };
+		7E5A926513EB6246006498C3 /* BytheStackAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BytheStackAppDelegate.h; sourceTree = "<group>"; };
 		7E5A926613EB6246006498C3 /* BytheStackAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BytheStackAppDelegate.m; sourceTree = "<group>"; };
 		7E5A926913EB6246006498C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7E5A926C13EB6246006498C3 /* BytheStack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BytheStack.xcdatamodel; sourceTree = "<group>"; };
 		7E5A927313EB6246006498C3 /* BytheStackTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BytheStackTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5A927413EB6246006498C3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		7E5A927B13EB6246006498C3 /* BytheStackTests-Info.plist */ = {isa = PBXFileReference; path = "BytheStackTests-Info.plist"; sourceTree = "<group>"; };
+		7E5A927B13EB6246006498C3 /* BytheStackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BytheStackTests-Info.plist"; sourceTree = "<group>"; };
 		7E5A927D13EB6246006498C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E5A927F13EB6246006498C3 /* BytheStackTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BytheStackTests.h; sourceTree = "<group>"; };
 		7E5A928113EB6246006498C3 /* BytheStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BytheStackTests.m; sourceTree = "<group>"; };
+		7E5A92E013EB639B006498C3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7E5AA16F13EB6DA5006498C3 /* git-core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "git-core"; path = "Library/homebrew/Cellar/git/1.7.6/libexec/git-core"; sourceTree = "<group>"; };
+		7E5AA19413EB73B1006498C3 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		7E5AA19513EB73B1006498C3 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		7E5AA19613EB73B1006498C3 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		7E5AA19713EB73B1006498C3 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		7E5AA19813EB73B1006498C3 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		7E5AA19913EB73B1006498C3 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		7E5AA19A13EB73B1006498C3 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		7E5AA19B13EB73B1006498C3 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		7E5AA19C13EB73B1006498C3 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		7E5AA19D13EB73B1006498C3 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		7E5AA19E13EB73B1006498C3 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		7E5AA19F13EB73B1006498C3 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		7E5AA1A013EB73B1006498C3 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		7E5AA1A113EB73B1006498C3 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		7E5AA1A213EB73B1006498C3 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		7E5AA1A313EB73B1006498C3 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		7E5AA1A413EB73B1006498C3 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		7E5AA1A513EB73B1006498C3 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		7E5AA20D13EB7462006498C3 /* NginxInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxInstaller.m; sourceTree = "<group>"; };
+		7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7E5AA21213EB757C006498C3 /* NginxInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxInstaller.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5AA21013EB7542006498C3 /* SystemConfiguration.framework in Frameworks */,
+				7E5A92E113EB639B006498C3 /* libz.dylib in Frameworks */,
 				7E5A925413EB6246006498C3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,9 +128,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E404C4713EB80DD00596A91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E404C4913EB80FB00596A91 /* ServerView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7E404CAF13EBADED00596A91 /* PHP */ = {
+			isa = PBXGroup;
+			children = (
+				7E404CAC13EBADD000596A91 /* PHPInstaller.h */,
+				7E404CAD13EBADD000596A91 /* PHPInstaller.m */,
+			);
+			name = PHP;
+			sourceTree = "<group>";
+		};
 		7E5A924413EB6245006498C3 = {
 			isa = PBXGroup;
 			children = (
+				7E404CA613EBA14200596A91 /* conf-defaults */,
+				7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */,
+				7E5AA16F13EB6DA5006498C3 /* git-core */,
+				7E5A928B13EB6314006498C3 /* Library */,
 				7E5A925913EB6246006498C3 /* BytheStack */,
 				7E5A927913EB6246006498C3 /* BytheStackTests */,
 				7E5A925213EB6245006498C3 /* Frameworks */,
@@ -97,6 +171,7 @@
 		7E5A925213EB6245006498C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E5A92E013EB639B006498C3 /* libz.dylib */,
 				7E5A925313EB6246006498C3 /* Cocoa.framework */,
 				7E5A927413EB6246006498C3 /* SenTestingKit.framework */,
 				7E5A925513EB6246006498C3 /* Other Frameworks */,
@@ -117,6 +192,9 @@
 		7E5A925913EB6246006498C3 /* BytheStack */ = {
 			isa = PBXGroup;
 			children = (
+				7E5AA21313EB7812006498C3 /* ViewControllers */,
+				7E404C4713EB80DD00596A91 /* Views */,
+				7E5AA20913EB741D006498C3 /* Classes */,
 				7E5A926513EB6246006498C3 /* BytheStackAppDelegate.h */,
 				7E5A926613EB6246006498C3 /* BytheStackAppDelegate.m */,
 				7E5A926813EB6246006498C3 /* MainMenu.xib */,
@@ -157,7 +235,110 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7E5A928B13EB6314006498C3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7E5AA19113EB73B1006498C3 /* ASIHTTPRequest */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		7E5AA19113EB73B1006498C3 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				7E5AA19413EB73B1006498C3 /* ASICacheDelegate.h */,
+				7E5AA19513EB73B1006498C3 /* ASIDataCompressor.h */,
+				7E5AA19613EB73B1006498C3 /* ASIDataCompressor.m */,
+				7E5AA19713EB73B1006498C3 /* ASIDataDecompressor.h */,
+				7E5AA19813EB73B1006498C3 /* ASIDataDecompressor.m */,
+				7E5AA19913EB73B1006498C3 /* ASIDownloadCache.h */,
+				7E5AA19A13EB73B1006498C3 /* ASIDownloadCache.m */,
+				7E5AA19B13EB73B1006498C3 /* ASIFormDataRequest.h */,
+				7E5AA19C13EB73B1006498C3 /* ASIFormDataRequest.m */,
+				7E5AA19D13EB73B1006498C3 /* ASIHTTPRequest.h */,
+				7E5AA19E13EB73B1006498C3 /* ASIHTTPRequest.m */,
+				7E5AA19F13EB73B1006498C3 /* ASIHTTPRequestConfig.h */,
+				7E5AA1A013EB73B1006498C3 /* ASIHTTPRequestDelegate.h */,
+				7E5AA1A113EB73B1006498C3 /* ASIInputStream.h */,
+				7E5AA1A213EB73B1006498C3 /* ASIInputStream.m */,
+				7E5AA1A313EB73B1006498C3 /* ASINetworkQueue.h */,
+				7E5AA1A413EB73B1006498C3 /* ASINetworkQueue.m */,
+				7E5AA1A513EB73B1006498C3 /* ASIProgressDelegate.h */,
+			);
+			name = ASIHTTPRequest;
+			path = "asi-http-request/Classes";
+			sourceTree = "<group>";
+		};
+		7E5AA20913EB741D006498C3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E5AA20A13EB743C006498C3 /* Installers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7E5AA20A13EB743C006498C3 /* Installers */ = {
+			isa = PBXGroup;
+			children = (
+				7E404CAF13EBADED00596A91 /* PHP */,
+				7E5AA20B13EB743C006498C3 /* nginx */,
+				7E404CA913EBABCF00596A91 /* BaseInstaller.h */,
+				7E404CAA13EBABCF00596A91 /* BaseInstaller.m */,
+			);
+			path = Installers;
+			sourceTree = "<group>";
+		};
+		7E5AA20B13EB743C006498C3 /* nginx */ = {
+			isa = PBXGroup;
+			children = (
+				7E5AA21213EB757C006498C3 /* NginxInstaller.h */,
+				7E5AA20D13EB7462006498C3 /* NginxInstaller.m */,
+			);
+			path = nginx;
+			sourceTree = "<group>";
+		};
+		7E5AA21313EB7812006498C3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E5AA21413EB782F006498C3 /* Installers */,
+			);
+			name = ViewControllers;
+			path = BytheStack/ViewControllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		7E5AA21413EB782F006498C3 /* Installers */ = {
+			isa = PBXGroup;
+			children = (
+				7E5AA21513EB782F006498C3 /* Nginx */,
+			);
+			path = Installers;
+			sourceTree = "<group>";
+		};
+		7E5AA21513EB782F006498C3 /* Nginx */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nginx;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		7E5AA16913EB6A9D006498C3 /* Git */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "install git";
+			buildConfigurationList = 7E5AA16A13EB6A9D006498C3 /* Build configuration list for PBXLegacyTarget "Git" */;
+			buildPhases = (
+			);
+			buildToolPath = Library/homebrew/bin/brew;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = Git;
+			passBuildSettingsInEnvironment = 1;
+			productName = Git;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		7E5A924E13EB6245006498C3 /* BytheStack */ = {
@@ -171,6 +352,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7E5AA16E13EB6D43006498C3 /* PBXTargetDependency */,
 			);
 			name = BytheStack;
 			productName = BytheStack;
@@ -218,6 +400,7 @@
 			targets = (
 				7E5A924E13EB6245006498C3 /* BytheStack */,
 				7E5A927213EB6246006498C3 /* BytheStackTests */,
+				7E5AA16913EB6A9D006498C3 /* Git */,
 			);
 		};
 /* End PBXProject section */
@@ -227,9 +410,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E404CA713EBA14200596A91 /* conf-defaults in Resources */,
+				7E5AA17013EB6DA5006498C3 /* git-core in Resources */,
 				7E5A925E13EB6246006498C3 /* InfoPlist.strings in Resources */,
 				7E5A926413EB6246006498C3 /* Credits.rtf in Resources */,
 				7E5A926A13EB6246006498C3 /* MainMenu.xib in Resources */,
+				7E404C4A13EB80FB00596A91 /* ServerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +454,16 @@
 				7E5A926013EB6246006498C3 /* main.m in Sources */,
 				7E5A926713EB6246006498C3 /* BytheStackAppDelegate.m in Sources */,
 				7E5A926D13EB6246006498C3 /* BytheStack.xcdatamodeld in Sources */,
+				7E5AA1E513EB73B1006498C3 /* ASIDataCompressor.m in Sources */,
+				7E5AA1E613EB73B1006498C3 /* ASIDataDecompressor.m in Sources */,
+				7E5AA1E713EB73B1006498C3 /* ASIDownloadCache.m in Sources */,
+				7E5AA1E813EB73B1006498C3 /* ASIFormDataRequest.m in Sources */,
+				7E5AA1E913EB73B1006498C3 /* ASIHTTPRequest.m in Sources */,
+				7E5AA1EA13EB73B1006498C3 /* ASIInputStream.m in Sources */,
+				7E5AA1EB13EB73B1006498C3 /* ASINetworkQueue.m in Sources */,
+				7E5AA20E13EB7462006498C3 /* NginxInstaller.m in Sources */,
+				7E404CAB13EBABCF00596A91 /* BaseInstaller.m in Sources */,
+				7E404CAE13EBADD000596A91 /* PHPInstaller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +482,11 @@
 			isa = PBXTargetDependency;
 			target = 7E5A924E13EB6245006498C3 /* BytheStack */;
 			targetProxy = 7E5A927713EB6246006498C3 /* PBXContainerItemProxy */;
+		};
+		7E5AA16E13EB6D43006498C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E5AA16913EB6A9D006498C3 /* Git */;
+			targetProxy = 7E5AA16D13EB6D43006498C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -420,6 +621,27 @@
 			};
 			name = Release;
 		};
+		7E5AA16B13EB6A9D006498C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7E5AA16C13EB6A9D006498C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -439,6 +661,7 @@
 				7E5A928713EB6246006498C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E5A928813EB6246006498C3 /* Build configuration list for PBXNativeTarget "BytheStackTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +670,16 @@
 				7E5A928A13EB6246006498C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E5AA16A13EB6A9D006498C3 /* Build configuration list for PBXLegacyTarget "Git" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5AA16B13EB6A9D006498C3 /* Debug */,
+				7E5AA16C13EB6A9D006498C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
