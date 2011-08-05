@@ -17,6 +17,7 @@
         // Initialization code here.
         filePrefix = @"";
         fileSuffix = @"";
+        urlSuffix = @"";
     }
     
     return self;
@@ -69,7 +70,7 @@
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request {
-    NSLog(@"Request failed.\n%@\nResponse:\n%@\nStatus Code: %d",[request error],[request responseString],[request responseStatusCode]);
+    NSLog(@"Request failed.\n\n%@\nResponse:\n\n%@\n\nStatus Code: %d",[request error],[request responseString],[request responseStatusCode]);
 }
 
 - (void)request:(ASIHTTPRequest *)request didReceiveBytes:(long long)bytes {

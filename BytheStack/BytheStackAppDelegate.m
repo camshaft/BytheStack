@@ -15,6 +15,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    NginxInstaller *installer = [[NginxInstaller alloc] init];
+    [installer installVersion:@"1.1.0"];
 }
 
 /**

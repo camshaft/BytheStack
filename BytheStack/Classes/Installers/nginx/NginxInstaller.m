@@ -28,9 +28,9 @@
     NSTask *tarTask = [[NSTask alloc] init];
     
     NSMutableArray *tarArgs = [NSMutableArray arrayWithObjects:
-                            @"-xvzf",
-                            [filename stringByAppendingPathExtension:extension],
-                            nil];
+                               @"-xvzf",
+                               [filename stringByAppendingPathExtension:extension],
+                               nil];
     
     [tarTask setArguments:tarArgs];
     [tarTask setCurrentDirectoryPath:tempPath];
@@ -44,15 +44,11 @@
     // make task object
     NSTask *aTask = [[NSTask alloc] init];
     
-    // make pipes & hook them up
-    //NSPipe *pipe = [NSPipe pipe];
-    //NSFileHandle *results = [pipe fileHandleForReading];
-    //[aTask setStandardOutput:pipe];
-    
     // set arguments
+    
     NSMutableArray *args = [NSMutableArray arrayWithObjects:
                             @"-c",
-                            @"./configure",
+                            [NSString stringWithFormat:@"%@/configure",[tempPath stringByAppendingPathComponent:filename]],
                             [NSString stringWithFormat:@"--sbin-path=%@/bin/nginx",installDir],
                             @"--with-http_ssl_module",
                             @"--without-mail_pop3_module",
@@ -65,11 +61,20 @@
     
     [aTask setArguments:args];
     
+    [aTask setTerminationHandler:^(NSTask *task) {
+        
+        [aTask terminate];
+        
+        [NSThread detachNewThreadSelector:@selector(makeInstall) toTarget:self withObject:nil];
+    }];
+    
     // launch
     [aTask setCurrentDirectoryPath:[tempPath stringByAppendingPathComponent:filename]];
+    [aTask setLaunchPath:@"/bin/sh"];
     [aTask launch];
-    
-    [aTask waitUntilExit];
+}
+
+- (void)makeInstall {
     
     NSTask *makeTask = [[NSTask alloc] init];
     
@@ -77,14 +82,10 @@
     [makeTask setCurrentDirectoryPath:[tempPath stringByAppendingPathComponent:filename]];
     [makeTask setLaunchPath:@"/usr/bin/make"];
     
-    [args removeAllObjects];
-    [args addObject:@"install"];
+    NSMutableArray *args = [[NSMutableArray alloc] initWithObjects:@"install", nil];
     [makeTask setArguments:args];
-
-     
-    [makeTask launch];
     
-    [makeTask waitUntilExit];
+    [makeTask launch];
 }
 
 @end
