@@ -8,20 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ASIHTTPRequest.h"
 #import "TaskWrapper.h"
 
-@interface BaseInstaller : NSObject <ASIHTTPRequestDelegate, ASIProgressDelegate, TaskWrapperDelegate> {
-    NSString *tempPath;
-    NSString *version;
-    NSString *filename;
-    NSString *extension;
-    NSString *baseURL;
-    NSString *filePrefix;
-    NSString *fileSuffix;
-    NSString *urlSuffix;
+@interface BaseInstaller : NSObject <TaskWrapperDelegate> {
+    NSString *brewInstall;
+    NSString *brewRemote;
+    NSArray *brewArgs;
 }
 
-- (void)installVersion:(NSString*)version;
+
+- (id)initWithArgs:(NSArray*)args;
+
+- (void)install;
 - (NSString *)applicationFilesDirectory;
+- (NSString *)applicationResourceDirectory;
+
 @end

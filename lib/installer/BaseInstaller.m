@@ -10,14 +10,11 @@
 
 @implementation BaseInstaller
 
-- (id)init
+- (id)initWithArgs:(NSArray*)args
 {
     self = [super init];
     if (self) {
-        // Initialization code here.
-        filePrefix = @"";
-        fileSuffix = @"";
-        urlSuffix = @"";
+        brewArgs = [args retain];
     }
     
     return self;
@@ -33,52 +30,34 @@
     return [[NSBundle mainBundle] resourcePath];
 }
 
-- (NSString *)tempDirectory {
-    NSString * tempDir = NSTemporaryDirectory();
-    if (tempDir == nil)
-        tempDir = @"/tmp";
+- (void)install {
+    NSString *installString = (brewInstall)?brewInstall:brewRemote;
     
-    NSString * template = [tempDir stringByAppendingPathComponent: [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"] stringByAppendingString:@"-temp.XXXXXX"]];    
+    if (!installString) {
+        [NSException raise:@"Unable to install formula" format:@"either brewInstall or brewRemote must be set"];
+    }
     
-    const char * fsTemplate = [template fileSystemRepresentation];
-    NSMutableData * bufferData = [NSMutableData dataWithBytes: fsTemplate
-                                                       length: strlen(fsTemplate)+1];
-    char * buffer = [bufferData mutableBytes];
-    char * result = mkdtemp(buffer);
-    return [[NSFileManager defaultManager]
-            stringWithFileSystemRepresentation: buffer
-            length: strlen(buffer)];
+    NSMutableArray *_brewArgs = [NSMutableArray arrayWithObjects:@"install",@"-v",installString, nil];
+    
+    [_brewArgs addObjectsFromArray:brewArgs];
+    
+    TaskWrapper *brewTask = [[TaskWrapper alloc] 
+                                 initWithCommandPath:[[self applicationResourceDirectory] stringByAppendingFormat:@"%@/brew",BREW_PATH]
+                                 workingDir:@"/"
+                                 arguments:_brewArgs
+                                 delegate:self];
+    
+    [brewTask startTask];
 }
 
-- (void)installVersion:(NSString*)newVersion {
-    version = [newVersion retain];
-    filename = [[NSString stringWithFormat:@"%@%@%@",filePrefix,version,fileSuffix] retain];
-    
-    NSString *tarName = [[NSString stringWithFormat:@"%@.%@",filename,extension] retain];
-    
-    NSURL *url = [NSURL URLWithString:[baseURL stringByAppendingFormat:@"%@%@",tarName,urlSuffix]];
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-    
-    tempPath = [[self tempDirectory] retain];
-    
-    [request setDownloadDestinationPath:[tempPath stringByAppendingPathComponent:tarName]];
-    
-    [request setDelegate:self];
-    [request setDownloadProgressDelegate:self];
-    
-    [request startAsynchronous];
+- (void)taskWrapper:(TaskWrapper *)taskWrapper didProduceOutput:(NSString *)output {
+    NSLog(@"%@",output);
 }
 
-- (void)requestFailed:(ASIHTTPRequest *)request {
-    NSLog(@"Request failed.\n\n%@\nResponse:\n\n%@\n\nStatus Code: %d",[request error],[request responseString],[request responseStatusCode]);
+- (void)taskWrapper:(TaskWrapper *)taskWrapper didFinishTaskWithStatus:(int)terminationStatus {
+    
 }
 
-- (void)request:(ASIHTTPRequest *)request didReceiveBytes:(long long)bytes {
-    NSLog(@"%lld",bytes);
-}
 
-- (void)requestFinished:(ASIHTTPRequest *)request {
-    [self performSelector:@selector(sourceDownloadComplete)];
-}
 
 @end

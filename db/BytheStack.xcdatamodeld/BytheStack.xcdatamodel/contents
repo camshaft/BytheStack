@@ -5,18 +5,25 @@
         <attribute name="authn_dbm_modle" optional="YES" attributeType="Boolean"/>
         <attribute name="authn_file_module" optional="YES" attributeType="Boolean"/>
         <attribute name="pathToLog" optional="YES" attributeType="String"/>
+        <attribute name="version" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="MongoDB" representedClassName="MongoDB"/>
+    <entity name="MongoDB" representedClassName="MongoDB">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="version" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="MySQL" representedClassName="MySQL">
         <attribute name="enableOutsideAccess" optional="YES" attributeType="Boolean"/>
         <attribute name="pathToLog" optional="YES" attributeType="String"/>
+        <attribute name="version" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Nginx" representedClassName="Nginx">
         <attribute name="defaultPort" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="version" optional="YES" attributeType="String"/>
     </entity>
     <entity name="PHP" representedClassName="PHP">
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="version" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Server" representedClassName="Server">
         <attribute name="group" optional="YES" attributeType="String"/>
@@ -40,12 +47,12 @@
         <attribute name="url" optional="YES" attributeType="String"/>
     </entity>
     <elements>
+        <element name="Apache" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="MongoDB" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="MySQL" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Nginx" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="PHP" positionX="160" positionY="192" width="128" height="75"/>
         <element name="Server" positionX="160" positionY="192" width="128" height="195"/>
-        <element name="PHP" positionX="160" positionY="192" width="128" height="60"/>
-        <element name="Nginx" positionX="160" positionY="192" width="128" height="75"/>
         <element name="Vhost" positionX="160" positionY="192" width="128" height="150"/>
-        <element name="Apache" positionX="160" positionY="192" width="128" height="105"/>
-        <element name="MySQL" positionX="160" positionY="192" width="128" height="75"/>
-        <element name="MongoDB" positionX="160" positionY="192" width="128" height="45"/>
     </elements>
 </model>

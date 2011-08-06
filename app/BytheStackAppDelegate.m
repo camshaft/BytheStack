@@ -15,8 +15,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    NginxInstaller *installer = [[NginxInstaller alloc] init];
-    [installer installVersion:@"1.0.5"];
+    PHPInstaller *phpInstall = [[PHPInstaller alloc] initWithArgs:[NSArray arrayWithObjects:@"--with-fpm",@"", nil]];
+    [phpInstall install];
 }
 
 /**
@@ -144,8 +144,7 @@
 }
 
 - (IBAction)installNginx:(id)sender {
-    PHPInstaller *installer = [[PHPInstaller alloc] init];
-    [installer installVersion:@"5.3.6"];
+    
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {

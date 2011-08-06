@@ -1,20 +1,20 @@
 //
-//  NginxInstaller.m
+//  MySQLInstaller.m
 //  BytheStack
 //
 //  Created by Cameron Bytheway on 8/4/11.
 //  Copyright 2011 Big Thumb Electronics. All rights reserved.
 //
 
-#import "NginxInstaller.h"
+#import "MySQLInstaller.h"
 
-@implementation NginxInstaller
+@implementation MySQLInstaller
 
 - (id)initWithArgs:(NSArray*)args
 {
     self = [super initWithArgs:args];
     if (self) {
-        brewInstall = @"nginx";
+        brewInstall = @"mysql";
     }
     
     return self;

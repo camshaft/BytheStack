@@ -1,5 +1,5 @@
 //
-//  NginxInstaller.m
+//  NodeInstaller.m
 //  BytheStack
 //
 //  Created by Cameron Bytheway on 8/4/11.
@@ -10,81 +10,27 @@
 
 @implementation PHPInstaller
 
-- (id)init
+- (id)initWithArgs:(NSArray*)args
 {
-    self = [super init];
+    self = [super initWithArgs:args];
     if (self) {
-        // Initialization code here.
-        filePrefix = @"php-";
-        urlSuffix = @"/from/this/mirror";
-        extension = @"tar.gz";
-        baseURL = @"http://us.php.net/get/";
+        brewRemote = @"https://raw.github.com/adamv/homebrew-alt/master/duplicates/php.rb";
     }
     
     return self;
 }
 
-- (void)requestFinished:(ASIHTTPRequest *)request {
+- (void)install {
+    //[super install];
     
-    NSTask *tarTask = [[NSTask alloc] init];
     
-    NSMutableArray *tarArgs = [NSMutableArray arrayWithObjects:
-                               @"-xvzf",
-                               [filename stringByAppendingPathExtension:extension],
-                               nil];
+    TaskWrapper *xdebugTask = [[TaskWrapper alloc] 
+                             initWithCommandPath:@"/Users/Cameron/Library/Developer/Xcode/DerivedData/BytheStack-bcwvshzfrtmldkcxolyskmrbspds/Build/Products/Debug/BytheStack.app/Contents/Resources/resources/brew/bin/pecl"
+                             workingDir:@"/Users/Cameron/Library/Developer/Xcode/DerivedData/BytheStack-bcwvshzfrtmldkcxolyskmrbspds/Build/Products/Debug/BytheStack.app/Contents/Resources/resources/brew/bin/"
+                             arguments:[NSArray arrayWithObjects:@"install",@"xdebug", nil]
+                             delegate:self];
     
-    [tarTask setArguments:tarArgs];
-    [tarTask setCurrentDirectoryPath:tempPath];
-    [tarTask setLaunchPath:@"/usr/bin/tar"];
-    [tarTask launch];
-    
-    [tarTask waitUntilExit];
-    
-    NSString *installDir = [[self applicationResourceDirectory] stringByAppendingPathComponent:@"/lib/php/"];
-    
-    // make task object
-    NSTask *aTask = [[NSTask alloc] init];
-    
-    // make pipes & hook them up
-    //NSPipe *pipe = [NSPipe pipe];
-    //NSFileHandle *results = [pipe fileHandleForReading];
-    //[aTask setStandardOutput:pipe];
-    
-    ;
-    
-    // set arguments
-    NSMutableArray *args = [NSMutableArray arrayWithObjects:
-                            @"-c",
-                            [NSString stringWithFormat: @"\"./configure\" --enable-cli --enable-fpm --with-zlib --enable-mbstring --with-curl --disable-rpath --enable-inline-optimization --with-bz2 --with-zlib --enable-sockets --enable-sysvsem --enable-sysvshm --enable-pcntl --enable-mbregex --with-mhash --enable-zip --with-pear=%@/pear --with-pcre-regex --prefix=%@",installDir,installDir],
-                            nil];
-    
-    [aTask setArguments:args];
-    
-    [aTask setTerminationHandler:^(NSTask *task) {
-        
-        [aTask terminate];
-        
-        [NSThread detachNewThreadSelector:@selector(makeInstall) toTarget:self withObject:nil];
-    }];
-    
-    // launch
-    [aTask setCurrentDirectoryPath:[tempPath stringByAppendingPathComponent:filename]];
-    [aTask setLaunchPath:@"/bin/sh"];
-    [aTask launch];
-}
-
-- (void)makeInstall {
-    
-    NSTask *makeTask = [[NSTask alloc] init];
-    
-    // launch
-    [makeTask setCurrentDirectoryPath:[tempPath stringByAppendingPathComponent:filename]];
-    [makeTask setLaunchPath:@"/usr/bin/make"];
-    
-    NSMutableArray *args = [[NSMutableArray alloc] initWithObjects:@"all",@"install", nil];
-    [makeTask setArguments:args];
-    
-    [makeTask launch];
+    [xdebugTask startTask];
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  NginxInstaller.h
+//  ApacheInstaller.h
 //  BytheStack
 //
 //  Created by Cameron Bytheway on 8/4/11.
@@ -8,6 +8,6 @@
 
 #import "BaseInstaller.h"
 
-@interface NginxInstaller : BaseInstaller 
+@interface ApacheInstaller : BaseInstaller 
 
 @end
