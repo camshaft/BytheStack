@@ -9,19 +9,14 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Git.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>cURL.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>7E3CE81D13EBFB5900EC69E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7E5A924E13EB6245006498C3</key>
 		<dict>
 			<key>primary</key>
@@ -38,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>7E5AA17213EB7053006498C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7EEED71D13EC849E0038E8B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

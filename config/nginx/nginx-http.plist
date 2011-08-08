@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aio</key>
+	<dict>
+		<key>possible_values</key>
+		<array>
+			<string>off</string>
+			<string>on</string>
+			<string>sendfile</string>
+		</array>
+		<key>description</key>
+		<string>This directive is usable as of Linux kernel 2.6.22. For Linux it is required to use directio, this automatically disables sendfile support.</string>
+		<key>default</key>
+		<string>off</string>
+	</dict>
+	<key>chunked_transfer_encoding</key>
+	<dict>
+		<key>description</key>
+		<string>This directive (0.7.66+) sets whether chunked encoding is enabled in responses (only valid for connections using HTTP 1.1 or later).</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>client_body_in_file_only</key>
+	<dict>
+		<key>description</key>
+		<string>The directive forces nginx to always store a client request body into a temporary disk file even if the body is actually of 0 size.
+
+Please note that the file will not be removed at request completion if the directive is enabled.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>client_body_in_single_buffer</key>
+	<dict>
+		<key>description</key>
+		<string>The directive(0.7.58+) specifies whether to keep the whole body in a single client request buffer. The directive is recommended when using the variable $request_body to reduce the operations of copying.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>client_body_buffer_size</key>
+	<dict>
+		<key>description</key>
+		<string>The directive specifies the client request body buffer size.
+
+If the request body is more than the buffer, then the entire request body or some part is written in a temporary file.
+
+The default size is equal to two pages size, depending on platform it is either 8K or 16K.</string>
+		<key>default</key>
+		<integer>16</integer>
+	</dict>
+	<key>client_body_temp_path</key>
+	<dict>
+		<key>description</key>
+		<string>The directive assigns the directory for storing the temporary files in it with the body of the request.</string>
+		<key>default</key>
+		<string>client_body_temp</string>
+	</dict>
+	<key>client_body_timeout</key>
+	<dict>
+		<key>description</key>
+		<string>Directive sets the read timeout for the request body from client.
+
+The timeout is set only if a body is not get in one readstep. If after this time the client send nothing, nginx returns error &quot;Request time out&quot; (408).</string>
+		<key>default</key>
+		<integer>60</integer>
+	</dict>
+	<key>client_header_buffer_size</key>
+	<dict>
+		<key>description</key>
+		<string>Directive sets the headerbuffer size for the request header from client.
+
+For the overwhelming majority of requests it is completely sufficient a buffer size of 1K.
+
+However if a big cookie is in the request-header or the request has come from a wap-client the header can not be placed in 1K, therefore, the request-header or a line of request-header is not located completely in this buffer nginx allocate a bigger buffer, the size of the bigger buffer can be set with the instruction large_client_header_buffers.</string>
+		<key>default</key>
+		<integer>1000</integer>
+	</dict>
+	<key>client_header_timeout</key>
+	<dict>
+		<key>description</key>
+		<string>Directive assigns timeout with reading of the title of the request of client.
+
+The timeout is set only if a header is not get in one readstep. If after this time the client send nothing, nginx returns error &quot;Request time out&quot; (408).</string>
+		<key>default</key>
+		<integer>60</integer>
+	</dict>
+	<key>client_max_body_size</key>
+	<dict>
+		<key>description</key>
+		<string>Directive assigns the maximum accepted body size of client request, indicated by the line Content-Length in the header of request.
+
+If size is greater the given one, then the client gets the error &quot;Request Entity Too Large&quot; (413).
+
+It is necessary to keep in mind that the browsers do not know how to correctly show this error.</string>
+		<key>default</key>
+		<integer>1</integer>
+	</dict>
+	<key>default_type</key>
+	<dict>
+		<key>description</key>
+		<string>Assigns the default MIME-type to be used for files where the standard MIME map doesn&apos;t specify anything.</string>
+		<key>default</key>
+		<array>
+			<string>text/plain</string>
+		</array>
+	</dict>
+	<key>directio</key>
+	<dict>
+		<key>description</key>
+		<string>The directive enables use of flags O_DIRECT (FreeBSD, Linux), F_NOCACHE (Mac OS X) or directio() function (Solaris) for reading files with size greater than specified. This directive disables use of sendfile for this request. This directive may be useful for big files.</string>
+		<key>default</key>
+		<integer>0</integer>
+	</dict>
+	<key>error_page</key>
+	<dict>
+		<key>description</key>
+		<string>The directive specifies the URI that will be shown for the errors indicated.</string>
+		<key>default</key>
+		<dict/>
+	</dict>
+	<key>if_modified_since</key>
+	<dict>
+		<key>possible_values</key>
+		<array>
+			<string>off</string>
+			<string>exact</string>
+			<string>before</string>
+		</array>
+		<key>description</key>
+		<string>The directive (0.7.24) defines how to compare time of file modification and time in request header &quot;If-Modified-Since&quot;</string>
+		<key>default</key>
+		<string>exact</string>
+	</dict>
+	<key>keepalive_disable</key>
+	<dict>
+		<key>description</key>
+		<string>Disable keepalive for certain user agents (0.9.0+). By default keepalive is disabled for MS Internet Explorer (older than 6.0 service pack 2) after POST requests, and for Safari.</string>
+		<key>default</key>
+		<string>msie6 safari</string>
+	</dict>
+	<key>keepalive_timeout</key>
+	<dict>
+		<key>description</key>
+		<string>The first parameter assigns the timeout for keep-alive connections with the client. The server will close connections after this time.</string>
+		<key>default</key>
+		<integer>75</integer>
+	</dict>
+	<key>keepalive_requests</key>
+	<dict>
+		<key>description</key>
+		<string>Number of requests which can be made over a keep-alive connection.</string>
+		<key>default</key>
+		<integer>100</integer>
+	</dict>
+	<key>large_client_header_buffers</key>
+	<dict>
+		<key>description</key>
+		<string>Directive assigns the maximum number and size of buffers for large headers to read from client request.
+
+The request line can not be bigger than the size of one buffer, if the client send a bigger header nginx returns error &quot;Request URI too large&quot; (414).
+
+The longest header line of request also must be not more than the size of one buffer, otherwise the client get the error &quot;Bad request&quot; (400).
+
+Buffers are separated only as needed.</string>
+		<key>default</key>
+		<dict>
+			<key>size</key>
+			<integer>8000</integer>
+			<key>number</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>limit_rate</key>
+	<dict>
+		<key>description</key>
+		<string>Directive limits HTTP-methods, accessible inside location.
+
+For the limitation can be used the directives of modules ngx_http_access_module and ngx_http_auth_basic_module.</string>
+		<key>default</key>
+		<integer>0</integer>
+	</dict>
+	<key>limit_rate_after</key>
+	<dict>
+		<key>description</key>
+		<string>The directive limits speed only after the first part was sent.</string>
+		<key>default</key>
+		<integer>1000000</integer>
+	</dict>
+	<key>lingering_close</key>
+	<dict>
+		<key>possible_values</key>
+		<array>
+			<string>off</string>
+			<string>on</string>
+			<string>always</string>
+		</array>
+		<key>description</key>
+		<string>Sets SO_LINGER on sockets.</string>
+		<key>default</key>
+		<string>on</string>
+	</dict>
+	<key>lingering_time</key>
+	<dict>
+		<key>description</key>
+		<string>Sets SO_LINGER on sockets.</string>
+		<key>default</key>
+		<integer>30</integer>
+	</dict>
+	<key>lingering_timeout</key>
+	<dict>
+		<key>description</key>
+		<string>Sets SO_LINGER on sockets.</string>
+		<key>default</key>
+		<integer>5</integer>
+	</dict>
+	<key>log_not_found</key>
+	<dict>
+		<key>description</key>
+		<string>The directive enables or disables messages in error_log about files not found on disk.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>log_subrequest</key>
+	<dict>
+		<key>description</key>
+		<string>The directive enables or disables messages in access_log about sub-requests such as rewrite rules and/or SSI requests.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>msie_padding</key>
+	<dict>
+		<key>description</key>
+		<string>This directive enables or disables the the msie_padding feature for MSIE browsers, and Chrome (as of nginx 0.8.25+). When this is enabled, nginx will pad the size of the response body to a minimum of 512 bytes, for responses with a status code above or equal to 400.
+
+The padding prevents the activation of &quot;friendly&quot; HTTP error pages in MSIE and Chrome, so as to not hide the more-informative error pages from the server.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>msie_refresh</key>
+	<dict>
+		<key>description</key>
+		<string>This directive allows or forbids issuing a refresh instead of doing a redirect for MSIE.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>open_file_cache</key>
+	<dict>
+		<key>description</key>
+		<string>The directive sets the cache activity on. </string>
+		<key>default</key>
+		<string>off</string>
+	</dict>
+	<key>open_file_cache_errors</key>
+	<dict>
+		<key>description</key>
+		<string>The directive specifies to cache errors or not when searching a file.</string>
+		<key>default</key>
+		<string>off</string>
+	</dict>
+	<key>open_file_cache_min_uses</key>
+	<dict>
+		<key>description</key>
+		<string>The directive defines the minimum use number of a file within the time specified in the directive parameter inactive in open_file_cache. If use more than the number, the file descriptor will remain open in the cache.</string>
+		<key>default</key>
+		<integer>1</integer>
+	</dict>
+	<key>open_file_cache_valid</key>
+	<dict>
+		<key>description</key>
+		<string>The directive specifies the time when need to check the validity of the information about the item in open_file_cache.</string>
+		<key>default</key>
+		<integer>60</integer>
+	</dict>
+	<key>optimize_server_names</key>
+	<dict>
+		<key>description</key>
+		<string>Directive activates or deactivates optimization of host name checks for name-based virtual servers.
+
+In particular, the check influences the name of the host used in redirects. If optimization is on, and all name-based servers listening on one address:port pair have identical configuration, then names are not checked during request execution and redirects use first server name.
+
+If redirect must use host name passed by the client, then the optimization must be turned off.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>post_action</key>
+	<dict>
+		<key>description</key>
+		<string>Defines a URI to sub-request upon completion of current request.</string>
+		<key>default</key>
+		<string>off</string>
+	</dict>
+	<key>recursive_error_pages</key>
+	<dict>
+		<key>description</key>
+		<string>recursive_error_pages enables or disables following a chain of error_page directives.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>reset_timedout_connection</key>
+	<dict>
+		<key>description</key>
+		<string>This directive enables or disables resetting the connection on timeout. When resetting the connection, before the socket is closed, the socket SO_LINGER option is set with a 0 timeout, which forces the RST packet to be sent to the client upon closing the socket, thus freeing all memory associated with it. This prevents the socket in the FIN_WAIT1 state, along with the buffers associated with it from lying around.
+
+Note that sockets with keepalive connections, after the defined timeout, are closed in the usual way.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>resolver</key>
+	<dict>
+		<key>description</key>
+		<string>Directive defines DNS server address, e.g.</string>
+		<key>default</key>
+		<string>no</string>
+	</dict>
+	<key>resolver_timeout</key>
+	<dict>
+		<key>description</key>
+		<string>Directive defines timeout for name resolution.</string>
+		<key>default</key>
+		<string>30</string>
+	</dict>
+	<key>root</key>
+	<dict>
+		<key>description</key>
+		<string>Directive defines timeout for name resolution.</string>
+		<key>default</key>
+		<string>html</string>
+	</dict>
+	<key>satisfy</key>
+	<dict>
+		<key>possible_values</key>
+		<array>
+			<string>all</string>
+			<string>any</string>
+		</array>
+		<key>description</key>
+		<string>Access policy if directives from both Access module and Auth Basic module are defined in a context.</string>
+		<key>default</key>
+		<string>all</string>
+	</dict>
+	<key>send_timeout</key>
+	<dict>
+		<key>description</key>
+		<string>Directive assigns response timeout to client. Timeout is established not on entire transfer of answer, but only between two operations of reading, if after this time client will take nothing, then nginx is shutting down the connection.</string>
+		<key>default</key>
+		<integer>60</integer>
+	</dict>
+	<key>sendfile</key>
+	<dict>
+		<key>description</key>
+		<string>Directive activate or deactivate the usage of sendfile().</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>server_name_in_redirect</key>
+	<dict>
+		<key>description</key>
+		<string>If server_name_in_redirect is on, then Nginx will use the first value of the server_name directive for redirects. If server_name_in_redirect is off, then nginx will use the requested Host header.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>server_names_hash_max_size</key>
+	<dict>
+		<key>description</key>
+		<string>The maximum size of the server name hash tables</string>
+		<key>default</key>
+		<integer>512</integer>
+	</dict>
+	<key>server_names_hash_bucket_size</key>
+	<dict>
+		<key>description</key>
+		<string>Directive assigns the size of basket in the hash-tables of the names of servers. This value by default depends on the size of the line of processor cache.</string>
+		<key>default</key>
+		<integer>64</integer>
+	</dict>
+	<key>server_tokens</key>
+	<dict>
+		<key>description</key>
+		<string>Whether to send the Nginx version number in error pages and Server header.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>tcp_nodelay</key>
+	<dict>
+		<key>description</key>
+		<string>This directive allows or forbids the use of the socket option TCP_NODELAY. Only included in keep-alive connections.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>tcp_nopush</key>
+	<dict>
+		<key>description</key>
+		<string>This directive permits or forbids the use of the socket options TCP_NOPUSH on FreeBSD or TCP_CORK on Linux. This option is only available when using sendfile.
+
+Setting this option causes nginx to attempt to send it&apos;s HTTP response headers in one packet on Linux and FreeBSD 4.x</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>types</key>
+	<dict>
+		<key>description</key>
+		<string>Directive assigns the correspondence of expansion and MIME-types of answers. To one MIME- type can correspond several expansions.</string>
+		<key>default</key>
+		<dict>
+			<key>text/html</key>
+			<string>html</string>
+			<key>image/gif</key>
+			<string>gif</string>
+			<key>image/jpeg</key>
+			<string>jpg</string>
+		</dict>
+	</dict>
+	<key>underscores_in_headers</key>
+	<dict>
+		<key>description</key>
+		<string>Allows or disallows underscores in headers.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>variables_hash_bucket_size</key>
+	<dict>
+		<key>description</key>
+		<string>Assigns the key bucket size for the variables hash table.</string>
+		<key>default</key>
+		<integer>64</integer>
+	</dict>
+	<key>variables_hash_max_size</key>
+	<dict>
+		<key>description</key>
+		<string>The maximum size of the variables hash table.</string>
+		<key>default</key>
+		<integer>512</integer>
+	</dict>
+</dict>
+</plist>

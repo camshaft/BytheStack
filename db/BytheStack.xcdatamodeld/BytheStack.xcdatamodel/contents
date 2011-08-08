@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11A511" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="MongoDB" representedClassName="MongoDB">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="version" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="MySQL" representedClassName="MySQL">
+        <attribute name="enableOutsideAccess" optional="YES" attributeType="Boolean"/>
+        <attribute name="pathToLog" optional="YES" attributeType="String"/>
+        <attribute name="version" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Nginx" representedClassName="Nginx" isAbstract="YES">
+        <attribute name="aio" optional="YES" attributeType="String"/>
+        <attribute name="chunked_transfer_encoding" optional="YES" attributeType="Boolean"/>
+        <attribute name="client_body_buffer_size" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="client_body_in_file_only" optional="YES" attributeType="Boolean"/>
+        <attribute name="client_body_in_single_buffer" optional="YES" attributeType="Boolean"/>
+        <attribute name="client_body_temp_path" optional="YES" attributeType="String"/>
+        <attribute name="client_body_timeout" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="client_max_body_size" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="default_type" optional="YES" attributeType="String"/>
+        <attribute name="directio" optional="YES" attributeType="Integer 16"/>
+        <attribute name="error_page" optional="YES" attributeType="Transformable"/>
+        <attribute name="if_modified_since" optional="YES" attributeType="String"/>
+        <attribute name="keepalive_disable" optional="YES" attributeType="String"/>
+        <attribute name="keepalive_requests" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="keepalive_timeout" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="limit_rate" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="limit_rate_after" optional="YES" attributeType="Integer 32" defaultValueString="0"/>
+        <attribute name="lingering_close" optional="YES" attributeType="String"/>
+        <attribute name="lingering_time" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="lingering_timeout" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="log_not_found" optional="YES" attributeType="Boolean"/>
+        <attribute name="log_subrequest" optional="YES" attributeType="Boolean"/>
+        <attribute name="msie_padding" optional="YES" attributeType="Boolean"/>
+        <attribute name="msie_refresh" optional="YES" attributeType="Boolean"/>
+        <attribute name="open_file_cache" optional="YES" attributeType="String"/>
+        <attribute name="open_file_cache_errors" optional="YES" attributeType="String"/>
+        <attribute name="open_file_cache_min_uses" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="open_file_cache_valid" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="post_action" optional="YES" attributeType="String"/>
+        <attribute name="recursive_error_pages" optional="YES" attributeType="Boolean"/>
+        <attribute name="reset_timedout_connection" optional="YES" attributeType="Boolean"/>
+        <attribute name="resolver" optional="YES" attributeType="String"/>
+        <attribute name="resolver_timeout" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="root" optional="YES" attributeType="String"/>
+        <attribute name="satisfy" optional="YES" attributeType="String"/>
+        <attribute name="send_timeout" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="sendfile" optional="YES" attributeType="Boolean"/>
+        <attribute name="server_name_in_redirect" optional="YES" attributeType="Boolean"/>
+        <attribute name="server_tokens" optional="YES" attributeType="Boolean"/>
+        <attribute name="tcp_nodelay" optional="YES" attributeType="Boolean"/>
+        <attribute name="tcp_nopush" optional="YES" attributeType="Boolean"/>
+        <attribute name="types" optional="YES" attributeType="Transformable"/>
+    </entity>
+    <entity name="NginxHTTP" representedClassName="NginxHTTP" parentEntity="Nginx">
+        <attribute name="client_header_buffer_size" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="client_header_timeout" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="daemon" optional="YES" attributeType="Boolean"/>
+        <attribute name="debug_points" optional="YES" attributeType="String"/>
+        <attribute name="env" optional="YES" attributeType="Transformable"/>
+        <attribute name="error_log" optional="YES" attributeType="String"/>
+        <attribute name="group" optional="YES" attributeType="String"/>
+        <attribute name="large_client_header_buffers" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="master_process" optional="YES" attributeType="Boolean"/>
+        <attribute name="optimize_server_names" optional="YES" attributeType="Boolean"/>
+        <attribute name="pid" optional="YES" attributeType="String"/>
+        <attribute name="port" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="server_names_hash_bucket_size" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="server_names_hash_max_size" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="timer_resolution" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="underscores_in_headers" optional="YES" attributeType="Boolean"/>
+        <attribute name="user" optional="YES" attributeType="String"/>
+        <attribute name="variables_hash_bucket_size" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="variables_hash_max_size" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="worker_processes" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="worker_rlimit_nofile" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <relationship name="servers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NginxServer" inverseName="http" inverseEntity="NginxServer"/>
+    </entity>
+    <entity name="NginxLocation" representedClassName="NginxLocation" parentEntity="Nginx">
+        <attribute name="alias" optional="YES" attributeType="String"/>
+        <attribute name="definition" optional="YES" attributeType="String"/>
+        <attribute name="internal" optional="YES" attributeType="Boolean"/>
+        <attribute name="limit_except" optional="YES" attributeType="Transformable"/>
+        <attribute name="try_files" optional="YES" attributeType="Transformable"/>
+        <relationship name="server" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="NginxServer" inverseName="locations" inverseEntity="NginxServer"/>
+    </entity>
+    <entity name="NginxServer" representedClassName="NginxServer" parentEntity="Nginx" syncable="YES" dataClassName="NginxServer">
+        <attribute name="access_log" optional="YES" attributeType="String"/>
+        <attribute name="client_header_buffer_size" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="client_header_timeout" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="error_log" optional="YES" attributeType="String"/>
+        <attribute name="isDefaultServer" optional="YES" attributeType="Boolean"/>
+        <attribute name="isPHPServer" optional="YES" attributeType="Boolean"/>
+        <attribute name="large_client_header_buffers" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="optimize_server_names" optional="YES" attributeType="Boolean"/>
+        <attribute name="port" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="server_name" optional="YES" attributeType="String"/>
+        <attribute name="try_files" optional="YES" attributeType="Transformable"/>
+        <attribute name="underscores_in_headers" optional="YES" attributeType="Boolean"/>
+        <relationship name="http" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="NginxHTTP" inverseName="servers" inverseEntity="NginxHTTP"/>
+        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NginxLocation" inverseName="server" inverseEntity="NginxLocation"/>
+    </entity>
+    <entity name="PHP" representedClassName="PHP">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="version" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Server" representedClassName="Server">
+        <attribute name="group" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="startOnStartup" optional="YES" attributeType="Boolean"/>
+        <attribute name="user" optional="YES" attributeType="String"/>
+        <relationship name="ServerToMongoDB" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MongoDB"/>
+        <relationship name="ServerToMySQL" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MySQL"/>
+        <relationship name="ServerToNginx" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="NginxHTTP"/>
+        <relationship name="ServerToPHP" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHP"/>
+    </entity>
+    <elements>
+        <element name="MongoDB" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="MySQL" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Nginx" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="NginxHTTP" positionX="-117" positionY="282" width="128" height="375"/>
+        <element name="NginxLocation" positionX="-452" positionY="288" width="128" height="105"/>
+        <element name="NginxServer" positionX="-299" positionY="279" width="128" height="255"/>
+        <element name="PHP" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Server" positionX="160" positionY="192" width="128" height="195"/>
+    </elements>
+</model>

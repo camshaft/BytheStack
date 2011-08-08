@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>access_log</key>
+	<dict>
+		<key>description</key>
+		<string>The access_log directive sets the path, format and buffer size for the access log file. Using &quot;off&quot; as the only parameter clears all access_log directives for the current level. If the format is not indicated, it defaults to &quot;combined&quot;. The size of buffer must not exceed the size of the atomic record for writing into the disk file. This size is not limited for FreeBSD 3.0-6.0.</string>
+		<key>default</key>
+		<string>no</string>
+	</dict>
+	<key>log_format</key>
+	<dict>
+		<key>description</key>
+		<string>The log_format directive describes the format of a log entry. You can use general variables in the format, as well as variables which exist only at the moment of writing into the log.</string>
+		<key>default</key>
+		<string>combined</string>
+	</dict>
+</dict>
+</plist>

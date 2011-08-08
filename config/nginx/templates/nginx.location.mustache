@@ -1,0 +1,8 @@
+        location {{definition}}{
+            {{#alias}}alias {{alias}};
+            {{/alias}}{{#internal}}internal {{internal}};
+            {{/internal}}{{#hasLimitExcept}}limit_except {{#limit_except}} {{.}}
+            {{/limit_except}};{{/hasLimitExcept}}{{#hasTryFiles}}try_files {{#try_files}} {{.}}
+            {{/try_files}};{{/hasTryFiles}}
+{{>nginx.base}}
+        }

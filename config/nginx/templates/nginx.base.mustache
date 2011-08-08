@@ -1,0 +1,45 @@
+{{#aio}}aio {{aio}};
+{{/aio}}{{#chunked_transfer_encoding}}chunked_transfer_encoding {{chunked_transfer_encoding}};
+{{/chunked_transfer_encoding}}{{#client_body_buffer_size}}client_body_buffer_size {{client_body_buffer_size}};
+{{/client_body_buffer_size}}{{#client_body_in_file_only}}client_body_in_file_only {{client_body_in_file_only}};
+{{/client_body_in_file_only}}{{#client_body_in_single_buffer}}client_body_in_single_buffer {{client_body_in_single_buffer}};
+{{/client_body_in_single_buffer}}{{#client_body_temp_path}}client_body_temp_path {{client_body_temp_path}};
+{{/client_body_temp_path}}{{#client_body_timeout}}client_body_timeout {{client_body_timeout}};
+{{/client_body_timeout}}{{#client_max_body_size}}client_max_body_size {{client_max_body_size}};
+{{/client_max_body_size}}{{#default_type}}default_type {{default_type}};
+{{/default_type}}{{#directio}}directio {{directio}};
+{{/directio}}{{#hasErrorPage}}{{#error_page}}error_page {{status}} {{value}};
+{{/error_page}}{{/hasErrorPage}}{{#if_modified_since}}if_modified_since {{if_modified_since}};
+{{/if_modified_since}}{{#keepalive_disable}}keepalive_disable {{keepalive_disable}};
+{{/keepalive_disable}}{{#keepalive_requests}}keepalive_requests {{keepalive_requests}};
+{{/keepalive_requests}}{{#keepalive_timeout}}keepalive_timeout {{keepalive_timeout}};
+{{/keepalive_timeout}}{{#limit_rate}}limit_rate {{limit_rate}};
+{{/limit_rate}}{{#limit_rate_after}}limit_rate_after {{limit_rate_after}};
+{{/limit_rate_after}}{{#lingering_close}}lingering_close {{lingering_close}};
+{{/lingering_close}}{{#lingering_time}}lingering_time {{lingering_time}};
+{{/lingering_time}}{{#lingering_timeout}}lingering_timeout {{lingering_timeout}};
+{{/lingering_timeout}}{{#log_not_found}}log_not_found {{log_not_found}};
+{{/log_not_found}}{{#log_subrequest}}log_subrequest {{log_subrequest}};
+{{/log_subrequest}}{{#msie_padding}}msie_padding {{msie_padding}};
+{{/msie_padding}}{{#msie_refresh}}msie_refresh {{msie_refresh}};
+{{/msie_refresh}}{{#open_file_cache}}open_file_cache {{open_file_cache}};
+{{/open_file_cache}}{{#open_file_cache_errors}}open_file_cache_errors {{open_file_cache_errors}};
+{{/open_file_cache_errors}}{{#open_file_cache_min_uses}}open_file_cache_min_uses {{open_file_cache_min_uses}};
+{{/open_file_cache_min_uses}}{{#open_file_cache_valid}}open_file_cache_valid {{open_file_cache_valid}};
+{{/open_file_cache_valid}}{{#post_action}}post_action {{post_action}};
+{{/post_action}}{{#recursive_error_pages}}recursive_error_pages {{recursive_error_pages}};
+{{/recursive_error_pages}}{{#reset_timedout_connection}}reset_timedout_connection {{reset_timedout_connection}};
+{{/reset_timedout_connection}}{{#resolver}}resolver {{resolver}};
+{{/resolver}}{{#resolver_timeout}}resolver_timeout {{resolver_timeout}};
+{{/resolver_timeout}}{{#root}}root {{root}};
+{{/root}}{{#satisfy}}satisfy {{satisfy}};
+{{/satisfy}}{{#send_timeout}}send_timeout {{send_timeout}};
+{{/send_timeout}}{{#sendfile}}sendfile {{sendfile}};
+{{/sendfile}}{{#server_name_in_redirect}}server_name_in_redirect {{server_name_in_redirect}};
+{{/server_name_in_redirect}}{{#server_tokens}}server_tokens {{server_tokens}};
+{{/server_tokens}}{{#tcp_nodelay}}tcp_nodelay {{tcp_nodelay}};
+{{/tcp_nodelay}}{{#tcp_nopush}}tcp_nopush {{tcp_nopush}};
+{{/tcp_nopush}}{{#hasTypes}}types {
+    {{#types}}{{mime}} {{expansion}};
+{{/types}}
+}{{/hasTypes}}
