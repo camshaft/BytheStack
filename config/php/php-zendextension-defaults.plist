@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>zend_extension</key>
+	<dict>
+		<key>description</key>
+		<string>Absolute path to dynamically loadable Zend extension (for example APD) to load when PHP starts up.</string>
+		<key>default</key>
+		<array/>
+	</dict>
+	<key>zend_extension_debug</key>
+	<dict>
+		<key>description</key>
+		<string>Variant of zend_extension for extensions compiled with debug info.</string>
+		<key>default</key>
+		<array/>
+	</dict>
+	<key>zend_extension_debug_ts</key>
+	<dict>
+		<key>description</key>
+		<string>Variant of zend_extension for extensions compiled with debug info and thread safety.</string>
+		<key>default</key>
+		<array/>
+	</dict>
+	<key>zend_extension_ts</key>
+	<dict>
+		<key>description</key>
+		<string>Variant of zend_extension for extensions compiled with thread safety.</string>
+		<key>default</key>
+		<array/>
+	</dict>
+</dict>
+</plist>

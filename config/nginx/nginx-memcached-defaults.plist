@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>memcached_pass</key>
+	<dict>
+		<key>description</key>
+		<string>The backend should set the data in memcached. The memcached key is &quot;/uri?args&quot;.
+
+Since 0.5.9 the memcached key is now in $memcached_key.</string>
+		<key>default</key>
+		<string>none</string>
+	</dict>
+	<key>memcached_connect_timeout</key>
+	<dict>
+		<key>description</key>
+		<string>The timeout for connecting to memcached.</string>
+		<key>default</key>
+		<integer>60</integer>
+	</dict>
+	<key>memcached_read_timeout</key>
+	<dict>
+		<key>description</key>
+		<string>The timeout for reading from memcached.</string>
+		<key>default</key>
+		<integer>60</integer>
+	</dict>
+	<key>memcached_send_timeout</key>
+	<dict>
+		<key>description</key>
+		<string>The timeout for sending to memcached.</string>
+		<key>default</key>
+		<integer>60</integer>
+	</dict>
+	<key>memcached_buffer_size</key>
+	<dict>
+		<key>description</key>
+		<string>The recv/send buffer size, in bytes.</string>
+		<key>default</key>
+		<dict>
+			<key>number</key>
+			<string>8</string>
+			<key>size</key>
+			<string>8000</string>
+		</dict>
+	</dict>
+	<key>memcached_next_upstream</key>
+	<dict>
+		<key>possible_values</key>
+		<array>
+			<string>off</string>
+			<string>not_found</string>
+			<string>invalid_response</string>
+			<string>timeout</string>
+			<string>error</string>
+		</array>
+		<key>description</key>
+		<string>Which failure conditions should cause the request to be forwarded to another upstream server. Applies only when the value in memcached_pass is an upstream with two or more servers.</string>
+		<key>default</key>
+		<string>error</string>
+	</dict>
+</dict>
+</plist>

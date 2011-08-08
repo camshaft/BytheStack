@@ -20,42 +20,36 @@
     return self;
 }
 
-- (NSString *)applicationFilesDirectory {
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *libraryURL = [[fileManager URLsForDirectory:NSLibraryDirectory inDomains:NSUserDomainMask] lastObject];
-    return [[libraryURL path] stringByAppendingPathComponent:@"BytheStack"];
-}
-
-- (NSString *)applicationResourceDirectory {
-    return [[NSBundle mainBundle] resourcePath];
-}
-
 - (void)install {
-    NSString *installString = (brewInstall)?brewInstall:brewRemote;
-    
-    if (!installString) {
+    if (!brewInstall) {
         [NSException raise:@"Unable to install formula" format:@"either brewInstall or brewRemote must be set"];
     }
     
-    NSMutableArray *_brewArgs = [NSMutableArray arrayWithObjects:@"install",@"-v",installString, nil];
+    NSMutableArray *_brewArgs = [NSMutableArray arrayWithObjects:@"install",@"-v",brewInstall, nil];
     
     [_brewArgs addObjectsFromArray:brewArgs];
     
     TaskWrapper *brewTask = [[TaskWrapper alloc] 
-                                 initWithCommandPath:[[self applicationResourceDirectory] stringByAppendingFormat:@"%@/brew",BREW_PATH]
-                                 workingDir:@"/"
-                                 arguments:_brewArgs
-                                 delegate:self];
+                             initWithCommandPath:[[PathFinder applicationResourceDirectoryPath] stringByAppendingFormat:@"%@/brew",BREW_PATH]
+                             workingDir:@"/"
+                             arguments:_brewArgs
+                             environment:[NSDictionary dictionary]
+                             delegate:self];
     
     [brewTask startTask];
 }
 
 - (void)taskWrapper:(TaskWrapper *)taskWrapper didProduceOutput:(NSString *)output {
-    NSLog(@"%@",output);
+    
+    [[GTMLogger sharedLogger] logDebug:@"%@", output];
 }
 
 - (void)taskWrapper:(TaskWrapper *)taskWrapper didFinishTaskWithStatus:(int)terminationStatus {
     
+}
+
+- (NSString*)brewPath {
+    return [[PathFinder applicationResourceDirectoryPath] stringByAppendingString:@"resources/brew"];
 }
 
 

@@ -12,7 +12,6 @@
 
 @interface BaseInstaller : NSObject <TaskWrapperDelegate> {
     NSString *brewInstall;
-    NSString *brewRemote;
     NSArray *brewArgs;
 }
 
@@ -20,7 +19,7 @@
 - (id)initWithArgs:(NSArray*)args;
 
 - (void)install;
-- (NSString *)applicationFilesDirectory;
-- (NSString *)applicationResourceDirectory;
+
+- (NSString*)brewPath;
 
 @end

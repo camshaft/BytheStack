@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>short_open_tag</key>
+	<dict>
+		<key>description</key>
+		<string>Tells PHP whether the short form (&lt;? ?&gt;) of PHP&apos;s open tag should be allowed. If you want to use PHP in combination with XML, you can disable this option in order to use &lt;?xml ?&gt; inline. Otherwise, you can print it with PHP, for example: &lt;?php echo &apos;&lt;?xml version=&quot;1.0&quot;?&gt;&apos;; ?&gt;. Also, if disabled, you must use the long form of the PHP open tag (&lt;?php ?&gt;).</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>asp_tags</key>
+	<dict>
+		<key>description</key>
+		<string>Enables the use of ASP-like &lt;% %&gt; tags in addition to the usual &lt;?php ?&gt; tags. This includes the variable-value printing shorthand of &lt;%= $value %&gt;.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>precision</key>
+	<dict>
+		<key>description</key>
+		<string>The number of significant digits displayed in floating point numbers.</string>
+		<key>default</key>
+		<integer>14</integer>
+	</dict>
+	<key>serialize_precision</key>
+	<dict>
+		<key>description</key>
+		<string>The number of significant digits stored while serializing floating point numbers.</string>
+		<key>default</key>
+		<integer>17</integer>
+	</dict>
+	<key>y2k_compliance</key>
+	<dict>
+		<key>description</key>
+		<string>Enforce year 2000 compliance (will cause problems with non-compliant browsers)</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>allow_call_time_pass_reference</key>
+	<dict>
+		<key>description</key>
+		<string>Whether to warn when arguments are passed by reference at function call time. The encouraged method of specifying which arguments should be passed by reference is in the function declaration. You&apos;re encouraged to try and turn this option Off and make sure your scripts work properly with it in order to ensure they will work with future versions of the language (you will receive a warning each time you use this feature).
+
+Passing arguments by reference at function call time was deprecated for code-cleanliness reasons. A function can modify its arguments in an undocumented way if it didn&apos;t declare that the argument shall be passed by reference. To prevent side-effects it&apos;s better to specify which arguments are passed by reference in the function declaration only.
+
+In PHP5, allow_call_time_pass_reference is deprecated, in versions prior to PHP 5.3.0, use of this feature will emit an E_COMPILE_WARNING, and in PHP 5.3.0+, the warning is a E_DEPRECATED notice.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>disable_functions</key>
+	<dict>
+		<key>description</key>
+		<string>This directive allows you to disable certain functions for security reasons. It takes on a comma-delimited list of function names. disable_functions is not affected by Safe Mode.
+
+Only internal functions can be disabled using this directive. User-defined functions are unaffected.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>disable_classes</key>
+	<dict>
+		<key>description</key>
+		<string>This directive allows you to disable certain classes for security reasons. It takes on a comma-delimited list of class names. disable_classes is not affected by Safe Mode.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>expose_php</key>
+	<dict>
+		<key>description</key>
+		<string>Exposes to the world that PHP is installed on the server, which includes the PHP version within the HTTP header (e.g., X-Powered-By: PHP/5.3.7). The PHP logo guids are also exposed, thus appending them to the URL of a PHP enabled site will display the appropriate logo (e.g., » http://www.php.net/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42). This also affects the output of phpinfo(), as when disabled, the PHP logo and credits information will not be displayed.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>ze1_compatibility_mode</key>
+	<dict>
+		<key>description</key>
+		<string>Enable compatibility mode with Zend Engine 1 (PHP 4). It affects the cloning, casting (objects with no properties cast to FALSE or 0), and comparing of objects. In this mode, objects are passed by value instead of reference by default.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>zend.multibyte</key>
+	<dict>
+		<key>description</key>
+		<string>Enables parsing of source files in multibyte encodings.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>detect_unicode</key>
+	<dict>
+		<key>description</key>
+		<string>Check for BOM (Byte Order Mark) and see if the file contains valid multibyte characters. This detection is performed before processing of __halt_compiler(). Available only in Zend Multibyte mode.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>memory_limit</key>
+	<dict>
+		<key>description</key>
+		<string>This sets the maximum amount of memory in bytes that a script is allowed to allocate. This helps prevent poorly written scripts for eating up all available memory on a server. Note that to have no memory limit, set this directive to -1.</string>
+		<key>default</key>
+		<string>128M</string>
+	</dict>
+	<key>realpath_cache_size</key>
+	<dict>
+		<key>description</key>
+		<string>Determines the size of the realpath cache to be used by PHP. This value should be increased on systems where PHP opens many files, to reflect the quantity of the file operations performed.</string>
+		<key>default</key>
+		<string>16K</string>
+	</dict>
+	<key>realpath_cache_ttl</key>
+	<dict>
+		<key>description</key>
+		<string>Duration of time (in seconds) for which to cache realpath information for a given file or directory. For systems with rarely changing files, consider increasing the value.</string>
+		<key>default</key>
+		<string>120</string>
+	</dict>
+	<key>arg_separator.output</key>
+	<dict>
+		<key>description</key>
+		<string>The separator used in PHP generated URLs to separate arguments.</string>
+		<key>default</key>
+		<string>&amp;</string>
+	</dict>
+	<key>arg_separator.input</key>
+	<dict>
+		<key>description</key>
+		<string>List of separator(s) used by PHP to parse input URLs into variables.</string>
+		<key>default</key>
+		<string>&amp;</string>
+	</dict>
+	<key>variables_order</key>
+	<dict>
+		<key>description</key>
+		<string>Sets the order of the EGPCS (Environment, Get, Post, Cookie, and Server) variable parsing. For example, if variables_order is set to &quot;SP&quot; then PHP will create the superglobals $_SERVER and $_POST, but not create $_ENV, $_GET, and $_COOKIE. Setting to &quot;&quot; means no superglobals will be set.</string>
+		<key>default</key>
+		<string>EGPCS</string>
+	</dict>
+	<key>request_order</key>
+	<dict>
+		<key>description</key>
+		<string>This directive describes the order in which PHP registers GET, POST and Cookie variables into the _REQUEST array. Registration is done from left to right, newer values override older values.
+
+If this directive is not set, variables_order is used for $_REQUEST contents.
+
+Note that the default distribution php.ini files does not contain the &apos;C&apos; for cookies, due to security concerns.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>auto_globals_jit</key>
+	<dict>
+		<key>description</key>
+		<string>When enabled, the SERVER and ENV variables are created when they&apos;re first used (Just In Time) instead of when the script starts. If these variables are not used within a script, having this directive on will result in a performance gain.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>register_globals</key>
+	<dict>
+		<key>description</key>
+		<string>Whether or not to register the EGPCS (Environment, GET, POST, Cookie, Server) variables as global variables.
+
+As of » PHP 4.2.0, this directive defaults to off.
+
+Please read the security chapter on Using register_globals for related information.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>register_argc_argv</key>
+	<dict>
+		<key>description</key>
+		<string>Tells PHP whether to declare the argv &amp; argc variables (that would contain the GET information). See also command line. Also, this directive became available in PHP 4.0.0 and was always &quot;on&quot; before that.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>register_long_arrays</key>
+	<dict>
+		<key>description</key>
+		<string>Tells PHP whether or not to register the deprecated long $HTTP_*_VARS type predefined variables. When On (default), long predefined PHP variables like $HTTP_GET_VARS will be defined. If you&apos;re not using them, it&apos;s recommended to turn them off, for performance reasons. Instead, use the superglobal arrays, like $_GET. This directive became available in PHP 5.0.0.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>post_max_size</key>
+	<dict>
+		<key>description</key>
+		<string>Sets max size of post data allowed. This setting also affects file upload. To upload large files, this value must be larger than upload_max_filesize. If memory limit is enabled by your configure script, memory_limit also affects file uploading. Generally speaking, memory_limit should be larger than post_max_size. When an integer is used, the value is measured in bytes. Shorthand notation, as described in this FAQ, may also be used. If the size of post data is greater than post_max_size, the $_POST and $_FILES superglobals are empty. This can be tracked in various ways, e.g. by passing the $_GET variable to the script processing the data, i.e. &lt;form action=&quot;edit.php?processed=1&quot;&gt;, and then checking if $_GET[&apos;processed&apos;] is set.</string>
+		<key>default</key>
+		<string>8M</string>
+	</dict>
+	<key>gpc_order</key>
+	<dict>
+		<key>description</key>
+		<string>Set the order of GET/POST/COOKIE variable parsing. The default setting of this directive is &quot;GPC&quot;. Setting this to &quot;GP&quot;, for example, will cause PHP to completely ignore cookies and to overwrite any GET method variables with POST-method variables of the same name.</string>
+		<key>default</key>
+		<string>GPC</string>
+	</dict>
+	<key>auto_prepend_file</key>
+	<dict>
+		<key>description</key>
+		<string>Specifies the name of a file that is automatically parsed before the main file. The file is included as if it was called with the require() function, so include_path is used.
+
+The special value none disables auto-prepending.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>auto_append_file</key>
+	<dict>
+		<key>description</key>
+		<string>Specifies the name of a file that is automatically parsed after the main file. The file is included as if it was called with the require() function, so include_path is used.
+
+The special value none disables auto-appending.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>default_mimetype</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<string>text/html</string>
+	</dict>
+	<key>default_charset</key>
+	<dict>
+		<key>description</key>
+		<string>PHP always outputs a character encoding by default in the Content-type: header. To disable sending of the charset, simply set it to be empty.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>always_populate_raw_post_data</key>
+	<dict>
+		<key>description</key>
+		<string>Always populate the $HTTP_RAW_POST_DATA containing the raw POST data. Otherwise, the variable is populated only with unrecognized MIME type of the data. However, the preferred method for accessing the raw POST data is php://input. $HTTP_RAW_POST_DATA is not available with enctype=&quot;multipart/form-data&quot;.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>allow_webdav_methods</key>
+	<dict>
+		<key>description</key>
+		<string>Allow handling of WebDAV http requests within PHP scripts (eg. PROPFIND, PROPPATCH, MOVE, COPY, etc.). This directive does not exist as of PHP 4.3.2. If you want to get the post data of those requests, you have to set always_populate_raw_post_data as well.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>include_path</key>
+	<dict>
+		<key>description</key>
+		<string>Specifies a list of directories where the require(), include(), fopen(), file(), readfile() and file_get_contents() functions look for files. The format is like the system&apos;s PATH environment variable: a list of directories separated with a colon in Unix or semicolon in Windows.
+
+PHP considers each entry in the include path separately when looking for files to include. It will check the first path, and if it doesn&apos;t find it, check the next path, until it either locates the included file or returns with a warning or an error. You may modify or set your include path at runtime using set_include_path().</string>
+		<key>default</key>
+		<array/>
+	</dict>
+	<key>open_basedir</key>
+	<dict>
+		<key>description</key>
+		<string>Limit the files that can be opened by PHP to the specified directory-tree, including the file itself. This directive is NOT affected by whether Safe Mode is turned On or Off.
+
+When a script tries to open a file with, for example, fopen() or gzopen(), the location of the file is checked. When the file is outside the specified directory-tree, PHP will refuse to open it. All symbolic links are resolved, so it&apos;s not possible to avoid this restriction with a symlink. If the file doesn&apos;t exist then the symlink couldn&apos;t be resolved and the filename is compared to (a resolved) open_basedir .
+
+The special value . indicates that the working directory of the script will be used as the base-directory. This is, however, a little dangerous as the working directory of the script can easily be changed with chdir().
+
+In httpd.conf, open_basedir can be turned off (e.g. for some virtual hosts) the same way as any other configuration directive with &quot;php_admin_value open_basedir none&quot;.
+
+Under Windows, separate the directories with a semicolon. On all other systems, separate the directories with a colon. As an Apache module, open_basedir paths from parent directories are now automatically inherited.
+
+The restriction specified with open_basedir is a directory name since PHP 5.2.16 and 5.3.4. Previous versions used it as a prefix. This means that &quot;open_basedir = /dir/incl&quot; also allowed access to &quot;/dir/include&quot; and &quot;/dir/incls&quot; if they exist. When you want to restrict access to only the specified directory, end with a slash. For example: open_basedir = /dir/incl/
+
+The default is to allow all files to be opened.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>doc_root</key>
+	<dict>
+		<key>description</key>
+		<string>PHP&apos;s &quot;root directory&quot; on the server. Only used if non-empty. If PHP is configured with safe mode, no files outside this directory are served. If PHP was not compiled with FORCE_REDIRECT, you should set doc_root if you are running PHP as a CGI under any web server (other than IIS). The alternative is to use the cgi.force_redirect configuration below.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>user_dir</key>
+	<dict>
+		<key>description</key>
+		<string>The base name of the directory used on a user&apos;s home directory for PHP files, for example public_html .</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>extension_dir</key>
+	<dict>
+		<key>description</key>
+		<string>In what directory PHP should look for dynamically loadable extensions. See also: enable_dl, and dl().</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>extension</key>
+	<dict>
+		<key>description</key>
+		<string>Which dynamically loadable extensions to load when PHP starts up.</string>
+		<key>default</key>
+		<array/>
+	</dict>
+	<key>zend_extension</key>
+	<dict>
+		<key>description</key>
+		<string>Absolute path to dynamically loadable Zend extension (for example APD) to load when PHP starts up.</string>
+		<key>default</key>
+		<array/>
+	</dict>
+	<key>zend_extension_debug</key>
+	<dict>
+		<key>description</key>
+		<string>Variant of zend_extension for extensions compiled with debug info.</string>
+		<key>default</key>
+		<array/>
+	</dict>
+	<key>zend_extension_debug_ts</key>
+	<dict>
+		<key>description</key>
+		<string>Variant of zend_extension for extensions compiled with debug info and thread safety.</string>
+		<key>default</key>
+		<array/>
+	</dict>
+	<key>zend_extension_ts</key>
+	<dict>
+		<key>description</key>
+		<string>Variant of zend_extension for extensions compiled with thread safety.</string>
+		<key>default</key>
+		<array/>
+	</dict>
+	<key>file_uploads</key>
+	<dict>
+		<key>description</key>
+		<string>Whether or not to allow HTTP file uploads. See also the upload_max_filesize, upload_tmp_dir, and post_max_size directives.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>upload_tmp_dir</key>
+	<dict>
+		<key>description</key>
+		<string>The temporary directory used for storing files when doing file upload. Must be writable by whatever user PHP is running as. If not specified PHP will use the system&apos;s default.
+
+If the directory specified here is not writable, PHP falls back to the system default temporary directory. If open_basedir is on, then the system default directory must be allowed for an upload to succeed.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>upload_max_filesize</key>
+	<dict>
+		<key>description</key>
+		<string>The maximum size of an uploaded file.
+
+When an integer is used, the value is measured in bytes. Shorthand notation may also be used.</string>
+		<key>default</key>
+		<string>2M</string>
+	</dict>
+	<key>max_file_uploads</key>
+	<dict>
+		<key>description</key>
+		<string>The maximum number of files allowed to be uploaded simultaneously. Starting with PHP 5.3.4, upload fields left blank on submission do not count towards this limit.</string>
+		<key>default</key>
+		<integer>20</integer>
+	</dict>
+	<key>sql.safe_mode</key>
+	<dict>
+		<key>description</key>
+		<string>If turned on, database connect functions that specify default values will use those values in place of supplied arguments. For default values see connect function documentation for the relevant database.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>allow_url_fopen</key>
+	<dict>
+		<key>description</key>
+		<string>This option enables the URL-aware fopen wrappers that enable accessing URL object like files. Default wrappers are provided for the access of remote files using the ftp or http protocol, some extensions like zlib may register additional wrappers.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>allow_url_include</key>
+	<dict>
+		<key>description</key>
+		<string>This option allows the use of URL-aware fopen wrappers with the following functions: include(), include_once(), require(), require_once()</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>user_agent</key>
+	<dict>
+		<key>description</key>
+		<string>Define the user agent for PHP to send.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>default_socket_timeout</key>
+	<dict>
+		<key>description</key>
+		<string>Default timeout (in seconds) for socket based streams.</string>
+		<key>default</key>
+		<integer>60</integer>
+	</dict>
+	<key>from</key>
+	<dict>
+		<key>description</key>
+		<string>The email address to be used on unauthenticated FTP connections and as the value of From header for HTTP connections, when using the ftp and http wrappers, respectively.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>auto_detect_line_endings</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>assert.active</key>
+	<dict>
+		<key>description</key>
+		<string>Enable assert() evaluation.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>assert.bail</key>
+	<dict>
+		<key>description</key>
+		<string>Terminate script execution on failed assertions.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>assert.warning</key>
+	<dict>
+		<key>description</key>
+		<string>Issue a PHP warning for each failed assertion.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>assert.callback</key>
+	<dict>
+		<key>description</key>
+		<string>user function to call on failed assertions</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>assert.quiet_eval</key>
+	<dict>
+		<key>description</key>
+		<string>Use the current setting of error_reporting() during assertion expression evaluation. If enabled, no errors are shown (implicit error_reporting(0)) while evaluation. If disabled, errors are shown according to the settings of error_reporting()</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>enable_dl</key>
+	<dict>
+		<key>description</key>
+		<string>This directive is really only useful in the Apache module version of PHP. You can turn dynamic loading of PHP extensions with dl() on and off per virtual server or per directory.
+
+The main reason for turning dynamic loading off is security. With dynamic loading, it&apos;s possible to ignore all open_basedir restrictions. The default is to allow dynamic loading, except when using safe mode. In safe mode, it&apos;s always impossible to use dl().</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>max_execution_time</key>
+	<dict>
+		<key>description</key>
+		<string>This sets the maximum time in seconds a script is allowed to run before it is terminated by the parser. This helps prevent poorly written scripts from tying up the server. The default setting is 30. When running PHP from the command line the default setting is 0.
+
+The maximum execution time is not affected by system calls, stream operations etc. Please see the set_time_limit() function for more details.
+
+You can not change this setting with ini_set() when running in safe mode. The only workaround is to turn off safe mode or by changing the time limit in the php.ini.
+
+Your web server can have other timeout configurations that may also interrupt PHP execution. Apache has a Timeout directive and IIS has a CGI timeout function. Both default to 300 seconds. See your web server documentation for specific details.</string>
+		<key>default</key>
+		<integer>30</integer>
+	</dict>
+	<key>max_input_time</key>
+	<dict>
+		<key>description</key>
+		<string>This sets the maximum time in seconds a script is allowed to parse input data, like POST and GET. It is measured from the moment of receiving all data on the server to the start of script execution.</string>
+		<key>default</key>
+		<integer>-1</integer>
+	</dict>
+	<key>max_input_nesting_level</key>
+	<dict>
+		<key>description</key>
+		<string>Sets the max nesting depth of input variables (i.e. $_GET, $_POST..)</string>
+		<key>default</key>
+		<integer>64</integer>
+	</dict>
+	<key>magic_quotes_gpc</key>
+	<dict>
+		<key>description</key>
+		<string>Sets the magic_quotes state for GPC (Get/Post/Cookie) operations. When magic_quotes are on, all &apos; (single-quote), &quot; (double quote), \ (backslash) and NUL&apos;s are escaped with a backslash automatically.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>magic_quotes_runtime</key>
+	<dict>
+		<key>description</key>
+		<string>If magic_quotes_runtime is enabled, most functions that return data from any sort of external source including databases and text files will have quotes escaped with a backslash. If magic_quotes_sybase is also on, a single-quote is escaped with a single-quote instead of a backslash.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>zend.enable_gc</key>
+	<dict>
+		<key>description</key>
+		<string>Enables or disables the circular reference collector.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>date.default_latitude</key>
+	<dict>
+		<key>description</key>
+		<string>The default latitude.</string>
+		<key>default</key>
+		<real>31.7667</real>
+	</dict>
+	<key>date.default_longitude</key>
+	<dict>
+		<key>description</key>
+		<string>The default longitude.</string>
+		<key>default</key>
+		<real>35.2333</real>
+	</dict>
+	<key>date.sunrise_zenith</key>
+	<dict>
+		<key>description</key>
+		<string>The default sunrise zenith.</string>
+		<key>default</key>
+		<real>90.583333</real>
+	</dict>
+	<key>date.sunset_zenith</key>
+	<dict>
+		<key>description</key>
+		<string>The default sunset zenith.</string>
+		<key>default</key>
+		<real>90.583333</real>
+	</dict>
+	<key>date.timezone</key>
+	<dict>
+		<key>possible_values</key>
+		<array>
+			<string>Africa/Abidjan</string>
+			<string>Africa/Accra</string>
+			<string>Africa/Addis_Ababa</string>
+			<string>Africa/Algiers</string>
+			<string>Africa/Asmara</string>
+			<string>Africa/Asmera</string>
+			<string>Africa/Bamako</string>
+			<string>Africa/Bangui</string>
+			<string>Africa/Banjul</string>
+			<string>Africa/Bissau</string>
+			<string>Africa/Blantyre</string>
+			<string>Africa/Brazzaville</string>
+			<string>Africa/Bujumbura</string>
+			<string>Africa/Cairo</string>
+			<string>Africa/Casablanca</string>
+			<string>Africa/Ceuta</string>
+			<string>Africa/Conakry</string>
+			<string>Africa/Dakar</string>
+			<string>Africa/Dar_es_Salaam</string>
+			<string>Africa/Djibouti</string>
+			<string>Africa/Douala</string>
+			<string>Africa/El_Aaiun</string>
+			<string>Africa/Freetown</string>
+			<string>Africa/Gaborone</string>
+			<string>Africa/Harare</string>
+			<string>Africa/Johannesburg</string>
+			<string>Africa/Kampala</string>
+			<string>Africa/Khartoum</string>
+			<string>Africa/Kigali</string>
+			<string>Africa/Kinshasa</string>
+			<string>Africa/Lagos</string>
+			<string>Africa/Libreville</string>
+			<string>Africa/Lome</string>
+			<string>Africa/Luanda</string>
+			<string>Africa/Lubumbashi</string>
+			<string>Africa/Lusaka</string>
+			<string>Africa/Malabo</string>
+			<string>Africa/Maputo</string>
+			<string>Africa/Maseru</string>
+			<string>Africa/Mbabane</string>
+			<string>Africa/Mogadishu</string>
+			<string>Africa/Monrovia</string>
+			<string>Africa/Nairobi</string>
+			<string>Africa/Ndjamena</string>
+			<string>Africa/Niamey</string>
+			<string>Africa/Nouakchott</string>
+			<string>Africa/Ouagadougou</string>
+			<string>Africa/Porto-Novo</string>
+			<string>Africa/Sao_Tome</string>
+			<string>Africa/Timbuktu</string>
+			<string>Africa/Tripoli</string>
+			<string>Africa/Tunis</string>
+			<string>Africa/Windhoek</string>
+			<string>America/Adak</string>
+			<string>America/Anchorage</string>
+			<string>America/Anguilla</string>
+			<string>America/Antigua</string>
+			<string>America/Araguaina</string>
+			<string>America/Argentina/Buenos_Aires</string>
+			<string>America/Argentina/Catamarca</string>
+			<string>America/Argentina/ComodRivadavia</string>
+			<string>America/Argentina/Cordoba</string>
+			<string>America/Argentina/Jujuy</string>
+			<string>America/Argentina/La_Rioja</string>
+			<string>America/Argentina/Mendoza</string>
+			<string>America/Argentina/Rio_Gallegos</string>
+			<string>America/Argentina/Salta</string>
+			<string>America/Argentina/San_Juan</string>
+			<string>America/Argentina/San_Luis</string>
+			<string>America/Argentina/Tucuman</string>
+			<string>America/Argentina/Ushuaia</string>
+			<string>America/Aruba</string>
+			<string>America/Asuncion</string>
+			<string>America/Atikokan</string>
+			<string>America/Atka</string>
+			<string>America/Bahia</string>
+			<string>America/Bahia_Banderas</string>
+			<string>America/Barbados</string>
+			<string>America/Belem</string>
+			<string>America/Belize</string>
+			<string>America/Blanc-Sablon</string>
+			<string>America/Boa_Vista</string>
+			<string>America/Bogota</string>
+			<string>America/Boise</string>
+			<string>America/Buenos_Aires</string>
+			<string>America/Cambridge_Bay</string>
+			<string>America/Campo_Grande</string>
+			<string>America/Cancun</string>
+			<string>America/Caracas</string>
+			<string>America/Catamarca</string>
+			<string>America/Cayenne</string>
+			<string>America/Cayman</string>
+			<string>America/Chicago</string>
+			<string>America/Chihuahua</string>
+			<string>America/Coral_Harbour</string>
+			<string>America/Cordoba</string>
+			<string>America/Costa_Rica</string>
+			<string>America/Cuiaba</string>
+			<string>America/Curacao</string>
+			<string>America/Danmarkshavn</string>
+			<string>America/Dawson</string>
+			<string>America/Dawson_Creek</string>
+			<string>America/Denver</string>
+			<string>America/Detroit</string>
+			<string>America/Dominica</string>
+			<string>America/Edmonton</string>
+			<string>America/Eirunepe</string>
+			<string>America/El_Salvador</string>
+			<string>America/Ensenada</string>
+			<string>America/Fort_Wayne</string>
+			<string>America/Fortaleza</string>
+			<string>America/Glace_Bay</string>
+			<string>America/Godthab</string>
+			<string>America/Goose_Bay</string>
+			<string>America/Grand_Turk</string>
+			<string>America/Grenada</string>
+			<string>America/Guadeloupe</string>
+			<string>America/Guatemala</string>
+			<string>America/Guayaquil</string>
+			<string>America/Guyana</string>
+			<string>America/Halifax</string>
+			<string>America/Havana</string>
+			<string>America/Hermosillo</string>
+			<string>America/Indiana/Indianapolis</string>
+			<string>America/Indiana/Knox</string>
+			<string>America/Indiana/Marengo</string>
+			<string>America/Indiana/Petersburg</string>
+			<string>America/Indiana/Tell_City</string>
+			<string>America/Indiana/Vevay</string>
+			<string>America/Indiana/Vincennes</string>
+			<string>America/Indiana/Winamac</string>
+			<string>America/Indianapolis</string>
+			<string>America/Inuvik</string>
+			<string>America/Iqaluit</string>
+			<string>America/Jamaica</string>
+			<string>America/Jujuy</string>
+			<string>America/Juneau</string>
+			<string>America/Kentucky/Louisville</string>
+			<string>America/Kentucky/Monticello</string>
+			<string>America/Knox_IN</string>
+			<string>America/Kralendijk</string>
+			<string>America/La_Paz</string>
+			<string>America/Lima</string>
+			<string>America/Los_Angeles</string>
+			<string>America/Louisville</string>
+			<string>America/Lower_Princes</string>
+			<string>America/Maceio</string>
+			<string>America/Managua</string>
+			<string>America/Manaus</string>
+			<string>America/Marigot</string>
+			<string>America/Martinique</string>
+			<string>America/Matamoros</string>
+			<string>America/Mazatlan</string>
+			<string>America/Mendoza</string>
+			<string>America/Menominee</string>
+			<string>America/Merida</string>
+			<string>America/Metlakatla</string>
+			<string>America/Mexico_City</string>
+			<string>America/Miquelon</string>
+			<string>America/Moncton</string>
+			<string>America/Monterrey</string>
+			<string>America/Montevideo</string>
+			<string>America/Montreal</string>
+			<string>America/Montserrat</string>
+			<string>America/Nassau</string>
+			<string>America/New_York</string>
+			<string>America/Nipigon</string>
+			<string>America/Nome</string>
+			<string>America/Noronha</string>
+			<string>America/North_Dakota/Beulah</string>
+			<string>America/North_Dakota/Center</string>
+			<string>America/North_Dakota/New_Salem</string>
+			<string>America/Ojinaga</string>
+			<string>America/Panama</string>
+			<string>America/Pangnirtung</string>
+			<string>America/Paramaribo</string>
+			<string>America/Phoenix</string>
+			<string>America/Port-au-Prince</string>
+			<string>America/Port_of_Spain</string>
+			<string>America/Porto_Acre</string>
+			<string>America/Porto_Velho</string>
+			<string>America/Puerto_Rico</string>
+			<string>America/Rainy_River</string>
+			<string>America/Rankin_Inlet</string>
+			<string>America/Recife</string>
+			<string>America/Regina</string>
+			<string>America/Resolute</string>
+			<string>America/Rio_Branco</string>
+			<string>America/Rosario</string>
+			<string>America/Santa_Isabel</string>
+			<string>America/Santarem</string>
+			<string>America/Santiago</string>
+			<string>America/Santo_Domingo</string>
+			<string>America/Sao_Paulo</string>
+			<string>America/Scoresbysund</string>
+			<string>America/Shiprock</string>
+			<string>America/Sitka</string>
+			<string>America/St_Barthelemy</string>
+			<string>America/St_Johns</string>
+			<string>America/St_Kitts</string>
+			<string>America/St_Lucia</string>
+			<string>America/St_Thomas</string>
+			<string>America/St_Vincent</string>
+			<string>America/Swift_Current</string>
+			<string>America/Tegucigalpa</string>
+			<string>America/Thule</string>
+			<string>America/Thunder_Bay</string>
+			<string>America/Tijuana</string>
+			<string>America/Toronto</string>
+			<string>America/Tortola</string>
+			<string>America/Vancouver</string>
+			<string>America/Virgin</string>
+			<string>America/Whitehorse</string>
+			<string>America/Winnipeg</string>
+			<string>America/Yakutat</string>
+			<string>America/Yellowknife</string>
+			<string>Antarctica/Casey</string>
+			<string>Antarctica/Davis</string>
+			<string>Antarctica/DumontDUrville</string>
+			<string>Antarctica/Macquarie</string>
+			<string>Antarctica/Mawson</string>
+			<string>Antarctica/McMurdo</string>
+			<string>Antarctica/Palmer</string>
+			<string>Antarctica/Rothera</string>
+			<string>Antarctica/South_Pole</string>
+			<string>Antarctica/Syowa</string>
+			<string>Antarctica/Vostok</string>
+			<string>Arctic/Longyearbyen</string>
+			<string>Asia/Aden</string>
+			<string>Asia/Almaty</string>
+			<string>Asia/Amman</string>
+			<string>Asia/Anadyr</string>
+			<string>Asia/Aqtau</string>
+			<string>Asia/Aqtobe</string>
+			<string>Asia/Ashgabat</string>
+			<string>Asia/Ashkhabad</string>
+			<string>Asia/Baghdad</string>
+			<string>Asia/Bahrain</string>
+			<string>Asia/Baku</string>
+			<string>Asia/Bangkok</string>
+			<string>Asia/Beirut</string>
+			<string>Asia/Bishkek</string>
+			<string>Asia/Brunei</string>
+			<string>Asia/Calcutta</string>
+			<string>Asia/Choibalsan</string>
+			<string>Asia/Chongqing</string>
+			<string>Asia/Chungking</string>
+			<string>Asia/Colombo</string>
+			<string>Asia/Dacca</string>
+			<string>Asia/Damascus</string>
+			<string>Asia/Dhaka</string>
+			<string>Asia/Dili</string>
+			<string>Asia/Dubai</string>
+			<string>Asia/Dushanbe</string>
+			<string>Asia/Gaza</string>
+			<string>Asia/Harbin</string>
+			<string>Asia/Ho_Chi_Minh</string>
+			<string>Asia/Hong_Kong</string>
+			<string>Asia/Hovd</string>
+			<string>Asia/Irkutsk</string>
+			<string>Asia/Istanbul</string>
+			<string>Asia/Jakarta</string>
+			<string>Asia/Jayapura</string>
+			<string>Asia/Jerusalem</string>
+			<string>Asia/Kabul</string>
+			<string>Asia/Kamchatka</string>
+			<string>Asia/Karachi</string>
+			<string>Asia/Kashgar</string>
+			<string>Asia/Kathmandu</string>
+			<string>Asia/Katmandu</string>
+			<string>Asia/Kolkata</string>
+			<string>Asia/Krasnoyarsk</string>
+			<string>Asia/Kuala_Lumpur</string>
+			<string>Asia/Kuching</string>
+			<string>Asia/Kuwait</string>
+			<string>Asia/Macao</string>
+			<string>Asia/Macau</string>
+			<string>Asia/Magadan</string>
+			<string>Asia/Makassar</string>
+			<string>Asia/Manila</string>
+			<string>Asia/Muscat</string>
+			<string>Asia/Nicosia</string>
+			<string>Asia/Novokuznetsk</string>
+			<string>Asia/Novosibirsk</string>
+			<string>Asia/Omsk</string>
+			<string>Asia/Oral</string>
+			<string>Asia/Phnom_Penh</string>
+			<string>Asia/Pontianak</string>
+			<string>Asia/Pyongyang</string>
+			<string>Asia/Qatar</string>
+			<string>Asia/Qyzylorda</string>
+			<string>Asia/Rangoon</string>
+			<string>Asia/Riyadh</string>
+			<string>Asia/Saigon</string>
+			<string>Asia/Sakhalin</string>
+			<string>Asia/Samarkand</string>
+			<string>Asia/Seoul</string>
+			<string>Asia/Shanghai</string>
+			<string>Asia/Singapore</string>
+			<string>Asia/Taipei</string>
+			<string>Asia/Tashkent</string>
+			<string>Asia/Tbilisi</string>
+			<string>Asia/Tehran</string>
+			<string>Asia/Tel_Aviv</string>
+			<string>Asia/Thimbu</string>
+			<string>Asia/Thimphu</string>
+			<string>Asia/Tokyo</string>
+			<string>Asia/Ujung_Pandang</string>
+			<string>Asia/Ulaanbaatar</string>
+			<string>Asia/Ulan_Bator</string>
+			<string>Asia/Urumqi</string>
+			<string>Asia/Vientiane</string>
+			<string>Asia/Vladivostok</string>
+			<string>Asia/Yakutsk</string>
+			<string>Asia/Yekaterinburg</string>
+			<string>Asia/Yerevan</string>
+			<string>Atlantic/Azores</string>
+			<string>Atlantic/Bermuda</string>
+			<string>Atlantic/Canary</string>
+			<string>Atlantic/Cape_Verde</string>
+			<string>Atlantic/Faeroe</string>
+			<string>Atlantic/Faroe</string>
+			<string>Atlantic/Jan_Mayen</string>
+			<string>Atlantic/Madeira</string>
+			<string>Atlantic/Reykjavik</string>
+			<string>Atlantic/South_Georgia</string>
+			<string>Atlantic/St_Helena</string>
+			<string>Atlantic/Stanley</string>
+			<string>Australia/ACT</string>
+			<string>Australia/Adelaide</string>
+			<string>Australia/Brisbane</string>
+			<string>Australia/Broken_Hill</string>
+			<string>Australia/Canberra</string>
+			<string>Australia/Currie</string>
+			<string>Australia/Darwin</string>
+			<string>Australia/Eucla</string>
+			<string>Australia/Hobart</string>
+			<string>Australia/LHI</string>
+			<string>Australia/Lindeman</string>
+			<string>Australia/Lord_Howe</string>
+			<string>Australia/Melbourne</string>
+			<string>Australia/North</string>
+			<string>Australia/NSW</string>
+			<string>Australia/Perth</string>
+			<string>Australia/Queensland</string>
+			<string>Australia/South</string>
+			<string>Australia/Sydney</string>
+			<string>Australia/Tasmania</string>
+			<string>Australia/Victoria</string>
+			<string>Australia/West</string>
+			<string>Australia/Yancowinna</string>
+			<string>Europe/Amsterdam</string>
+			<string>Europe/Andorra</string>
+			<string>Europe/Athens</string>
+			<string>Europe/Belfast</string>
+			<string>Europe/Belgrade</string>
+			<string>Europe/Berlin</string>
+			<string>Europe/Bratislava</string>
+			<string>Europe/Brussels</string>
+			<string>Europe/Bucharest</string>
+			<string>Europe/Budapest</string>
+			<string>Europe/Chisinau</string>
+			<string>Europe/Copenhagen</string>
+			<string>Europe/Dublin</string>
+			<string>Europe/Gibraltar</string>
+			<string>Europe/Guernsey</string>
+			<string>Europe/Helsinki</string>
+			<string>Europe/Isle_of_Man</string>
+			<string>Europe/Istanbul</string>
+			<string>Europe/Jersey</string>
+			<string>Europe/Kaliningrad</string>
+			<string>Europe/Kiev</string>
+			<string>Europe/Lisbon</string>
+			<string>Europe/Ljubljana</string>
+			<string>Europe/London</string>
+			<string>Europe/Luxembourg</string>
+			<string>Europe/Madrid</string>
+			<string>Europe/Malta</string>
+			<string>Europe/Mariehamn</string>
+			<string>Europe/Minsk</string>
+			<string>Europe/Monaco</string>
+			<string>Europe/Moscow</string>
+			<string>Europe/Nicosia</string>
+			<string>Europe/Oslo</string>
+			<string>Europe/Paris</string>
+			<string>Europe/Podgorica</string>
+			<string>Europe/Prague</string>
+			<string>Europe/Riga</string>
+			<string>Europe/Rome</string>
+			<string>Europe/Samara</string>
+			<string>Europe/San_Marino</string>
+			<string>Europe/Sarajevo</string>
+			<string>Europe/Simferopol</string>
+			<string>Europe/Skopje</string>
+			<string>Europe/Sofia</string>
+			<string>Europe/Stockholm</string>
+			<string>Europe/Tallinn</string>
+			<string>Europe/Tirane</string>
+			<string>Europe/Tiraspol</string>
+			<string>Europe/Uzhgorod</string>
+			<string>Europe/Vaduz</string>
+			<string>Europe/Vatican</string>
+			<string>Europe/Vienna</string>
+			<string>Europe/Vilnius</string>
+			<string>Europe/Volgograd</string>
+			<string>Europe/Warsaw</string>
+			<string>Europe/Zagreb</string>
+			<string>Europe/Zaporozhye</string>
+			<string>Europe/Zurich</string>
+			<string>Indian/Antananarivo</string>
+			<string>Indian/Chagos</string>
+			<string>Indian/Christmas</string>
+			<string>Indian/Cocos</string>
+			<string>Indian/Comoro</string>
+			<string>Indian/Kerguelen</string>
+			<string>Indian/Mahe</string>
+			<string>Indian/Maldives</string>
+			<string>Indian/Mauritius</string>
+			<string>Indian/Mayotte</string>
+			<string>Indian/Reunion</string>
+			<string>Pacific/Apia</string>
+			<string>Pacific/Auckland</string>
+			<string>Pacific/Chatham</string>
+			<string>Pacific/Chuuk</string>
+			<string>Pacific/Easter</string>
+			<string>Pacific/Efate</string>
+			<string>Pacific/Enderbury</string>
+			<string>Pacific/Fakaofo</string>
+			<string>Pacific/Fiji</string>
+			<string>Pacific/Funafuti</string>
+			<string>Pacific/Galapagos</string>
+			<string>Pacific/Gambier</string>
+			<string>Pacific/Guadalcanal</string>
+			<string>Pacific/Guam</string>
+			<string>Pacific/Honolulu</string>
+			<string>Pacific/Johnston</string>
+			<string>Pacific/Kiritimati</string>
+			<string>Pacific/Kosrae</string>
+			<string>Pacific/Kwajalein</string>
+			<string>Pacific/Majuro</string>
+			<string>Pacific/Marquesas</string>
+			<string>Pacific/Midway</string>
+			<string>Pacific/Nauru</string>
+			<string>Pacific/Niue</string>
+			<string>Pacific/Norfolk</string>
+			<string>Pacific/Noumea</string>
+			<string>Pacific/Pago_Pago</string>
+			<string>Pacific/Palau</string>
+			<string>Pacific/Pitcairn</string>
+			<string>Pacific/Pohnpei</string>
+			<string>Pacific/Ponape</string>
+			<string>Pacific/Port_Moresby</string>
+			<string>Pacific/Rarotonga</string>
+			<string>Pacific/Saipan</string>
+			<string>Pacific/Samoa</string>
+			<string>Pacific/Tahiti</string>
+			<string>Pacific/Tarawa</string>
+			<string>Pacific/Tongatapu</string>
+			<string>Pacific/Truk</string>
+			<string>Pacific/Wake</string>
+			<string>Pacific/Wallis</string>
+			<string>Pacific/Yap</string>
+			<string>Brazil/Acre</string>
+			<string>Brazil/DeNoronha</string>
+			<string>Brazil/East</string>
+			<string>Brazil/West</string>
+			<string>Canada/Atlantic</string>
+			<string>Canada/Central</string>
+			<string>Canada/East-Saskatchewan</string>
+			<string>Canada/Eastern</string>
+			<string>Canada/Mountain</string>
+			<string>Canada/Newfoundland</string>
+			<string>Canada/Pacific</string>
+			<string>Canada/Saskatchewan</string>
+			<string>Canada/Yukon</string>
+			<string>CET</string>
+			<string>Chile/Continental</string>
+			<string>Chile/EasterIsland</string>
+			<string>CST6CDT</string>
+			<string>Cuba</string>
+			<string>EET</string>
+			<string>Egypt</string>
+			<string>Eire</string>
+			<string>EST</string>
+			<string>EST5EDT</string>
+			<string>Etc/GMT</string>
+			<string>Etc/GMT+0</string>
+			<string>Etc/GMT+1</string>
+			<string>Etc/GMT+10</string>
+			<string>Etc/GMT+11</string>
+			<string>Etc/GMT+12</string>
+			<string>Etc/GMT+2</string>
+			<string>Etc/GMT+3</string>
+			<string>Etc/GMT+4</string>
+			<string>Etc/GMT+5</string>
+			<string>Etc/GMT+6</string>
+			<string>Etc/GMT+7</string>
+			<string>Etc/GMT+8</string>
+			<string>Etc/GMT+9</string>
+			<string>Etc/GMT-0</string>
+			<string>Etc/GMT-1</string>
+			<string>Etc/GMT-10</string>
+			<string>Etc/GMT-11</string>
+			<string>Etc/GMT-12</string>
+			<string>Etc/GMT-13</string>
+			<string>Etc/GMT-14</string>
+			<string>Etc/GMT-2</string>
+			<string>Etc/GMT-3</string>
+			<string>Etc/GMT-4</string>
+			<string>Etc/GMT-5</string>
+			<string>Etc/GMT-6</string>
+			<string>Etc/GMT-7</string>
+			<string>Etc/GMT-8</string>
+			<string>Etc/GMT-9</string>
+			<string>Etc/GMT0</string>
+			<string>Etc/Greenwich</string>
+			<string>Etc/UCT</string>
+			<string>Etc/Universal</string>
+			<string>Etc/UTC</string>
+			<string>Etc/Zulu</string>
+			<string>Factory</string>
+			<string>GB</string>
+			<string>GB-Eire</string>
+			<string>GMT</string>
+			<string>GMT+0</string>
+			<string>GMT-0</string>
+			<string>GMT0</string>
+			<string>Greenwich</string>
+			<string>Hongkong</string>
+			<string>HST</string>
+			<string>Iceland</string>
+			<string>Iran</string>
+			<string>Israel</string>
+			<string>Jamaica</string>
+			<string>Japan</string>
+			<string>Kwajalein</string>
+			<string>Libya</string>
+			<string>MET</string>
+			<string>Mexico/BajaNorte</string>
+			<string>Mexico/BajaSur</string>
+			<string>Mexico/General</string>
+			<string>MST</string>
+			<string>MST7MDT</string>
+			<string>Navajo</string>
+			<string>NZ</string>
+			<string>NZ-CHAT</string>
+			<string>Poland</string>
+			<string>Portugal</string>
+			<string>PRC</string>
+			<string>PST8PDT</string>
+			<string>ROC</string>
+			<string>ROK</string>
+			<string>Singapore</string>
+			<string>Turkey</string>
+			<string>UCT</string>
+			<string>Universal</string>
+			<string>US/Alaska</string>
+			<string>US/Aleutian</string>
+			<string>US/Arizona</string>
+			<string>US/Central</string>
+			<string>US/East-Indiana</string>
+			<string>US/Eastern</string>
+			<string>US/Hawaii</string>
+			<string>US/Indiana-Starke</string>
+			<string>US/Michigan</string>
+			<string>US/Mountain</string>
+			<string>US/Pacific</string>
+			<string>US/Pacific-New</string>
+			<string>US/Samoa</string>
+			<string>UTC</string>
+			<string>W-SU</string>
+			<string>WET</string>
+			<string>Zulu</string>
+		</array>
+		<key>description</key>
+		<string>Prior to PHP 5.3.0, the default timezone used by all date/time functions if the TZ environment variable isn&apos;t set; this is longer the case as of 5.3.0. The precedence order is described in the date_default_timezone_get() page.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>error_reporting</key>
+	<dict>
+		<key>multiple_choice</key>
+		<true/>
+		<key>possible_values</key>
+		<array>
+			<string>E_ERROR</string>
+			<string>E_WARNING</string>
+			<string>E_PARSE</string>
+			<string>E_NOTICE</string>
+			<string>E_CORE_ERROR</string>
+			<string>E_CORE_WARNING</string>
+			<string>E_COMPILE_ERROR</string>
+			<string>E_COMPILE_WARNING</string>
+			<string>E_USER_ERROR</string>
+			<string>E_USER_WARNING</string>
+			<string>E_USER_NOTICE</string>
+			<string>E_STRICT</string>
+			<string>E_RECOVERABLE_ERROR</string>
+			<string>E_DEPRECATED</string>
+			<string>E_USER_DEPRECATED</string>
+		</array>
+		<key>description</key>
+		<string>Set the error reporting level. The parameter is either an integer representing a bit field, or named constants.</string>
+		<key>default</key>
+		<array>
+			<true/>
+			<true/>
+			<true/>
+			<false/>
+			<true/>
+			<true/>
+			<true/>
+			<true/>
+			<true/>
+			<true/>
+			<true/>
+			<true/>
+			<true/>
+			<true/>
+			<true/>
+		</array>
+	</dict>
+	<key>display_errors</key>
+	<dict>
+		<key>description</key>
+		<string>This determines whether errors should be printed to the screen as part of the output or if they should be hidden from the user.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>display_startup_errors</key>
+	<dict>
+		<key>description</key>
+		<string>Even when display_errors is on, errors that occur during PHP&apos;s startup sequence are not displayed. It&apos;s strongly recommended to keep display_startup_errors off, except for debugging.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>log_errors</key>
+	<dict>
+		<key>description</key>
+		<string>Tells whether script error messages should be logged to the server&apos;s error log or error_log. This option is thus server-specific.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>log_errors_max_len</key>
+	<dict>
+		<key>description</key>
+		<string>Set the maximum length of log_errors in bytes. In error_log information about the source is added. The default is 1024 and 0 allows to not apply any maximum length at all. This length is applied to logged errors, displayed errors and also to $php_errormsg.</string>
+		<key>default</key>
+		<integer>1024</integer>
+	</dict>
+	<key>ignore_repeated_errors</key>
+	<dict>
+		<key>description</key>
+		<string>Do not log repeated messages. Repeated errors must occur in the same file on the same line unless ignore_repeated_source is set true.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>ignore_repeated_source</key>
+	<dict>
+		<key>description</key>
+		<string>Ignore source of message when ignoring repeated messages. When this setting is On you will not log errors with repeated messages from different files or sourcelines.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>report_memleaks</key>
+	<dict>
+		<key>description</key>
+		<string>If this parameter is set to On (the default), this parameter will show a report of memory leaks detected by the Zend memory manager. This report will be send to stderr on Posix platforms. On Windows, it will be send to the debugger using OutputDebugString(), and can be viewed with tools like » DbgView. This parameter only has effect in a debug build, and if error_reporting includes E_WARNING in the allowed list.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>track_errors</key>
+	<dict>
+		<key>description</key>
+		<string>If enabled, the last error message will always be present in the variable $php_errormsg.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>html_errors</key>
+	<dict>
+		<key>description</key>
+		<string>Turn off HTML tags in error messages. The new format for HTML errors produces clickable messages that direct the user to a page describing the error or function in causing the error. These references are affected by docref_root and docref_ext.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>xmlrpc_errors</key>
+	<dict>
+		<key>description</key>
+		<string>Turns off normal error reporting and formats errors as XML-RPC error message.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>xmlrpc_error_number</key>
+	<dict>
+		<key>description</key>
+		<string>Used as the value of the XML-RPC faultCode element.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>docref_root</key>
+	<dict>
+		<key>description</key>
+		<string>The new error format contains a reference to a page describing the error or function causing the error. In case of manual pages you can download the manual in your language and set this ini directive to the URL of your local copy. If your local copy of the manual can be reached by &quot;/manual/&quot; you can simply use docref_root=/manual/. Additional you have to set docref_ext to match the fileextensions of your copy docref_ext=.html. It is possible to use external references. For example you can use docref_root=http://manual/en/ or docref_root=&quot;http://landonize.it/?how=url&amp;theme=classic&amp;filter=Landon &amp;url=http%3A%2F%2Fwww.php.net%2F&quot;
+
+Most of the time you want the docref_root value to end with a slash &quot;/&quot;. But see the second example above which does not have nor need it.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>docref_ext</key>
+	<dict>
+		<key>description</key>
+		<string>See docref_root.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>error_prepend_string</key>
+	<dict>
+		<key>description</key>
+		<string>String to output before an error message.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>error_append_string</key>
+	<dict>
+		<key>description</key>
+		<string>String to output after an error message.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>error_log</key>
+	<dict>
+		<key>description</key>
+		<string>Name of the file where script errors should be logged. The file should be writable by the web server&apos;s user. If the special value syslog is used, the errors are sent to the system logger instead. On Unix, this means syslog(3) and on Windows NT it means the event log. The system logger is not supported on Windows 95. See also: syslog(). If this directive is not set, errors are sent to the SAPI error logger. For example, it is an error log in Apache or stderr in CLI.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

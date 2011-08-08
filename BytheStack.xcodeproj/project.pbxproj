@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E15CECD13F09726008D387E /* php-cgi-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E15CECC13F09726008D387E /* php-cgi-defaults.plist */; };
+		7E15CED013F09765008D387E /* php-fastcgi-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E15CECF13F09765008D387E /* php-fastcgi-defaults.plist */; };
+		7E15CED213F09794008D387E /* php-zendextension-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E15CED113F09794008D387E /* php-zendextension-defaults.plist */; };
+		7E15CED413F097EE008D387E /* php-highlight-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E15CED313F097EE008D387E /* php-highlight-defaults.plist */; };
+		7E15CED613F09E43008D387E /* php-memcache-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E15CED513F09E43008D387E /* php-memcache-defaults.plist */; };
 		7E3C118113EC710E00EC69E8 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C117113EC710E00EC69E8 /* ASIDataCompressor.m */; };
 		7E3C118213EC710E00EC69E8 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C117313EC710E00EC69E8 /* ASIDataDecompressor.m */; };
 		7E3C118313EC710E00EC69E8 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C117513EC710E00EC69E8 /* ASIDownloadCache.m */; };
@@ -16,21 +21,11 @@
 		7E3C118713EC710E00EC69E8 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C117F13EC710E00EC69E8 /* ASINetworkQueue.m */; };
 		7E3C118B13EC719400EC69E8 /* ServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C118913EC719400EC69E8 /* ServerController.m */; };
 		7E3C118C13EC719400EC69E8 /* ServerController-show.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C118A13EC719400EC69E8 /* ServerController-show.xib */; };
-		7E3C11A413EC777200EC69E8 /* Nginx.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11A313EC777200EC69E8 /* Nginx.m */; };
-		7E3C11A713EC777300EC69E8 /* Vhost.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11A613EC777300EC69E8 /* Vhost.m */; };
-		7E3C11AA13EC777300EC69E8 /* MySQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11A913EC777300EC69E8 /* MySQL.m */; };
-		7E3C11AD13EC777300EC69E8 /* PHP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11AC13EC777300EC69E8 /* PHP.m */; };
-		7E3C11B013EC777300EC69E8 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11AF13EC777300EC69E8 /* Server.m */; };
-		7E3C11B313EC777300EC69E8 /* Apache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11B213EC777300EC69E8 /* Apache.m */; };
-		7E3C11B613EC777300EC69E8 /* MongoDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11B513EC777300EC69E8 /* MongoDB.m */; };
-		7E3C11B813EC780300EC69E8 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C11B713EC780300EC69E8 /* config.plist */; };
 		7E3C11C813EC78BF00EC69E8 /* BytheStackTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C11C313EC78BF00EC69E8 /* BytheStackTests-Info.plist */; };
 		7E3C11C913EC78BF00EC69E8 /* BytheStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C11C513EC78BF00EC69E8 /* BytheStackTests.m */; };
 		7E3C11CA13EC78BF00EC69E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C11C613EC78BF00EC69E8 /* InfoPlist.strings */; };
 		7E3CFD4A13EC704A00EC69E8 /* BytheStackAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE82813EC702000EC69E8 /* BytheStackAppDelegate.m */; };
 		7E3CFD4B13EC704A00EC69E8 /* default.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3CE82E13EC702000EC69E8 /* default.xib */; };
-		7E3CFD4E13EC704A00EC69E8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7E3CE83413EC702000EC69E8 /* Credits.rtf */; };
-		7E3CFD4F13EC704A00EC69E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E3CE83613EC702000EC69E8 /* InfoPlist.strings */; };
 		7E3CFD5013EC704A00EC69E8 /* BytheStack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE83913EC702000EC69E8 /* BytheStack.xcdatamodeld */; };
 		7E3CFD5113EC704A00EC69E8 /* BaseInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE84013EC702100EC69E8 /* BaseInstaller.m */; };
 		7E3CFD5213EC704A00EC69E8 /* NginxInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CE84513EC702100EC69E8 /* NginxInstaller.m */; };
@@ -43,10 +38,58 @@
 		7E5A92E113EB639B006498C3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5A92E013EB639B006498C3 /* libz.dylib */; };
 		7E5AA21013EB7542006498C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */; };
 		7EAF17C513ECBFF1000B5375 /* NodeInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17C413ECBFF1000B5375 /* NodeInstaller.m */; };
-		7EAF17C813ECC064000B5375 /* MySQLInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17C713ECC064000B5375 /* MySQLInstaller.m */; };
 		7EAF17CB13ECC0BA000B5375 /* MongoDBInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17CA13ECC0BA000B5375 /* MongoDBInstaller.m */; };
-		7EAF17CE13ECC0E9000B5375 /* ApacheInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17CD13ECC0E9000B5375 /* ApacheInstaller.m */; };
+		7EAF17D413ED3808000B5375 /* MemcachedInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17D313ED3808000B5375 /* MemcachedInstaller.m */; };
+		7EAF17DE13ED3F7F000B5375 /* PathFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17DD13ED3F7F000B5375 /* PathFinder.m */; };
+		7EAF17E513ED460F000B5375 /* GTMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17E013ED460F000B5375 /* GTMLogger.m */; };
+		7EAF17E613ED460F000B5375 /* GTMLogger+ASL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17E213ED460F000B5375 /* GTMLogger+ASL.m */; };
+		7EAF17E713ED460F000B5375 /* GTMLoggerRingBufferWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17E413ED460F000B5375 /* GTMLoggerRingBufferWriter.m */; };
+		7EAF17FC13EDFE04000B5375 /* VhostController-show.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF17FB13EDFE03000B5375 /* VhostController-show.xib */; };
+		7EAF17FE13EDFE52000B5375 /* ServerController-edit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF17FD13EDFE52000B5375 /* ServerController-edit.xib */; };
+		7EAF180713EE2B2B000B5375 /* nginx-core-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF180313EE2B2B000B5375 /* nginx-core-defaults.plist */; };
+		7EAF180813EE2B2B000B5375 /* nginx-http.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF180413EE2B2B000B5375 /* nginx-http.plist */; };
+		7EAF180913EE2B2B000B5375 /* nginx-location.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF180513EE2B2B000B5375 /* nginx-location.plist */; };
+		7EAF180A13EE2B2B000B5375 /* nginx-server.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF180613EE2B2B000B5375 /* nginx-server.plist */; };
+		7EAF180C13EE2E86000B5375 /* nginx-gzip-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF180B13EE2E86000B5375 /* nginx-gzip-defaults.plist */; };
+		7EAF180E13EE3183000B5375 /* nginx-main-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF180D13EE3183000B5375 /* nginx-main-defaults.plist */; };
+		7EAF181013EE34FE000B5375 /* nginx-log-defauts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF180F13EE34FE000B5375 /* nginx-log-defauts.plist */; };
+		7EAF181413EE38FF000B5375 /* nginx-memcached-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF181313EE38FF000B5375 /* nginx-memcached-defaults.plist */; };
+		7EAF185713EE544F000B5375 /* MustacheModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF185613EE544D000B5375 /* MustacheModel.m */; };
 		7EEED72213EC8CAC0038E8B0 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = 7EEED72113EC8CAC0038E8B0 /* resources */; };
+		7EF26CB913EE6204004E54EE /* GRBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C8D13EE6204004E54EE /* GRBoolean.m */; };
+		7EF26CBA13EE6204004E54EE /* GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C8F13EE6204004E54EE /* GRMustache.m */; };
+		7EF26CBB13EE6204004E54EE /* GRMustacheBundleTemplateLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C9113EE6204004E54EE /* GRMustacheBundleTemplateLoader.m */; };
+		7EF26CBC13EE6204004E54EE /* GRMustacheConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C9413EE6204004E54EE /* GRMustacheConfiguration.m */; };
+		7EF26CBD13EE6204004E54EE /* GRMustacheContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C9613EE6204004E54EE /* GRMustacheContext.m */; };
+		7EF26CBE13EE6204004E54EE /* GRMustacheDirectoryTemplateLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C9813EE6204004E54EE /* GRMustacheDirectoryTemplateLoader.m */; };
+		7EF26CBF13EE6204004E54EE /* GRMustacheError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C9C13EE6204004E54EE /* GRMustacheError.m */; };
+		7EF26CC013EE6204004E54EE /* GRMustacheLambda.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C9E13EE6204004E54EE /* GRMustacheLambda.m */; };
+		7EF26CC113EE6204004E54EE /* GRMustacheRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CA113EE6204004E54EE /* GRMustacheRendering.m */; };
+		7EF26CC213EE6204004E54EE /* GRMustacheSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CA413EE6204004E54EE /* GRMustacheSection.m */; };
+		7EF26CC313EE6204004E54EE /* GRMustacheTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CA713EE6204004E54EE /* GRMustacheTemplate.m */; };
+		7EF26CC413EE6204004E54EE /* GRMustacheTemplateLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CAA13EE6204004E54EE /* GRMustacheTemplateLoader.m */; };
+		7EF26CC513EE6204004E54EE /* GRMustacheTemplateParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CAD13EE6204004E54EE /* GRMustacheTemplateParser.m */; };
+		7EF26CC613EE6204004E54EE /* GRMustacheTextElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CAF13EE6204004E54EE /* GRMustacheTextElement.m */; };
+		7EF26CC713EE6204004E54EE /* GRMustacheToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CB113EE6204004E54EE /* GRMustacheToken.m */; };
+		7EF26CC813EE6204004E54EE /* GRMustacheTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CB313EE6204004E54EE /* GRMustacheTokenizer.m */; };
+		7EF26CC913EE6204004E54EE /* GRMustacheVariableElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CB513EE6204004E54EE /* GRMustacheVariableElement.m */; };
+		7EF26CCA13EE6204004E54EE /* GRMustacheVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CB813EE6204004E54EE /* GRMustacheVersion.m */; };
+		7EF26CCE13EE65F5004E54EE /* nginx.server.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26CCD13EE65F5004E54EE /* nginx.server.mustache */; };
+		7EF26CD913EE6FED004E54EE /* nginx.location.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26CD813EE6FED004E54EE /* nginx.location.mustache */; };
+		7EF26CDD13EE769B004E54EE /* nginx.base.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26CDC13EE769B004E54EE /* nginx.base.mustache */; };
+		7EF26CDF13EE76D7004E54EE /* nginx.http.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26CDE13EE76D7004E54EE /* nginx.http.mustache */; };
+		7EF26CFA13EE8A01004E54EE /* Nginx.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CF913EE8A01004E54EE /* Nginx.m */; };
+		7EF26CFD13EE8A01004E54EE /* NginxHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CFC13EE8A01004E54EE /* NginxHTTP.m */; };
+		7EF26D0013EE8A01004E54EE /* NginxLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CFF13EE8A01004E54EE /* NginxLocation.m */; };
+		7EF26D0313EE8A01004E54EE /* NginxServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26D0213EE8A01004E54EE /* NginxServer.m */; };
+		7EF26D0613EF0EA4004E54EE /* Nginx+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26D0513EF0EA4004E54EE /* Nginx+GRMustache.m */; };
+		7EF26D0913EF131E004E54EE /* NginxHTTP+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26D0813EF131E004E54EE /* NginxHTTP+GRMustache.m */; };
+		7EF26D0C13EF13B4004E54EE /* NginxLocation+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26D0B13EF13B3004E54EE /* NginxLocation+GRMustache.m */; };
+		7EF26D0F13EF144B004E54EE /* NginxServer+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26D0E13EF144B004E54EE /* NginxServer+GRMustache.m */; };
+		7EF26D1613F06AF6004E54EE /* php-fpm.conf.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26D1413F06AF6004E54EE /* php-fpm.conf.mustache */; };
+		7EF26D1713F06AF6004E54EE /* php.ini.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26D1513F06AF6004E54EE /* php.ini.mustache */; };
+		7EF26D1B13F06CD9004E54EE /* php-core-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26D1A13F06CD9004E54EE /* php-core-defaults.plist */; };
+		7EF26D1D13F0762A004E54EE /* php-apc-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26D1C13F0762A004E54EE /* php-apc-defaults.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +103,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E15CECC13F09726008D387E /* php-cgi-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-cgi-defaults.plist"; sourceTree = "<group>"; };
+		7E15CECF13F09765008D387E /* php-fastcgi-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-fastcgi-defaults.plist"; sourceTree = "<group>"; };
+		7E15CED113F09794008D387E /* php-zendextension-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-zendextension-defaults.plist"; sourceTree = "<group>"; };
+		7E15CED313F097EE008D387E /* php-highlight-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-highlight-defaults.plist"; sourceTree = "<group>"; };
+		7E15CED513F09E43008D387E /* php-memcache-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-memcache-defaults.plist"; sourceTree = "<group>"; };
 		7E3C116F13EC710E00EC69E8 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = Classes/ASICacheDelegate.h; sourceTree = "<group>"; };
 		7E3C117013EC710E00EC69E8 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = Classes/ASIDataCompressor.h; sourceTree = "<group>"; };
 		7E3C117113EC710E00EC69E8 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = Classes/ASIDataCompressor.m; sourceTree = "<group>"; };
@@ -81,20 +129,6 @@
 		7E3C118813EC719400EC69E8 /* ServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerController.h; sourceTree = "<group>"; };
 		7E3C118913EC719400EC69E8 /* ServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerController.m; sourceTree = "<group>"; };
 		7E3C118A13EC719400EC69E8 /* ServerController-show.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "ServerController-show.xib"; path = "../../controllers/ServerController-show.xib"; sourceTree = "<group>"; };
-		7E3C11A213EC777200EC69E8 /* Nginx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nginx.h; sourceTree = "<group>"; };
-		7E3C11A313EC777200EC69E8 /* Nginx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nginx.m; sourceTree = "<group>"; };
-		7E3C11A513EC777300EC69E8 /* Vhost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vhost.h; sourceTree = "<group>"; };
-		7E3C11A613EC777300EC69E8 /* Vhost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vhost.m; sourceTree = "<group>"; };
-		7E3C11A813EC777300EC69E8 /* MySQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQL.h; sourceTree = "<group>"; };
-		7E3C11A913EC777300EC69E8 /* MySQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQL.m; sourceTree = "<group>"; };
-		7E3C11AB13EC777300EC69E8 /* PHP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHP.h; sourceTree = "<group>"; };
-		7E3C11AC13EC777300EC69E8 /* PHP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHP.m; sourceTree = "<group>"; };
-		7E3C11AE13EC777300EC69E8 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
-		7E3C11AF13EC777300EC69E8 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
-		7E3C11B113EC777300EC69E8 /* Apache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apache.h; sourceTree = "<group>"; };
-		7E3C11B213EC777300EC69E8 /* Apache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apache.m; sourceTree = "<group>"; };
-		7E3C11B413EC777300EC69E8 /* MongoDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoDB.h; sourceTree = "<group>"; };
-		7E3C11B513EC777300EC69E8 /* MongoDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoDB.m; sourceTree = "<group>"; };
 		7E3C11B713EC780300EC69E8 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		7E3C11C313EC78BF00EC69E8 /* BytheStackTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BytheStackTests-Info.plist"; sourceTree = "<group>"; };
 		7E3C11C413EC78BF00EC69E8 /* BytheStackTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BytheStackTests.h; sourceTree = "<group>"; };
@@ -104,8 +138,6 @@
 		7E3CE82813EC702000EC69E8 /* BytheStackAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BytheStackAppDelegate.m; sourceTree = "<group>"; };
 		7E3CE82E13EC702000EC69E8 /* default.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = default.xib; sourceTree = "<group>"; };
 		7E3CE83213EC702000EC69E8 /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
-		7E3CE83513EC702000EC69E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		7E3CE83713EC702000EC69E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E3CE83A13EC702100EC69E8 /* BytheStack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BytheStack.xcdatamodel; sourceTree = "<group>"; };
 		7E3CE83F13EC702100EC69E8 /* BaseInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInstaller.h; sourceTree = "<group>"; };
 		7E3CE84013EC702100EC69E8 /* BaseInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseInstaller.m; sourceTree = "<group>"; };
@@ -127,14 +159,102 @@
 		7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7EAF17C313ECBFF1000B5375 /* NodeInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeInstaller.h; sourceTree = "<group>"; };
 		7EAF17C413ECBFF1000B5375 /* NodeInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeInstaller.m; sourceTree = "<group>"; };
-		7EAF17C613ECC064000B5375 /* MySQLInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLInstaller.h; sourceTree = "<group>"; };
-		7EAF17C713ECC064000B5375 /* MySQLInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQLInstaller.m; sourceTree = "<group>"; };
 		7EAF17C913ECC0BA000B5375 /* MongoDBInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoDBInstaller.h; sourceTree = "<group>"; };
 		7EAF17CA13ECC0BA000B5375 /* MongoDBInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoDBInstaller.m; sourceTree = "<group>"; };
-		7EAF17CC13ECC0E9000B5375 /* ApacheInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApacheInstaller.h; sourceTree = "<group>"; };
-		7EAF17CD13ECC0E9000B5375 /* ApacheInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApacheInstaller.m; sourceTree = "<group>"; };
+		7EAF17D213ED3808000B5375 /* MemcachedInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemcachedInstaller.h; sourceTree = "<group>"; };
+		7EAF17D313ED3808000B5375 /* MemcachedInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemcachedInstaller.m; sourceTree = "<group>"; };
+		7EAF17DC13ED3F7F000B5375 /* PathFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathFinder.h; sourceTree = "<group>"; };
+		7EAF17DD13ED3F7F000B5375 /* PathFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathFinder.m; sourceTree = "<group>"; };
+		7EAF17DF13ED460F000B5375 /* GTMLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMLogger.h; path = "google-toolbox-for-mac/Foundation/GTMLogger.h"; sourceTree = "<group>"; };
+		7EAF17E013ED460F000B5375 /* GTMLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMLogger.m; path = "google-toolbox-for-mac/Foundation/GTMLogger.m"; sourceTree = "<group>"; };
+		7EAF17E113ED460F000B5375 /* GTMLogger+ASL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GTMLogger+ASL.h"; path = "google-toolbox-for-mac/Foundation/GTMLogger+ASL.h"; sourceTree = "<group>"; };
+		7EAF17E213ED460F000B5375 /* GTMLogger+ASL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GTMLogger+ASL.m"; path = "google-toolbox-for-mac/Foundation/GTMLogger+ASL.m"; sourceTree = "<group>"; };
+		7EAF17E313ED460F000B5375 /* GTMLoggerRingBufferWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMLoggerRingBufferWriter.h; path = "google-toolbox-for-mac/Foundation/GTMLoggerRingBufferWriter.h"; sourceTree = "<group>"; };
+		7EAF17E413ED460F000B5375 /* GTMLoggerRingBufferWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMLoggerRingBufferWriter.m; path = "google-toolbox-for-mac/Foundation/GTMLoggerRingBufferWriter.m"; sourceTree = "<group>"; };
+		7EAF17EA13ED474C000B5375 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = "google-toolbox-for-mac/GTMDefines.h"; sourceTree = "<group>"; };
+		7EAF17FB13EDFE03000B5375 /* VhostController-show.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "VhostController-show.xib"; sourceTree = "<group>"; };
+		7EAF17FD13EDFE52000B5375 /* ServerController-edit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ServerController-edit.xib"; sourceTree = "<group>"; };
+		7EAF180313EE2B2B000B5375 /* nginx-core-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "nginx-core-defaults.plist"; sourceTree = "<group>"; };
+		7EAF180413EE2B2B000B5375 /* nginx-http.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "nginx-http.plist"; sourceTree = "<group>"; };
+		7EAF180513EE2B2B000B5375 /* nginx-location.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "nginx-location.plist"; sourceTree = "<group>"; };
+		7EAF180613EE2B2B000B5375 /* nginx-server.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "nginx-server.plist"; sourceTree = "<group>"; };
+		7EAF180B13EE2E86000B5375 /* nginx-gzip-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "nginx-gzip-defaults.plist"; sourceTree = "<group>"; };
+		7EAF180D13EE3183000B5375 /* nginx-main-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "nginx-main-defaults.plist"; sourceTree = "<group>"; };
+		7EAF180F13EE34FE000B5375 /* nginx-log-defauts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "nginx-log-defauts.plist"; sourceTree = "<group>"; };
+		7EAF181313EE38FF000B5375 /* nginx-memcached-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "nginx-memcached-defaults.plist"; sourceTree = "<group>"; };
+		7EAF185513EE544D000B5375 /* MustacheModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MustacheModel.h; sourceTree = "<group>"; };
+		7EAF185613EE544D000B5375 /* MustacheModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MustacheModel.m; sourceTree = "<group>"; };
 		7EEED72113EC8CAC0038E8B0 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
 		7EEED72513ECA9CD0038E8B0 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		7EF26C8C13EE6204004E54EE /* GRBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBoolean.h; sourceTree = "<group>"; };
+		7EF26C8D13EE6204004E54EE /* GRBoolean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBoolean.m; sourceTree = "<group>"; };
+		7EF26C8E13EE6204004E54EE /* GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustache.h; sourceTree = "<group>"; };
+		7EF26C8F13EE6204004E54EE /* GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustache.m; sourceTree = "<group>"; };
+		7EF26C9013EE6204004E54EE /* GRMustache_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustache_private.h; sourceTree = "<group>"; };
+		7EF26C9113EE6204004E54EE /* GRMustacheBundleTemplateLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheBundleTemplateLoader.m; sourceTree = "<group>"; };
+		7EF26C9213EE6204004E54EE /* GRMustacheBundleTemplateLoader_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheBundleTemplateLoader_private.h; sourceTree = "<group>"; };
+		7EF26C9313EE6204004E54EE /* GRMustacheConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheConfiguration.h; sourceTree = "<group>"; };
+		7EF26C9413EE6204004E54EE /* GRMustacheConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheConfiguration.m; sourceTree = "<group>"; };
+		7EF26C9513EE6204004E54EE /* GRMustacheContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheContext.h; sourceTree = "<group>"; };
+		7EF26C9613EE6204004E54EE /* GRMustacheContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheContext.m; sourceTree = "<group>"; };
+		7EF26C9713EE6204004E54EE /* GRMustacheContext_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheContext_private.h; sourceTree = "<group>"; };
+		7EF26C9813EE6204004E54EE /* GRMustacheDirectoryTemplateLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheDirectoryTemplateLoader.m; sourceTree = "<group>"; };
+		7EF26C9913EE6204004E54EE /* GRMustacheDirectoryTemplateLoader_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheDirectoryTemplateLoader_private.h; sourceTree = "<group>"; };
+		7EF26C9A13EE6204004E54EE /* GRMustacheEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheEnvironment.h; sourceTree = "<group>"; };
+		7EF26C9B13EE6204004E54EE /* GRMustacheError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheError.h; sourceTree = "<group>"; };
+		7EF26C9C13EE6204004E54EE /* GRMustacheError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheError.m; sourceTree = "<group>"; };
+		7EF26C9D13EE6204004E54EE /* GRMustacheLambda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheLambda.h; sourceTree = "<group>"; };
+		7EF26C9E13EE6204004E54EE /* GRMustacheLambda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheLambda.m; sourceTree = "<group>"; };
+		7EF26C9F13EE6204004E54EE /* GRMustacheLambda_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheLambda_private.h; sourceTree = "<group>"; };
+		7EF26CA013EE6204004E54EE /* GRMustacheRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheRendering.h; sourceTree = "<group>"; };
+		7EF26CA113EE6204004E54EE /* GRMustacheRendering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheRendering.m; sourceTree = "<group>"; };
+		7EF26CA213EE6204004E54EE /* GRMustacheRendering_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheRendering_private.h; sourceTree = "<group>"; };
+		7EF26CA313EE6204004E54EE /* GRMustacheSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheSection.h; sourceTree = "<group>"; };
+		7EF26CA413EE6204004E54EE /* GRMustacheSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheSection.m; sourceTree = "<group>"; };
+		7EF26CA513EE6204004E54EE /* GRMustacheSection_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheSection_private.h; sourceTree = "<group>"; };
+		7EF26CA613EE6204004E54EE /* GRMustacheTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplate.h; sourceTree = "<group>"; };
+		7EF26CA713EE6204004E54EE /* GRMustacheTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheTemplate.m; sourceTree = "<group>"; };
+		7EF26CA813EE6204004E54EE /* GRMustacheTemplate_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplate_private.h; sourceTree = "<group>"; };
+		7EF26CA913EE6204004E54EE /* GRMustacheTemplateLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplateLoader.h; sourceTree = "<group>"; };
+		7EF26CAA13EE6204004E54EE /* GRMustacheTemplateLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheTemplateLoader.m; sourceTree = "<group>"; };
+		7EF26CAB13EE6204004E54EE /* GRMustacheTemplateLoader_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplateLoader_private.h; sourceTree = "<group>"; };
+		7EF26CAC13EE6204004E54EE /* GRMustacheTemplateLoader_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplateLoader_protected.h; sourceTree = "<group>"; };
+		7EF26CAD13EE6204004E54EE /* GRMustacheTemplateParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheTemplateParser.m; sourceTree = "<group>"; };
+		7EF26CAE13EE6204004E54EE /* GRMustacheTemplateParser_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplateParser_private.h; sourceTree = "<group>"; };
+		7EF26CAF13EE6204004E54EE /* GRMustacheTextElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheTextElement.m; sourceTree = "<group>"; };
+		7EF26CB013EE6204004E54EE /* GRMustacheTextElement_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTextElement_private.h; sourceTree = "<group>"; };
+		7EF26CB113EE6204004E54EE /* GRMustacheToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheToken.m; sourceTree = "<group>"; };
+		7EF26CB213EE6204004E54EE /* GRMustacheToken_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheToken_private.h; sourceTree = "<group>"; };
+		7EF26CB313EE6204004E54EE /* GRMustacheTokenizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheTokenizer.m; sourceTree = "<group>"; };
+		7EF26CB413EE6204004E54EE /* GRMustacheTokenizer_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTokenizer_private.h; sourceTree = "<group>"; };
+		7EF26CB513EE6204004E54EE /* GRMustacheVariableElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheVariableElement.m; sourceTree = "<group>"; };
+		7EF26CB613EE6204004E54EE /* GRMustacheVariableElement_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheVariableElement_private.h; sourceTree = "<group>"; };
+		7EF26CB713EE6204004E54EE /* GRMustacheVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheVersion.h; sourceTree = "<group>"; };
+		7EF26CB813EE6204004E54EE /* GRMustacheVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMustacheVersion.m; sourceTree = "<group>"; };
+		7EF26CCD13EE65F5004E54EE /* nginx.server.mustache */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = nginx.server.mustache; sourceTree = "<group>"; };
+		7EF26CD813EE6FED004E54EE /* nginx.location.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nginx.location.mustache; sourceTree = "<group>"; };
+		7EF26CDC13EE769B004E54EE /* nginx.base.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nginx.base.mustache; sourceTree = "<group>"; };
+		7EF26CDE13EE76D7004E54EE /* nginx.http.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nginx.http.mustache; sourceTree = "<group>"; };
+		7EF26CF813EE8A01004E54EE /* Nginx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nginx.h; sourceTree = "<group>"; };
+		7EF26CF913EE8A01004E54EE /* Nginx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nginx.m; sourceTree = "<group>"; };
+		7EF26CFB13EE8A01004E54EE /* NginxHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxHTTP.h; sourceTree = "<group>"; };
+		7EF26CFC13EE8A01004E54EE /* NginxHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxHTTP.m; sourceTree = "<group>"; };
+		7EF26CFE13EE8A01004E54EE /* NginxLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxLocation.h; sourceTree = "<group>"; };
+		7EF26CFF13EE8A01004E54EE /* NginxLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxLocation.m; sourceTree = "<group>"; };
+		7EF26D0113EE8A01004E54EE /* NginxServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxServer.h; sourceTree = "<group>"; };
+		7EF26D0213EE8A01004E54EE /* NginxServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxServer.m; sourceTree = "<group>"; };
+		7EF26D0413EF0EA4004E54EE /* Nginx+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nginx+GRMustache.h"; sourceTree = "<group>"; };
+		7EF26D0513EF0EA4004E54EE /* Nginx+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Nginx+GRMustache.m"; sourceTree = "<group>"; };
+		7EF26D0713EF131E004E54EE /* NginxHTTP+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NginxHTTP+GRMustache.h"; sourceTree = "<group>"; };
+		7EF26D0813EF131E004E54EE /* NginxHTTP+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NginxHTTP+GRMustache.m"; sourceTree = "<group>"; };
+		7EF26D0A13EF13B3004E54EE /* NginxLocation+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NginxLocation+GRMustache.h"; sourceTree = "<group>"; };
+		7EF26D0B13EF13B3004E54EE /* NginxLocation+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NginxLocation+GRMustache.m"; sourceTree = "<group>"; };
+		7EF26D0D13EF144A004E54EE /* NginxServer+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NginxServer+GRMustache.h"; sourceTree = "<group>"; };
+		7EF26D0E13EF144B004E54EE /* NginxServer+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NginxServer+GRMustache.m"; sourceTree = "<group>"; };
+		7EF26D1413F06AF6004E54EE /* php-fpm.conf.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "php-fpm.conf.mustache"; sourceTree = "<group>"; };
+		7EF26D1513F06AF6004E54EE /* php.ini.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = php.ini.mustache; sourceTree = "<group>"; };
+		7EF26D1A13F06CD9004E54EE /* php-core-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-core-defaults.plist"; sourceTree = "<group>"; };
+		7EF26D1C13F0762A004E54EE /* php-apc-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-apc-defaults.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,9 +294,9 @@
 		7E3CE82613EC702000EC69E8 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				7EAF182D13EE49F9000B5375 /* models */,
 				7E3CE82913EC702000EC69E8 /* controllers */,
 				7E3CE82A13EC702000EC69E8 /* helpers */,
-				7E3CE82B13EC702000EC69E8 /* models */,
 				7E3CE82C13EC702000EC69E8 /* views */,
 				7E3CE82713EC702000EC69E8 /* BytheStackAppDelegate.h */,
 				7E3CE82813EC702000EC69E8 /* BytheStackAppDelegate.m */,
@@ -200,30 +320,10 @@
 			path = helpers;
 			sourceTree = "<group>";
 		};
-		7E3CE82B13EC702000EC69E8 /* models */ = {
-			isa = PBXGroup;
-			children = (
-				7E3C11B113EC777300EC69E8 /* Apache.h */,
-				7E3C11B213EC777300EC69E8 /* Apache.m */,
-				7E3C11AE13EC777300EC69E8 /* Server.h */,
-				7E3C11AF13EC777300EC69E8 /* Server.m */,
-				7E3C11AB13EC777300EC69E8 /* PHP.h */,
-				7E3C11AC13EC777300EC69E8 /* PHP.m */,
-				7E3C11B413EC777300EC69E8 /* MongoDB.h */,
-				7E3C11B513EC777300EC69E8 /* MongoDB.m */,
-				7E3C11A813EC777300EC69E8 /* MySQL.h */,
-				7E3C11A913EC777300EC69E8 /* MySQL.m */,
-				7E3C11A513EC777300EC69E8 /* Vhost.h */,
-				7E3C11A613EC777300EC69E8 /* Vhost.m */,
-				7E3C11A213EC777200EC69E8 /* Nginx.h */,
-				7E3C11A313EC777200EC69E8 /* Nginx.m */,
-			);
-			path = models;
-			sourceTree = "<group>";
-		};
 		7E3CE82C13EC702000EC69E8 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				7EAF17FA13EDFDDA000B5375 /* vhost */,
 				7E3CE82D13EC702000EC69E8 /* layouts */,
 				7E3CE82F13EC702000EC69E8 /* server */,
 			);
@@ -242,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				7E3C118A13EC719400EC69E8 /* ServerController-show.xib */,
+				7EAF17FD13EDFE52000B5375 /* ServerController-edit.xib */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -249,9 +350,9 @@
 		7E3CE83313EC702000EC69E8 /* config */ = {
 			isa = PBXGroup;
 			children = (
+				7EF26D1213F06A6B004E54EE /* php */,
+				7EAF180213EE2B2B000B5375 /* nginx */,
 				7E3C11B713EC780300EC69E8 /* config.plist */,
-				7E3CE83413EC702000EC69E8 /* Credits.rtf */,
-				7E3CE83613EC702000EC69E8 /* InfoPlist.strings */,
 				7EEED72513ECA9CD0038E8B0 /* define.h */,
 			);
 			path = config;
@@ -275,6 +376,7 @@
 		7E3CE83C13EC702100EC69E8 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				7EAF17DB13ED3F72000B5375 /* path */,
 				7E3CE83D13EC702100EC69E8 /* installer */,
 				7E3CE84A13EC702100EC69E8 /* task */,
 			);
@@ -284,9 +386,8 @@
 		7E3CE83D13EC702100EC69E8 /* installer */ = {
 			isa = PBXGroup;
 			children = (
-				7E3CE83E13EC702100EC69E8 /* apache */,
+				7EAF17D113ED3808000B5375 /* memcached */,
 				7E3CE84113EC702100EC69E8 /* mongo */,
-				7E3CE84213EC702100EC69E8 /* mysql */,
 				7E3CE84313EC702100EC69E8 /* nginx */,
 				7E3CE84613EC702100EC69E8 /* node */,
 				7E3CE84713EC702100EC69E8 /* php */,
@@ -296,15 +397,6 @@
 			path = installer;
 			sourceTree = "<group>";
 		};
-		7E3CE83E13EC702100EC69E8 /* apache */ = {
-			isa = PBXGroup;
-			children = (
-				7EAF17CC13ECC0E9000B5375 /* ApacheInstaller.h */,
-				7EAF17CD13ECC0E9000B5375 /* ApacheInstaller.m */,
-			);
-			path = apache;
-			sourceTree = "<group>";
-		};
 		7E3CE84113EC702100EC69E8 /* mongo */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,15 +404,6 @@
 				7EAF17CA13ECC0BA000B5375 /* MongoDBInstaller.m */,
 			);
 			path = mongo;
-			sourceTree = "<group>";
-		};
-		7E3CE84213EC702100EC69E8 /* mysql */ = {
-			isa = PBXGroup;
-			children = (
-				7EAF17C613ECC064000B5375 /* MySQLInstaller.h */,
-				7EAF17C713ECC064000B5375 /* MySQLInstaller.m */,
-			);
-			path = mysql;
 			sourceTree = "<group>";
 		};
 		7E3CE84313EC702100EC69E8 /* nginx */ = {
@@ -369,6 +452,8 @@
 		7E3CE85B13EC702100EC69E8 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				7EF26C8B13EE6204004E54EE /* mustache */,
+				7EAF17E813ED4615000B5375 /* google-toolkit-for-mac */,
 				7E3CE85C13EC702100EC69E8 /* asi-http-request */,
 			);
 			path = vendor;
@@ -449,6 +534,184 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		7EAF17D113ED3808000B5375 /* memcached */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF17D213ED3808000B5375 /* MemcachedInstaller.h */,
+				7EAF17D313ED3808000B5375 /* MemcachedInstaller.m */,
+			);
+			path = memcached;
+			sourceTree = "<group>";
+		};
+		7EAF17DB13ED3F72000B5375 /* path */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF17DC13ED3F7F000B5375 /* PathFinder.h */,
+				7EAF17DD13ED3F7F000B5375 /* PathFinder.m */,
+			);
+			path = path;
+			sourceTree = "<group>";
+		};
+		7EAF17E813ED4615000B5375 /* google-toolkit-for-mac */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF17E913ED4626000B5375 /* foundation */,
+			);
+			name = "google-toolkit-for-mac";
+			sourceTree = "<group>";
+		};
+		7EAF17E913ED4626000B5375 /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF17EA13ED474C000B5375 /* GTMDefines.h */,
+				7EAF17DF13ED460F000B5375 /* GTMLogger.h */,
+				7EAF17E013ED460F000B5375 /* GTMLogger.m */,
+				7EAF17E113ED460F000B5375 /* GTMLogger+ASL.h */,
+				7EAF17E213ED460F000B5375 /* GTMLogger+ASL.m */,
+				7EAF17E313ED460F000B5375 /* GTMLoggerRingBufferWriter.h */,
+				7EAF17E413ED460F000B5375 /* GTMLoggerRingBufferWriter.m */,
+			);
+			name = foundation;
+			sourceTree = "<group>";
+		};
+		7EAF17FA13EDFDDA000B5375 /* vhost */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF17FB13EDFE03000B5375 /* VhostController-show.xib */,
+			);
+			path = vhost;
+			sourceTree = "<group>";
+		};
+		7EAF180213EE2B2B000B5375 /* nginx */ = {
+			isa = PBXGroup;
+			children = (
+				7EF26CCC13EE65F5004E54EE /* templates */,
+				7EAF181313EE38FF000B5375 /* nginx-memcached-defaults.plist */,
+				7EAF180313EE2B2B000B5375 /* nginx-core-defaults.plist */,
+				7EAF180B13EE2E86000B5375 /* nginx-gzip-defaults.plist */,
+				7EAF180F13EE34FE000B5375 /* nginx-log-defauts.plist */,
+				7EAF180D13EE3183000B5375 /* nginx-main-defaults.plist */,
+				7EAF180413EE2B2B000B5375 /* nginx-http.plist */,
+				7EAF180513EE2B2B000B5375 /* nginx-location.plist */,
+				7EAF180613EE2B2B000B5375 /* nginx-server.plist */,
+			);
+			path = nginx;
+			sourceTree = "<group>";
+		};
+		7EAF182D13EE49F9000B5375 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF185513EE544D000B5375 /* MustacheModel.h */,
+				7EAF185613EE544D000B5375 /* MustacheModel.m */,
+				7EF26D0113EE8A01004E54EE /* NginxServer.h */,
+				7EF26D0213EE8A01004E54EE /* NginxServer.m */,
+				7EF26CFE13EE8A01004E54EE /* NginxLocation.h */,
+				7EF26CFF13EE8A01004E54EE /* NginxLocation.m */,
+				7EF26CFB13EE8A01004E54EE /* NginxHTTP.h */,
+				7EF26CFC13EE8A01004E54EE /* NginxHTTP.m */,
+				7EF26CF813EE8A01004E54EE /* Nginx.h */,
+				7EF26CF913EE8A01004E54EE /* Nginx.m */,
+				7EF26D0413EF0EA4004E54EE /* Nginx+GRMustache.h */,
+				7EF26D0513EF0EA4004E54EE /* Nginx+GRMustache.m */,
+				7EF26D0713EF131E004E54EE /* NginxHTTP+GRMustache.h */,
+				7EF26D0813EF131E004E54EE /* NginxHTTP+GRMustache.m */,
+				7EF26D0A13EF13B3004E54EE /* NginxLocation+GRMustache.h */,
+				7EF26D0B13EF13B3004E54EE /* NginxLocation+GRMustache.m */,
+				7EF26D0D13EF144A004E54EE /* NginxServer+GRMustache.h */,
+				7EF26D0E13EF144B004E54EE /* NginxServer+GRMustache.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		7EF26C8B13EE6204004E54EE /* mustache */ = {
+			isa = PBXGroup;
+			children = (
+				7EF26C8C13EE6204004E54EE /* GRBoolean.h */,
+				7EF26C8D13EE6204004E54EE /* GRBoolean.m */,
+				7EF26C8E13EE6204004E54EE /* GRMustache.h */,
+				7EF26C8F13EE6204004E54EE /* GRMustache.m */,
+				7EF26C9013EE6204004E54EE /* GRMustache_private.h */,
+				7EF26C9113EE6204004E54EE /* GRMustacheBundleTemplateLoader.m */,
+				7EF26C9213EE6204004E54EE /* GRMustacheBundleTemplateLoader_private.h */,
+				7EF26C9313EE6204004E54EE /* GRMustacheConfiguration.h */,
+				7EF26C9413EE6204004E54EE /* GRMustacheConfiguration.m */,
+				7EF26C9513EE6204004E54EE /* GRMustacheContext.h */,
+				7EF26C9613EE6204004E54EE /* GRMustacheContext.m */,
+				7EF26C9713EE6204004E54EE /* GRMustacheContext_private.h */,
+				7EF26C9813EE6204004E54EE /* GRMustacheDirectoryTemplateLoader.m */,
+				7EF26C9913EE6204004E54EE /* GRMustacheDirectoryTemplateLoader_private.h */,
+				7EF26C9A13EE6204004E54EE /* GRMustacheEnvironment.h */,
+				7EF26C9B13EE6204004E54EE /* GRMustacheError.h */,
+				7EF26C9C13EE6204004E54EE /* GRMustacheError.m */,
+				7EF26C9D13EE6204004E54EE /* GRMustacheLambda.h */,
+				7EF26C9E13EE6204004E54EE /* GRMustacheLambda.m */,
+				7EF26C9F13EE6204004E54EE /* GRMustacheLambda_private.h */,
+				7EF26CA013EE6204004E54EE /* GRMustacheRendering.h */,
+				7EF26CA113EE6204004E54EE /* GRMustacheRendering.m */,
+				7EF26CA213EE6204004E54EE /* GRMustacheRendering_private.h */,
+				7EF26CA313EE6204004E54EE /* GRMustacheSection.h */,
+				7EF26CA413EE6204004E54EE /* GRMustacheSection.m */,
+				7EF26CA513EE6204004E54EE /* GRMustacheSection_private.h */,
+				7EF26CA613EE6204004E54EE /* GRMustacheTemplate.h */,
+				7EF26CA713EE6204004E54EE /* GRMustacheTemplate.m */,
+				7EF26CA813EE6204004E54EE /* GRMustacheTemplate_private.h */,
+				7EF26CA913EE6204004E54EE /* GRMustacheTemplateLoader.h */,
+				7EF26CAA13EE6204004E54EE /* GRMustacheTemplateLoader.m */,
+				7EF26CAB13EE6204004E54EE /* GRMustacheTemplateLoader_private.h */,
+				7EF26CAC13EE6204004E54EE /* GRMustacheTemplateLoader_protected.h */,
+				7EF26CAD13EE6204004E54EE /* GRMustacheTemplateParser.m */,
+				7EF26CAE13EE6204004E54EE /* GRMustacheTemplateParser_private.h */,
+				7EF26CAF13EE6204004E54EE /* GRMustacheTextElement.m */,
+				7EF26CB013EE6204004E54EE /* GRMustacheTextElement_private.h */,
+				7EF26CB113EE6204004E54EE /* GRMustacheToken.m */,
+				7EF26CB213EE6204004E54EE /* GRMustacheToken_private.h */,
+				7EF26CB313EE6204004E54EE /* GRMustacheTokenizer.m */,
+				7EF26CB413EE6204004E54EE /* GRMustacheTokenizer_private.h */,
+				7EF26CB513EE6204004E54EE /* GRMustacheVariableElement.m */,
+				7EF26CB613EE6204004E54EE /* GRMustacheVariableElement_private.h */,
+				7EF26CB713EE6204004E54EE /* GRMustacheVersion.h */,
+				7EF26CB813EE6204004E54EE /* GRMustacheVersion.m */,
+			);
+			name = mustache;
+			path = mustache/Classes;
+			sourceTree = "<group>";
+		};
+		7EF26CCC13EE65F5004E54EE /* templates */ = {
+			isa = PBXGroup;
+			children = (
+				7EF26CDC13EE769B004E54EE /* nginx.base.mustache */,
+				7EF26CDE13EE76D7004E54EE /* nginx.http.mustache */,
+				7EF26CD813EE6FED004E54EE /* nginx.location.mustache */,
+				7EF26CCD13EE65F5004E54EE /* nginx.server.mustache */,
+			);
+			path = templates;
+			sourceTree = "<group>";
+		};
+		7EF26D1213F06A6B004E54EE /* php */ = {
+			isa = PBXGroup;
+			children = (
+				7EF26D1313F06A6B004E54EE /* templates */,
+				7EF26D1A13F06CD9004E54EE /* php-core-defaults.plist */,
+				7EF26D1C13F0762A004E54EE /* php-apc-defaults.plist */,
+				7E15CECC13F09726008D387E /* php-cgi-defaults.plist */,
+				7E15CECF13F09765008D387E /* php-fastcgi-defaults.plist */,
+				7E15CED113F09794008D387E /* php-zendextension-defaults.plist */,
+				7E15CED313F097EE008D387E /* php-highlight-defaults.plist */,
+				7E15CED513F09E43008D387E /* php-memcache-defaults.plist */,
+			);
+			name = php;
+			path = config/php;
+			sourceTree = SOURCE_ROOT;
+		};
+		7EF26D1313F06A6B004E54EE /* templates */ = {
+			isa = PBXGroup;
+			children = (
+				7EF26D1413F06AF6004E54EE /* php-fpm.conf.mustache */,
+				7EF26D1513F06AF6004E54EE /* php.ini.mustache */,
+			);
+			path = templates;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -523,10 +786,30 @@
 			files = (
 				7EEED72213EC8CAC0038E8B0 /* resources in Resources */,
 				7E3CFD4B13EC704A00EC69E8 /* default.xib in Resources */,
-				7E3CFD4E13EC704A00EC69E8 /* Credits.rtf in Resources */,
-				7E3CFD4F13EC704A00EC69E8 /* InfoPlist.strings in Resources */,
 				7E3C118C13EC719400EC69E8 /* ServerController-show.xib in Resources */,
-				7E3C11B813EC780300EC69E8 /* config.plist in Resources */,
+				7EAF17FC13EDFE04000B5375 /* VhostController-show.xib in Resources */,
+				7EAF17FE13EDFE52000B5375 /* ServerController-edit.xib in Resources */,
+				7EAF180713EE2B2B000B5375 /* nginx-core-defaults.plist in Resources */,
+				7EAF180813EE2B2B000B5375 /* nginx-http.plist in Resources */,
+				7EAF180913EE2B2B000B5375 /* nginx-location.plist in Resources */,
+				7EAF180A13EE2B2B000B5375 /* nginx-server.plist in Resources */,
+				7EAF180C13EE2E86000B5375 /* nginx-gzip-defaults.plist in Resources */,
+				7EAF180E13EE3183000B5375 /* nginx-main-defaults.plist in Resources */,
+				7EAF181013EE34FE000B5375 /* nginx-log-defauts.plist in Resources */,
+				7EAF181413EE38FF000B5375 /* nginx-memcached-defaults.plist in Resources */,
+				7EF26CCE13EE65F5004E54EE /* nginx.server.mustache in Resources */,
+				7EF26CD913EE6FED004E54EE /* nginx.location.mustache in Resources */,
+				7EF26CDD13EE769B004E54EE /* nginx.base.mustache in Resources */,
+				7EF26CDF13EE76D7004E54EE /* nginx.http.mustache in Resources */,
+				7EF26D1613F06AF6004E54EE /* php-fpm.conf.mustache in Resources */,
+				7EF26D1713F06AF6004E54EE /* php.ini.mustache in Resources */,
+				7EF26D1B13F06CD9004E54EE /* php-core-defaults.plist in Resources */,
+				7EF26D1D13F0762A004E54EE /* php-apc-defaults.plist in Resources */,
+				7E15CECD13F09726008D387E /* php-cgi-defaults.plist in Resources */,
+				7E15CED013F09765008D387E /* php-fastcgi-defaults.plist in Resources */,
+				7E15CED213F09794008D387E /* php-zendextension-defaults.plist in Resources */,
+				7E15CED413F097EE008D387E /* php-highlight-defaults.plist in Resources */,
+				7E15CED613F09E43008D387E /* php-memcache-defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +849,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd resources/brew/bin\n./brew update\ncd ../\nif [ ! -d \"etc\" ]; then\n    mkdir etc\nfi\nif [ ! -d \"lib\" ]; then\n    mkdir lib\nfi\nif [ ! -d \"sbin\" ]; then\n    mkdir sbin\nfi\nif [ ! -d \"share\" ]; then\n    mkdir share\nfi\nif [ ! -d \"var\" ]; then\n    mkdir var\nfi";
+			shellScript = "cd resources/brew/bin\n#./brew update\ncd ../\nif [ ! -d \"etc\" ]; then\n    mkdir etc\nfi\nif [ ! -d \"lib\" ]; then\n    mkdir lib\nfi\nif [ ! -d \"sbin\" ]; then\n    mkdir sbin\nfi\nif [ ! -d \"share\" ]; then\n    mkdir share\nfi\nif [ ! -d \"var\" ]; then\n    mkdir var\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -590,17 +873,40 @@
 				7E3C118613EC710E00EC69E8 /* ASIInputStream.m in Sources */,
 				7E3C118713EC710E00EC69E8 /* ASINetworkQueue.m in Sources */,
 				7E3C118B13EC719400EC69E8 /* ServerController.m in Sources */,
-				7E3C11A413EC777200EC69E8 /* Nginx.m in Sources */,
-				7E3C11A713EC777300EC69E8 /* Vhost.m in Sources */,
-				7E3C11AA13EC777300EC69E8 /* MySQL.m in Sources */,
-				7E3C11AD13EC777300EC69E8 /* PHP.m in Sources */,
-				7E3C11B013EC777300EC69E8 /* Server.m in Sources */,
-				7E3C11B313EC777300EC69E8 /* Apache.m in Sources */,
-				7E3C11B613EC777300EC69E8 /* MongoDB.m in Sources */,
 				7EAF17C513ECBFF1000B5375 /* NodeInstaller.m in Sources */,
-				7EAF17C813ECC064000B5375 /* MySQLInstaller.m in Sources */,
 				7EAF17CB13ECC0BA000B5375 /* MongoDBInstaller.m in Sources */,
-				7EAF17CE13ECC0E9000B5375 /* ApacheInstaller.m in Sources */,
+				7EAF17D413ED3808000B5375 /* MemcachedInstaller.m in Sources */,
+				7EAF17DE13ED3F7F000B5375 /* PathFinder.m in Sources */,
+				7EAF17E513ED460F000B5375 /* GTMLogger.m in Sources */,
+				7EAF17E613ED460F000B5375 /* GTMLogger+ASL.m in Sources */,
+				7EAF17E713ED460F000B5375 /* GTMLoggerRingBufferWriter.m in Sources */,
+				7EAF185713EE544F000B5375 /* MustacheModel.m in Sources */,
+				7EF26CB913EE6204004E54EE /* GRBoolean.m in Sources */,
+				7EF26CBA13EE6204004E54EE /* GRMustache.m in Sources */,
+				7EF26CBB13EE6204004E54EE /* GRMustacheBundleTemplateLoader.m in Sources */,
+				7EF26CBC13EE6204004E54EE /* GRMustacheConfiguration.m in Sources */,
+				7EF26CBD13EE6204004E54EE /* GRMustacheContext.m in Sources */,
+				7EF26CBE13EE6204004E54EE /* GRMustacheDirectoryTemplateLoader.m in Sources */,
+				7EF26CBF13EE6204004E54EE /* GRMustacheError.m in Sources */,
+				7EF26CC013EE6204004E54EE /* GRMustacheLambda.m in Sources */,
+				7EF26CC113EE6204004E54EE /* GRMustacheRendering.m in Sources */,
+				7EF26CC213EE6204004E54EE /* GRMustacheSection.m in Sources */,
+				7EF26CC313EE6204004E54EE /* GRMustacheTemplate.m in Sources */,
+				7EF26CC413EE6204004E54EE /* GRMustacheTemplateLoader.m in Sources */,
+				7EF26CC513EE6204004E54EE /* GRMustacheTemplateParser.m in Sources */,
+				7EF26CC613EE6204004E54EE /* GRMustacheTextElement.m in Sources */,
+				7EF26CC713EE6204004E54EE /* GRMustacheToken.m in Sources */,
+				7EF26CC813EE6204004E54EE /* GRMustacheTokenizer.m in Sources */,
+				7EF26CC913EE6204004E54EE /* GRMustacheVariableElement.m in Sources */,
+				7EF26CCA13EE6204004E54EE /* GRMustacheVersion.m in Sources */,
+				7EF26CFA13EE8A01004E54EE /* Nginx.m in Sources */,
+				7EF26CFD13EE8A01004E54EE /* NginxHTTP.m in Sources */,
+				7EF26D0013EE8A01004E54EE /* NginxLocation.m in Sources */,
+				7EF26D0313EE8A01004E54EE /* NginxServer.m in Sources */,
+				7EF26D0613EF0EA4004E54EE /* Nginx+GRMustache.m in Sources */,
+				7EF26D0913EF131E004E54EE /* NginxHTTP+GRMustache.m in Sources */,
+				7EF26D0C13EF13B4004E54EE /* NginxLocation+GRMustache.m in Sources */,
+				7EF26D0F13EF144B004E54EE /* NginxServer+GRMustache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,22 +933,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				7E3C11C713EC78BF00EC69E8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7E3CE83413EC702000EC69E8 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E3CE83513EC702000EC69E8 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		7E3CE83613EC702000EC69E8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E3CE83713EC702000EC69E8 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -703,8 +993,7 @@
 				INFOPLIST_FILE = config/config.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/vendor/homebrew/Cellar/openssl/0.9.8r/lib/engines\"",
-					"\"$(SRCROOT)/vendor/homebrew/Cellar/openssl/0.9.8r/lib\"",
+					"vendor/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -719,8 +1008,7 @@
 				INFOPLIST_FILE = config/config.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/vendor/homebrew/Cellar/openssl/0.9.8r/lib/engines\"",
-					"\"$(SRCROOT)/vendor/homebrew/Cellar/openssl/0.9.8r/lib\"",
+					"vendor/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

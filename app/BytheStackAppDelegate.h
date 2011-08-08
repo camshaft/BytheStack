@@ -8,8 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "MemcachedInstaller.h"
+#import "MongoDBInstaller.h"
 #import "NginxInstaller.h"
+#import "NodeInstaller.h"
 #import "PHPInstaller.h"
+
+#import "NginxServer.h"
+#import "NginxLocation.h"
+
 
 @interface BytheStackAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
@@ -26,6 +33,12 @@
 
 - (IBAction)saveAction:(id)sender;
 
+- (IBAction)installAll:(id)sender;
+- (IBAction)installMemcached:(id)sender;
+- (IBAction)installMongoDB:(id)sender;
+- (IBAction)installMySQL:(id)sender;
 - (IBAction)installNginx:(id)sender;
+- (IBAction)installNode:(id)sender;
+- (IBAction)installPHP:(id)sender;
 
 @end

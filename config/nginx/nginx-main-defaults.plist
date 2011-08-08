@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>daemon</key>
+	<dict>
+		<key>description</key>
+		<string>Do not use the daemon or master_process directives in a production mode; these options are used for development only. You can use daemon off safely in production mode with runit/daemontools, however you can&apos;t do a graceful upgrade. master_process off should never be used in production.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>env</key>
+	<dict>
+		<key>description</key>
+		<string>The instruction allows to limit a set of variables of environment, to change it values or to create new variables.</string>
+		<key>default</key>
+		<dict/>
+	</dict>
+	<key>debug_points</key>
+	<dict>
+		<key>possible_values</key>
+		<array>
+			<string>none</string>
+			<string>abort</string>
+			<string>stop</string>
+		</array>
+		<key>description</key>
+		<string>Do not use the daemon or master_process directives in a production mode; these options are used for development only. You can use daemon off safely in production mode with runit/daemontools, however you can&apos;t do a graceful upgrade. master_process off should never be used in production.</string>
+		<key>default</key>
+		<string>none</string>
+	</dict>
+	<key>error_log</key>
+	<dict>
+		<key>description</key>
+		<string>Specifies the file where server (and fastcgi) errors are logged.</string>
+		<key>default</key>
+		<string>logs/error.log</string>
+	</dict>
+	<key>master_process</key>
+	<dict>
+		<key>description</key>
+		<string>Do not use the &quot;daemon&quot; and &quot;master_process&quot; directives in a production mode, these options are mainly used for development only.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>timer_resolution</key>
+	<dict>
+		<key>description</key>
+		<string>The directive allows to decrease number gettimeofday() syscalls. By default gettimeofday() is called after each return from kevent(), epoll, /dev/poll, select(), poll().
+
+But if you need an exact time in logs when logging $upstream_response_time, or $msec variables, then you should use timer_resolution.</string>
+		<key>default</key>
+		<integer>100</integer>
+	</dict>
+	<key>user</key>
+	<dict>
+		<key>description</key>
+		<string>If the master process is run as root, then nginx will setuid()/setgid() to USER/GROUP. If GROUP is not specified, then nginx uses the same name as USER. By default it&apos;s nobody user and nobody or nogroup group.</string>
+		<key>default</key>
+		<string>nobody</string>
+	</dict>
+	<key>group</key>
+	<dict>
+		<key>description</key>
+		<string>If the master process is run as root, then nginx will setuid()/setgid() to USER/GROUP. If GROUP is not specified, then nginx uses the same name as USER. By default it&apos;s nobody user and nobody or nogroup group.</string>
+		<key>default</key>
+		<string>nogroup</string>
+	</dict>
+	<key>worker_processes</key>
+	<dict>
+		<key>description</key>
+		<string>A worker process is a single-threaded process.
+
+If Nginx is doing CPU-intensive work such as SSL or gzipping and you have 2 or more CPUs/cores, then you may set worker_processes to be equal to the number of CPUs or cores.
+
+If you are serving a lot of static files and the total size of the files is bigger than the available memory, then you may increase worker_processes to fully utilize disk bandwidth.</string>
+		<key>default</key>
+		<integer>1</integer>
+	</dict>
+	<key>worker_rlimit_nofile</key>
+	<dict>
+		<key>description</key>
+		<string>Specifies the value for maximum file descriptors that can be opened by this process. Default is set by OS.</string>
+		<key>default</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>

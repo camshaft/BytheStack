@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gzip</key>
+	<dict>
+		<key>description</key>
+		<string>Enables or disables gzip compression.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>gzip_buffers</key>
+	<dict>
+		<key>description</key>
+		<string>Assigns the number and the size of the buffers into which to store the compressed response. If unset, the size of one buffer is equal to the size of page, depending on platform this either 4K or 8K.</string>
+		<key>default</key>
+		<dict>
+			<key>size</key>
+			<integer>8000</integer>
+			<key>number</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>gzip_comp_level</key>
+	<dict>
+		<key>possible_values</key>
+		<array>
+			<integer>1</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<string>4</string>
+			<string>5</string>
+			<string>6</string>
+			<string>7</string>
+			<string>8</string>
+			<string>9</string>
+		</array>
+		<key>description</key>
+		<string>The compression level, between 1 and 9, where 1 is the least compression (fastest) and 9 is the most (slowest).</string>
+		<key>default</key>
+		<integer>1</integer>
+	</dict>
+	<key>gzip_disable</key>
+	<dict>
+		<key>description</key>
+		<string>Disable gzip compression for User-Agents matching the given regular expression. Requires PCRE library. Introduced in Nginx 0.6.23.
+
+You can use &quot;msie6&quot; to disable gzip for Internet Explorer 5.5 and Internet Explorer 6. &quot;SV1&quot; (Service Pack 2) will be ignored since Nginx 0.7.63.</string>
+		<key>default</key>
+		<string>msie6</string>
+	</dict>
+	<key>gzip_http_version</key>
+	<dict>
+		<key>possible_values</key>
+		<array>
+			<string>1.1</string>
+			<string>1.0</string>
+		</array>
+		<key>description</key>
+		<string>Turns gzip compression on or off depending on the HTTP request version.
+
+When HTTP version 1.0 is used, the Vary: Accept-Encoding header is not set. As this can lead to proxy cache corruption, consider adding it with add_header . Also note that the Content-Length header is not set when using either version. Keepalives will therefore be impossible with version 1.0, while for 1.1 it is handled by chunked transfers.</string>
+		<key>default</key>
+		<string>1.1</string>
+	</dict>
+	<key>gzip_min_length</key>
+	<dict>
+		<key>description</key>
+		<string>Sets the minimum length, in bytes, of the response that will be compressed. Responses shorter than this byte-length will not be compressed. Length is determined from the &quot;Content-Length&quot; header.</string>
+		<key>default</key>
+		<integer>0</integer>
+	</dict>
+	<key>gzip_proxied</key>
+	<dict>
+		<key>description</key>
+		<string>It allows or disallows the compression of the response for the proxy request in the dependence on the request and the response. The fact that, request proxy, is determined on the basis of line &quot;Via&quot; in the headers of request. In the directive it is possible to indicate simultaneously several parameters:
+
+off - disables compression for all proxied requests
+expired - enables compression, if the &quot;Expires&quot; header prevents caching
+no-cache - enables compression if &quot;Cache-Control&quot; header is set to &quot;no-cache&quot;
+no-store - enables compression if &quot;Cache-Control&quot; header is set to &quot;no-store&quot;
+private - enables compression if &quot;Cache-Control&quot; header is set to &quot;private&quot;
+no_last_modified - enables compression if &quot;Last-Modified&quot; isn&apos;t set
+no_etag - enables compression if there is no &quot;ETag&quot; header
+auth - enables compression if there is an &quot;Authorization&quot; header
+any - enables compression for all requests</string>
+		<key>default</key>
+		<string>off</string>
+	</dict>
+	<key>gzip_types</key>
+	<dict>
+		<key>description</key>
+		<string>Enables compression for additional MIME-types besides &quot;text/html&quot;. &quot;text/html&quot; is always compressed.</string>
+		<key>default</key>
+		<array>
+			<string>text/html</string>
+		</array>
+	</dict>
+	<key>gzip_vary</key>
+	<dict>
+		<key>description</key>
+		<string>Enables response header of &quot;Vary: Accept-Encoding&quot;. Note that this header causes IE 4-6 not to cache the content due to a bug (see [1] ).</string>
+		<key>default</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

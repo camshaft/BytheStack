@@ -1589,7 +1589,7 @@
 							<string key="NSFrame">{{9, 456}, {39, 38}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="131575545"/>
+							<reference key="NSNextKeyView" ref="608129277"/>
 							<string key="NSReuseIdentifierKey">_NS:3995</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="192191985">
@@ -1617,7 +1617,7 @@
 							<string key="NSFrame">{{14, 446}, {29, 17}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="608129277"/>
+							<reference key="NSNextKeyView" ref="129423322"/>
 							<string key="NSReuseIdentifierKey">_NS:3936</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="952482538">
@@ -1642,7 +1642,7 @@
 							<string key="NSFrame">{{50, 456}, {39, 38}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="129423322"/>
+							<reference key="NSNextKeyView" ref="131575545"/>
 							<string key="NSReuseIdentifierKey">_NS:3995</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="303452539">
@@ -1666,7 +1666,7 @@
 							<string key="NSFrame">{{53, 446}, {33, 17}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="660411602"/>
+							<reference key="NSNextKeyView" ref="386573150"/>
 							<string key="NSReuseIdentifierKey">_NS:3936</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="823978421">
@@ -1678,6 +1678,54 @@
 								<reference key="NSControlView" ref="129423322"/>
 								<reference key="NSBackgroundColor" ref="580198631"/>
 								<reference key="NSTextColor" ref="48291215"/>
+							</object>
+						</object>
+						<object class="NSButton" id="386573150">
+							<reference key="NSNextResponder" ref="439893737"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrame">{{124, 460}, {78, 32}}</string>
+							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="284290800"/>
+							<string key="NSReuseIdentifierKey">_NS:161</string>
+							<bool key="NSEnabled">YES</bool>
+							<object class="NSButtonCell" key="NSCell" id="895320170">
+								<int key="NSCellFlags">67239424</int>
+								<int key="NSCellFlags2">134217728</int>
+								<string key="NSContents">Nginx</string>
+								<reference key="NSSupport" ref="1042888240"/>
+								<string key="NSCellIdentifier">_NS:161</string>
+								<reference key="NSControlView" ref="386573150"/>
+								<int key="NSButtonFlags">-2038284033</int>
+								<int key="NSButtonFlags2">129</int>
+								<string key="NSAlternateContents"/>
+								<string key="NSKeyEquivalent"/>
+								<int key="NSPeriodicDelay">200</int>
+								<int key="NSPeriodicInterval">25</int>
+							</object>
+						</object>
+						<object class="NSButton" id="284290800">
+							<reference key="NSNextResponder" ref="439893737"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrame">{{209, 460}, {64, 32}}</string>
+							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="660411602"/>
+							<string key="NSReuseIdentifierKey">_NS:161</string>
+							<bool key="NSEnabled">YES</bool>
+							<object class="NSButtonCell" key="NSCell" id="856669310">
+								<int key="NSCellFlags">67239424</int>
+								<int key="NSCellFlags2">134217728</int>
+								<string key="NSContents">PHP</string>
+								<reference key="NSSupport" ref="1042888240"/>
+								<string key="NSCellIdentifier">_NS:161</string>
+								<reference key="NSControlView" ref="284290800"/>
+								<int key="NSButtonFlags">-2038284033</int>
+								<int key="NSButtonFlags2">129</int>
+								<string key="NSAlternateContents"/>
+								<string key="NSKeyEquivalent"/>
+								<int key="NSPeriodicDelay">200</int>
+								<int key="NSPeriodicInterval">25</int>
 							</object>
 						</object>
 					</array>
@@ -2466,7 +2514,7 @@
 									<int key="NSvFlags">266</int>
 									<string key="NSFrame">{{25, 0}, {140, 17}}</string>
 									<reference key="NSSuperview" ref="947977959"/>
-									<reference key="NSNextKeyView"/>
+									<reference key="NSNextKeyView" ref="653637609"/>
 									<string key="NSReuseIdentifierKey">_NS:78</string>
 									<bool key="NSEnabled">YES</bool>
 									<object class="NSTextFieldCell" key="NSCell" id="82489485">
@@ -2504,6 +2552,30 @@
 						<reference key="destination" ref="977575104"/>
 					</object>
 					<int key="connectionID">613</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">installAll:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="1064660168"/>
+					</object>
+					<int key="connectionID">625</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">installNginx:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="386573150"/>
+					</object>
+					<int key="connectionID">632</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">installPHP:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="284290800"/>
+					</object>
+					<int key="connectionID">633</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3036,6 +3108,8 @@
 							<reference ref="234169321"/>
 							<reference ref="608129277"/>
 							<reference ref="129423322"/>
+							<reference ref="386573150"/>
+							<reference ref="284290800"/>
 						</array>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -3703,6 +3777,32 @@
 						<reference key="object" ref="303452539"/>
 						<reference key="parent" ref="608129277"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">626</int>
+						<reference key="object" ref="386573150"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="895320170"/>
+						</array>
+						<reference key="parent" ref="439893737"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">627</int>
+						<reference key="object" ref="895320170"/>
+						<reference key="parent" ref="386573150"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">628</int>
+						<reference key="object" ref="284290800"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="856669310"/>
+						</array>
+						<reference key="parent" ref="439893737"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">629</int>
+						<reference key="object" ref="856669310"/>
+						<reference key="parent" ref="284290800"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -3885,6 +3985,10 @@
 				<string key="621.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="622.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="623.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="626.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="627.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="628.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="629.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="72.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="73.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="74.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3901,7 +4005,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">623</int>
+			<int key="maxID">633</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3909,12 +4013,42 @@
 					<string key="className">BytheStackAppDelegate</string>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="installAll:">id</string>
+						<string key="installMemcached:">id</string>
+						<string key="installMongoDB:">id</string>
+						<string key="installMySQL:">id</string>
 						<string key="installNginx:">id</string>
+						<string key="installNode:">id</string>
+						<string key="installPHP:">id</string>
 						<string key="saveAction:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="installAll:">
+							<string key="name">installAll:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="installMemcached:">
+							<string key="name">installMemcached:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="installMongoDB:">
+							<string key="name">installMongoDB:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="installMySQL:">
+							<string key="name">installMySQL:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="installNginx:">
 							<string key="name">installNginx:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="installNode:">
+							<string key="name">installNode:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="installPHP:">
+							<string key="name">installPHP:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="saveAction:">

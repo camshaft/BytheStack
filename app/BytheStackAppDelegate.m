@@ -12,22 +12,32 @@
 
 @synthesize window;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
-    PHPInstaller *phpInstall = [[PHPInstaller alloc] initWithArgs:[NSArray arrayWithObjects:@"--with-fpm",@"", nil]];
-    [phpInstall install];
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    // Insert code here to initialize your application    
+    NSFileHandle *f = [NSFileHandle fileHandleForWritingAtPath:@"/tmp/bythestack.log"];
+    [[GTMLogger sharedLogger] setWriter:f];
+    
+    NginxLocation *location = [[NginxLocation alloc] initWithEntity:[NSEntityDescription entityForName:@"NginxLocation" inManagedObjectContext:[self managedObjectContext]] insertIntoManagedObjectContext:[self managedObjectContext]];
+    
+    [location setClient_body_buffer_size:[NSNumber numberWithInt:123]];
+    [location setDefault_type:@"text/html"];
+    
+    NginxServer *server = [[NginxServer alloc] initWithEntity:[NSEntityDescription entityForName:@"NginxServer" inManagedObjectContext:[self managedObjectContext]] insertIntoManagedObjectContext:[self managedObjectContext]];
+    
+    [server addLocationsObject:location];
+    
+    [server setPort:[NSNumber numberWithInt:80]];
+    [server setIsPHPServer:[NSNumber numberWithBool:YES]];
+    [server setServer_name:@"test.localhost"];
+    [server setRoot:@"/srv/htdocs/test"];
+    [server setClient_header_buffer_size:[NSNumber numberWithInt:12]];
+    
+    [server setTypes:[NSArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"text/html",@"mime",@"json",@"expansion", nil], nil]];
+    
+    [server saveConfigToFile:@"/srv/nginx.conf"];
+    
 }
 
-/**
-    Returns the directory the application uses to store the Core Data store file. This code uses a directory named "BytheStack" in the user's Library directory.
- */
-- (NSURL *)applicationFilesDirectory {
-
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *libraryURL = [[fileManager URLsForDirectory:NSLibraryDirectory inDomains:NSUserDomainMask] lastObject];
-    return [libraryURL URLByAppendingPathComponent:@"BytheStack"];
-}
 
 /**
     Creates if necessary and returns the managed object model for the application.
@@ -57,7 +67,7 @@
     }
 
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *applicationFilesDirectory = [self applicationFilesDirectory];
+    NSURL *applicationFilesDirectory = [PathFinder applicationFilesDirectory];
     NSError *error = nil;
     
     NSDictionary *properties = [applicationFilesDirectory resourceValuesForKeys:[NSArray arrayWithObject:NSURLIsDirectoryKey] error:&error];
@@ -143,8 +153,29 @@
     }
 }
 
-- (IBAction)installNginx:(id)sender {
+- (IBAction)installAll:(id)sender {
     
+}
+
+- (IBAction)installMongoDB:(id)sender {
+    MongoDBInstaller *installer = [[MongoDBInstaller alloc] initWithArgs:[NSArray arrayWithObjects:nil]];
+    [installer install];
+}
+- (IBAction)installMemcached:(id)sender {
+    MemcachedInstaller *installer = [[MemcachedInstaller alloc] initWithArgs:[NSArray arrayWithObjects:nil]];
+    [installer install];
+}
+- (IBAction)installNginx:(id)sender {
+    NginxInstaller *installer = [[NginxInstaller alloc] initWithArgs:[NSArray arrayWithObjects:nil]];
+    [installer install];
+}
+- (IBAction)installNode:(id)sender {
+    NodeInstaller *installer = [[NodeInstaller alloc] initWithArgs:[NSArray arrayWithObjects:nil]];
+    [installer install];
+}
+- (IBAction)installPHP:(id)sender {
+    PHPInstaller *installer = [[PHPInstaller alloc] initWithArgs:[NSArray arrayWithObjects:@"--with-fpm",@"--with-mysql", nil]];
+    [installer install];
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {

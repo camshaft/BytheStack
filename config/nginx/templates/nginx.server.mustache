@@ -1,0 +1,21 @@
+    server {
+        {{#access_log}}access_log {{access_log}};
+        {{/access_log}}{{#client_header_buffer_size}}client_header_buffer_size {{client_header_buffer_size}};
+        {{/client_header_buffer_size}}{{#client_header_timeout}}client_header_timeout {{client_header_timeout}};
+        {{/client_header_timeout}}{{#error_log}}error_log {{error_log}};
+        {{/error_log}}{{#large_client_header_buffers}}large_client_header_buffers {{large_client_header_buffers}};
+        {{/large_client_header_buffers}}{{#optimize_server_names}}optimize_server_names {{optimize_server_names}};
+        {{/optimize_server_names}}{{#hasTryFiles}}{{#try_files}}try_files {{.}}
+        {{/try_files}};{{/hasTryFiles}}{{#underscores_in_headers}}underscores_in_headers {{underscores_in_headers}};
+        {{/underscores_in_headers}}
+        {{#port}}listen {{port}}{{#isDefaultServer}} default{{/isDefaultServer}};
+        {{/port}}{{#server_name}}server_name {{server_name}};
+        {{/server_name}}index index.html index.htm{{#isPHPServer}} index.php{{/isPHPServer}};
+        
+        {{#locations}}
+{{>nginx.location}}
+        {{/locations}}
+        include drop.conf;
+        {{#isPHPServer}}include php.conf;{{/isPHPServer}}
+{{>nginx.base}}
+    }

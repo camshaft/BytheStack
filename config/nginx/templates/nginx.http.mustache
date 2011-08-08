@@ -1,0 +1,28 @@
+{{#user}}user {{user}}{{#group}} {{group}}{{/group}};{{/user}}
+{{#worker_processes}}worker_processes {{worker_processes}};{{/worker_processes}}
+{{#error_log}}error_log {{error_log}};
+{{/error_log}}{{#pid}}pid {{pid}};
+{{/pid}}{{#daemon}}daemon {{daemon}};
+{{/daemon}}{{#worker_rlimit_nofile}}worker_rlimit_nofile {worker_rlimit_nofile}};{{/worker_rlimit_nofile}}
+events {
+    {{#worker_connections}}worker_connections  {{worker_connections}};{{/worker_connections}}
+}
+
+http {
+    {{#client_header_buffer_size}}client_header_buffer_size {{client_header_buffer_size}};
+    {{/client_header_buffer_size}}{{#client_header_timeout}}client_header_timeout {{client_header_timeout}};
+    {{/client_header_timeout}}{{#error_log}}error_log {{error_log}};
+    {{/error_log}}{{#large_client_header_buffers}}large_client_header_buffers {{large_client_header_buffers}};
+    {{/large_client_header_buffers}}{{#optimize_server_names}}optimize_server_names {{optimize_server_names}};
+    {{/optimize_server_names}}{{#underscores_in_headers}}underscores_in_headers {{underscores_in_headers}};
+    {{/underscores_in_headers}}
+    {{#port}}listen {{port}};
+    {{/port}}{{#server_names_hash_bucket_size}}server_names_hash_bucket_size {{server_names_hash_bucket_size}};
+    {{/server_names_hash_bucket_size}}{{#server_names_hash_max_size}}server_names_hash_max_size {{server_names_hash_max_size}};
+    {{/server_names_hash_max_size}}{{#underscores_in_headers}}underscores_in_headers {{underscores_in_headers}};
+    {{/underscores_in_headers}}{{#variables_hash_bucket_size}}variables_hash_bucket_size {{variables_hash_bucket_size}};
+    {{/variables_hash_bucket_size}}{{#variables_hash_max_size}}variables_hash_max_size {{variables_hash_max_size}};
+    {{/variables_hash_max_size}}
+{{>nginx.base}}
+    include sites/*.conf;
+}

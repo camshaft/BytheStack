@@ -14,23 +14,25 @@
 {
     self = [super initWithArgs:args];
     if (self) {
-        brewRemote = @"https://raw.github.com/adamv/homebrew-alt/master/duplicates/php.rb";
+        brewInstall = @"https://raw.github.com/adamv/homebrew-alt/master/duplicates/php.rb";
     }
     
     return self;
 }
 
-- (void)install {
-    //[super install];
+- (void)taskWrapper:(TaskWrapper *)taskWrapper didFinishTaskWithStatus:(int)terminationStatus {
     
+    /*
     
     TaskWrapper *xdebugTask = [[TaskWrapper alloc] 
-                             initWithCommandPath:@"/Users/Cameron/Library/Developer/Xcode/DerivedData/BytheStack-bcwvshzfrtmldkcxolyskmrbspds/Build/Products/Debug/BytheStack.app/Contents/Resources/resources/brew/bin/pecl"
-                             workingDir:@"/Users/Cameron/Library/Developer/Xcode/DerivedData/BytheStack-bcwvshzfrtmldkcxolyskmrbspds/Build/Products/Debug/BytheStack.app/Contents/Resources/resources/brew/bin/"
-                             arguments:[NSArray arrayWithObjects:@"install",@"xdebug", nil]
-                             delegate:self];
+                               initWithCommandPath:@"/bin/zsh"
+                               workingDir:@"/"
+                               arguments:[NSArray arrayWithObjects:@"/Users/Cameron/Library/Developer/Xcode/DerivedData/BytheStack-bcwvshzfrtmldkcxolyskmrbspds/Build/Products/Debug/BytheStack.app/Contents/Resources/resources/brew/bin/pecl",@"install",@"xdebug", nil]
+                               delegate:self];
     
     [xdebugTask startTask];
+     */
+    
 }
 
 @end

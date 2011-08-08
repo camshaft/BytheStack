@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>apc.enabled</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.shm_segments</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.shm_size</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.optimization</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.num_files_hint</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.user_entries_hint</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.ttl</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.user_ttl</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.gc_ttl</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.cache_by_default</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.filters</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.mmap_file_mask</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.slam_defense</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.file_update_protection</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.enable_cli</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.max_file_size</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.stat</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.write_lock</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.report_autofilter</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.include_once_override</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.rfc1867</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.rfc1867_prefix</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.rfc1867_name</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.rfc1867_freq</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.rfc1867_ttl</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.localcache</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.localcache.size</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.coredump_unmap</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.stat_ctime</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.canonicalize</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.preload_path</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.use_request_time</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.file_md5</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.lazy_functions</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>apc.lazy_classes</key>
+	<dict>
+		<key>description</key>
+		<string>When turned on, PHP will examine the data read by fgets() and file() to see if it is using Unix, MS-Dos or Macintosh line-ending conventions.
+
+This enables PHP to interoperate with Macintosh systems, but defaults to Off, as there is a very small performance penalty when detecting the EOL conventions for the first line, and also because people using carriage-returns as item separators under Unix systems would experience non-backwards-compatible behaviour.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

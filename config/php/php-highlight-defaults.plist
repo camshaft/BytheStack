@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ignore_user_abort</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>highlight.bg</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<string>#FFFFFF</string>
+	</dict>
+	<key>highlight.comment</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<string>#FF8000</string>
+	</dict>
+	<key>highlight.default</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<string>#0000BB</string>
+	</dict>
+	<key>highlight.html</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<string>#000000</string>
+	</dict>
+	<key>highlight.keyword</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<string>#007700</string>
+	</dict>
+	<key>highlight.string</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<string>#DD0000</string>
+	</dict>
+</dict>
+</plist>
