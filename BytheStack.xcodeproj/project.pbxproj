@@ -55,6 +55,11 @@
 		7EAF181013EE34FE000B5375 /* nginx-log-defauts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF180F13EE34FE000B5375 /* nginx-log-defauts.plist */; };
 		7EAF181413EE38FF000B5375 /* nginx-memcached-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF181313EE38FF000B5375 /* nginx-memcached-defaults.plist */; };
 		7EAF185713EE544F000B5375 /* MustacheModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF185613EE544D000B5375 /* MustacheModel.m */; };
+		7EC48F4213F0AE1E0022EAB8 /* php-mysql-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4113F0AE1E0022EAB8 /* php-mysql-defaults.plist */; };
+		7EC48F4513F0B1AB0022EAB8 /* php-xdebug-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4413F0B1AB0022EAB8 /* php-xdebug-defaults.plist */; };
+		7EC48F4713F0B49A0022EAB8 /* php-zlib-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4613F0B49A0022EAB8 /* php-zlib-defaults.plist */; };
+		7EC48F4913F0C18E0022EAB8 /* php.xdebug.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4813F0C18E0022EAB8 /* php.xdebug.mustache */; };
+		7EC48F4B13F0C6740022EAB8 /* php-fpm-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4A13F0C6740022EAB8 /* php-fpm-defaults.plist */; };
 		7EEED72213EC8CAC0038E8B0 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = 7EEED72113EC8CAC0038E8B0 /* resources */; };
 		7EF26CB913EE6204004E54EE /* GRBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C8D13EE6204004E54EE /* GRBoolean.m */; };
 		7EF26CBA13EE6204004E54EE /* GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C8F13EE6204004E54EE /* GRMustache.m */; };
@@ -184,6 +189,11 @@
 		7EAF181313EE38FF000B5375 /* nginx-memcached-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "nginx-memcached-defaults.plist"; sourceTree = "<group>"; };
 		7EAF185513EE544D000B5375 /* MustacheModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MustacheModel.h; sourceTree = "<group>"; };
 		7EAF185613EE544D000B5375 /* MustacheModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MustacheModel.m; sourceTree = "<group>"; };
+		7EC48F4113F0AE1E0022EAB8 /* php-mysql-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-mysql-defaults.plist"; sourceTree = "<group>"; };
+		7EC48F4413F0B1AB0022EAB8 /* php-xdebug-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-xdebug-defaults.plist"; sourceTree = "<group>"; };
+		7EC48F4613F0B49A0022EAB8 /* php-zlib-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-zlib-defaults.plist"; sourceTree = "<group>"; };
+		7EC48F4813F0C18E0022EAB8 /* php.xdebug.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = php.xdebug.mustache; sourceTree = "<group>"; };
+		7EC48F4A13F0C6740022EAB8 /* php-fpm-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-fpm-defaults.plist"; sourceTree = "<group>"; };
 		7EEED72113EC8CAC0038E8B0 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
 		7EEED72513ECA9CD0038E8B0 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		7EF26C8C13EE6204004E54EE /* GRBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBoolean.h; sourceTree = "<group>"; };
@@ -698,6 +708,10 @@
 				7E15CED113F09794008D387E /* php-zendextension-defaults.plist */,
 				7E15CED313F097EE008D387E /* php-highlight-defaults.plist */,
 				7E15CED513F09E43008D387E /* php-memcache-defaults.plist */,
+				7EC48F4113F0AE1E0022EAB8 /* php-mysql-defaults.plist */,
+				7EC48F4413F0B1AB0022EAB8 /* php-xdebug-defaults.plist */,
+				7EC48F4613F0B49A0022EAB8 /* php-zlib-defaults.plist */,
+				7EC48F4A13F0C6740022EAB8 /* php-fpm-defaults.plist */,
 			);
 			name = php;
 			path = config/php;
@@ -708,6 +722,7 @@
 			children = (
 				7EF26D1413F06AF6004E54EE /* php-fpm.conf.mustache */,
 				7EF26D1513F06AF6004E54EE /* php.ini.mustache */,
+				7EC48F4813F0C18E0022EAB8 /* php.xdebug.mustache */,
 			);
 			path = templates;
 			sourceTree = "<group>";
@@ -810,6 +825,11 @@
 				7E15CED213F09794008D387E /* php-zendextension-defaults.plist in Resources */,
 				7E15CED413F097EE008D387E /* php-highlight-defaults.plist in Resources */,
 				7E15CED613F09E43008D387E /* php-memcache-defaults.plist in Resources */,
+				7EC48F4213F0AE1E0022EAB8 /* php-mysql-defaults.plist in Resources */,
+				7EC48F4513F0B1AB0022EAB8 /* php-xdebug-defaults.plist in Resources */,
+				7EC48F4713F0B49A0022EAB8 /* php-zlib-defaults.plist in Resources */,
+				7EC48F4913F0C18E0022EAB8 /* php.xdebug.mustache in Resources */,
+				7EC48F4B13F0C6740022EAB8 /* php-fpm-defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

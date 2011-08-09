@@ -103,17 +103,20 @@
     </entity>
     <entity name="PHP" representedClassName="PHP">
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="version" optional="YES" attributeType="String"/>
+        <relationship name="pools" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHPFPMPool" inverseName="php" inverseEntity="PHPFPMPool"/>
+    </entity>
+    <entity name="PHPFPMPool">
+        <attribute name="poolname" optional="YES" attributeType="String"/>
+        <attribute name="prefix" optional="YES" attributeType="String"/>
+        <relationship name="php" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHP" inverseName="pools" inverseEntity="PHP"/>
     </entity>
     <entity name="Server" representedClassName="Server">
-        <attribute name="group" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="startOnStartup" optional="YES" attributeType="Boolean"/>
-        <attribute name="user" optional="YES" attributeType="String"/>
-        <relationship name="ServerToMongoDB" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MongoDB"/>
-        <relationship name="ServerToMySQL" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MySQL"/>
-        <relationship name="ServerToNginx" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="NginxHTTP"/>
-        <relationship name="ServerToPHP" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHP"/>
+        <relationship name="mongoDB" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MongoDB"/>
+        <relationship name="mySQL" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MySQL"/>
+        <relationship name="nginx" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="NginxHTTP"/>
+        <relationship name="php" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHP"/>
     </entity>
     <elements>
         <element name="MongoDB" positionX="160" positionY="192" width="128" height="75"/>
@@ -123,6 +126,7 @@
         <element name="NginxLocation" positionX="-452" positionY="288" width="128" height="105"/>
         <element name="NginxServer" positionX="-299" positionY="279" width="128" height="255"/>
         <element name="PHP" positionX="160" positionY="192" width="128" height="75"/>
-        <element name="Server" positionX="160" positionY="192" width="128" height="195"/>
+        <element name="Server" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="PHPFPMPool" positionX="-279" positionY="414" width="128" height="90"/>
     </elements>
 </model>

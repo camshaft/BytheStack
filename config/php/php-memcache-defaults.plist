@@ -5,9 +5,100 @@
 	<key>memcache.allow_failover</key>
 	<dict>
 		<key>description</key>
+		<string>Whether to transparently failover to other servers on errors.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>memcache.max_failover_attempts</key>
+	<dict>
+		<key>description</key>
+		<string>Defines how many servers to try when setting and getting data. Used only in conjunction with memcache.allow_failover.</string>
+		<key>default</key>
+		<integer>20</integer>
+	</dict>
+	<key>memcache.chunk_size</key>
+	<dict>
+		<key>description</key>
+		<string>Data will be transferred in chunks of this size, setting the value lower requires more network writes. Try increasing this value to 32768 if noticing otherwise inexplicable slowdowns.</string>
+		<key>default</key>
+		<integer>8192</integer>
+	</dict>
+	<key>memcache.default_port</key>
+	<dict>
+		<key>description</key>
+		<string>The default TCP port number to use when connecting to the memcached server if no other port is specified.</string>
+		<key>default</key>
+		<integer>11211</integer>
+	</dict>
+	<key>memcache.hash_strategy</key>
+	<dict>
+		<key>description</key>
+		<string>Controls which strategy to use when mapping keys to servers. Set this value to consistent to enable consistent hashing which allows servers to be added or removed from the pool without causing keys to be remapped. Setting this value to standard results in the old strategy being used.</string>
+		<key>default</key>
+		<string>standard</string>
+	</dict>
+	<key>memcache.hash_function</key>
+	<dict>
+		<key>possible_values</key>
+		<array>
+			<string>crc32</string>
+			<string>fnv</string>
+		</array>
+		<key>description</key>
+		<string>Controls which hash function to apply when mapping keys to servers, crc32 uses the standard CRC32 hash while fnv uses FNV-1a.</string>
+		<key>default</key>
+		<string>crc32</string>
+	</dict>
+	<key>session.save_handler</key>
+	<dict>
+		<key>description</key>
+		<string>Use memcache as a session handler by setting this value to memcache.</string>
+		<key>default</key>
+		<string>files</string>
+	</dict>
+	<key>session.save_path</key>
+	<dict>
+		<key>description</key>
+		<string>Defines a comma separated of server urls to use for session storage, for example &quot;tcp://host1:11211, tcp://host2:11211&quot;.
+
+Each url may contain parameters which are applied to that server, they are the same as for the Memcache::addServer() method. For example &quot;tcp://host1:11211?persistent=1&amp;weight=1&amp;timeout=1&amp;retry_interval=15&quot;</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>memcache.protocol</key>
+	<dict>
+		<key>description</key>
 		<string></string>
 		<key>default</key>
-		<string>#DD0000</string>
+		<string>ascii</string>
+	</dict>
+	<key>memcache.redundancy</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<integer>1</integer>
+	</dict>
+	<key>memcache.session_redundancy</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<integer>2</integer>
+	</dict>
+	<key>memcache.compress_threshold</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<integer>20000</integer>
+	</dict>
+	<key>memcache.lock_timeout</key>
+	<dict>
+		<key>description</key>
+		<string></string>
+		<key>default</key>
+		<integer>15</integer>
 	</dict>
 </dict>
 </plist>

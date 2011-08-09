@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mysql.allow_persistent</key>
+	<dict>
+		<key>description</key>
+		<string>Whether to allow persistent connections to MySQL.</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<key>mysql.max_persistent</key>
+	<dict>
+		<key>description</key>
+		<string>The maximum number of persistent MySQL connections per process.</string>
+		<key>default</key>
+		<integer>-1</integer>
+	</dict>
+	<key>mysql.max_links</key>
+	<dict>
+		<key>description</key>
+		<string>The maximum number of MySQL connections per process, including persistent connections.</string>
+		<key>default</key>
+		<integer>-1</integer>
+	</dict>
+	<key>mysql.trace_mode</key>
+	<dict>
+		<key>description</key>
+		<string>Trace mode. When mysql.trace_mode is enabled, warnings for table/index scans, non free result sets, and SQL-Errors will be displayed.</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<key>mysql.default_port</key>
+	<dict>
+		<key>description</key>
+		<string>The default TCP port number to use when connecting to the database server if no other port is specified. If no default is specified, the port will be obtained from the MYSQL_TCP_PORT environment variable, the mysql-tcp entry in /etc/services or the compile-time MYSQL_PORT constant, in that order. Win32 will only use the MYSQL_PORT constant.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>mysql.default_socket</key>
+	<dict>
+		<key>description</key>
+		<string>The default socket name to use when connecting to a local database server if no other socket name is specified.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>mysql.default_host</key>
+	<dict>
+		<key>description</key>
+		<string>The default server host to use when connecting to the database server if no other host is specified. Doesn&apos;t apply in SQL safe mode.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>mysql.default_user</key>
+	<dict>
+		<key>description</key>
+		<string>The default user name to use when connecting to the database server if no other name is specified. Doesn&apos;t apply in SQL safe mode.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>mysql.default_password</key>
+	<dict>
+		<key>description</key>
+		<string>The default password to use when connecting to the database server if no other password is specified. Doesn&apos;t apply in SQL safe mode.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+	<key>mysql.connect_timeout</key>
+	<dict>
+		<key>description</key>
+		<string>Connect timeout in seconds. On Linux this timeout is also used for waiting for the first answer from the server.</string>
+		<key>default</key>
+		<integer>60</integer>
+	</dict>
+</dict>
+</plist>

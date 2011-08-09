@@ -78,7 +78,7 @@ Only internal functions can be disabled using this directive. User-defined funct
 		<key>default</key>
 		<false/>
 	</dict>
-	<key>zend.multibyte</key>
+	<key>zend_multibyte</key>
 	<dict>
 		<key>description</key>
 		<string>Enables parsing of source files in multibyte encodings.</string>
@@ -113,14 +113,14 @@ Only internal functions can be disabled using this directive. User-defined funct
 		<key>default</key>
 		<string>120</string>
 	</dict>
-	<key>arg_separator.output</key>
+	<key>arg_separator_output</key>
 	<dict>
 		<key>description</key>
 		<string>The separator used in PHP generated URLs to separate arguments.</string>
 		<key>default</key>
 		<string>&amp;</string>
 	</dict>
-	<key>arg_separator.input</key>
+	<key>arg_separator_input</key>
 	<dict>
 		<key>description</key>
 		<string>List of separator(s) used by PHP to parse input URLs into variables.</string>
