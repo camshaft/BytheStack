@@ -1,10 +1,11 @@
-*.swp
-*~.nib
 
-build/
-
+build
+Build
+Products
 *.pbxuser
-*.perspective
 *.perspectivev3
-
-*.xcodeproj/xcuserdata
+*.mode1v3
+*.xcworkspace
+xcuserdata
+.DS_Store
+config
