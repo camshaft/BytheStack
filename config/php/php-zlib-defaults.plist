@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>zlib.output_compression</key>
+	<dict>
+		<key>description</key>
+		<string>Whether to transparently compress pages. If this option is set to &quot;On&quot; in php.ini or the Apache configuration, pages are compressed if the browser sends an &quot;Accept-Encoding: gzip&quot; or &quot;deflate&quot; header. &quot;Content-Encoding: gzip&quot; (respectively &quot;deflate&quot;) and &quot;Vary: Accept-Encoding&quot; headers are added to the output. In runtime, it can be set only before sending any output.
+
+This option also accepts integer values instead of boolean &quot;On&quot;/&quot;Off&quot;, using this you can set the output buffer size (default is 4KB).</string>
+		<key>default</key>
+		<integer>0</integer>
+	</dict>
+	<key>zlib.output_compression_level</key>
+	<dict>
+		<key>description</key>
+		<string>Compression level used for transparent output compression. Specify a value between 0 (no compression) to 9 (most compression). The default value, -1, lets the server decide which level to use.</string>
+		<key>default</key>
+		<integer>-1</integer>
+	</dict>
+	<key>zlib.output_handler</key>
+	<dict>
+		<key>description</key>
+		<string>You cannot specify additional output handlers if zlib.output_compression is activated here. This setting does the same as output_handler but in a different order.</string>
+		<key>default</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

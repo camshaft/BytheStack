@@ -14,8 +14,9 @@
 #import "NodeInstaller.h"
 #import "PHPInstaller.h"
 
-#import "NginxServer.h"
-#import "NginxLocation.h"
+#import "PHP.h"
+#import "PHPFPM.h"
+#import "PHPFPMPool.h"
 
 
 @interface BytheStackAppDelegate : NSObject <NSApplicationDelegate> {

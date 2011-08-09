@@ -78,7 +78,7 @@ Only internal functions can be disabled using this directive. User-defined funct
 		<key>default</key>
 		<false/>
 	</dict>
-	<key>zend.multibyte</key>
+	<key>zend_multibyte</key>
 	<dict>
 		<key>description</key>
 		<string>Enables parsing of source files in multibyte encodings.</string>
@@ -113,14 +113,14 @@ Only internal functions can be disabled using this directive. User-defined funct
 		<key>default</key>
 		<string>120</string>
 	</dict>
-	<key>arg_separator.output</key>
+	<key>arg_separator_output</key>
 	<dict>
 		<key>description</key>
 		<string>The separator used in PHP generated URLs to separate arguments.</string>
 		<key>default</key>
 		<string>&amp;</string>
 	</dict>
-	<key>arg_separator.input</key>
+	<key>arg_separator_input</key>
 	<dict>
 		<key>description</key>
 		<string>List of separator(s) used by PHP to parse input URLs into variables.</string>
@@ -286,14 +286,14 @@ The default is to allow all files to be opened.</string>
 		<key>default</key>
 		<string></string>
 	</dict>
-	<key>extension</key>
+	<key>extensions</key>
 	<dict>
 		<key>description</key>
 		<string>Which dynamically loadable extensions to load when PHP starts up.</string>
 		<key>default</key>
 		<array/>
 	</dict>
-	<key>zend_extension</key>
+	<key>zend_extensions</key>
 	<dict>
 		<key>description</key>
 		<string>Absolute path to dynamically loadable Zend extension (for example APD) to load when PHP starts up.</string>
@@ -353,7 +353,7 @@ When an integer is used, the value is measured in bytes. Shorthand notation may 
 		<key>default</key>
 		<integer>20</integer>
 	</dict>
-	<key>sql.safe_mode</key>
+	<key>sql_safe_mode</key>
 	<dict>
 		<key>description</key>
 		<string>If turned on, database connect functions that specify default values will use those values in place of supplied arguments. For default values see connect function documentation for the relevant database.</string>
@@ -404,35 +404,35 @@ This enables PHP to interoperate with Macintosh systems, but defaults to Off, as
 		<key>default</key>
 		<false/>
 	</dict>
-	<key>assert.active</key>
+	<key>assert_active</key>
 	<dict>
 		<key>description</key>
 		<string>Enable assert() evaluation.</string>
 		<key>default</key>
 		<true/>
 	</dict>
-	<key>assert.bail</key>
+	<key>assert_bail</key>
 	<dict>
 		<key>description</key>
 		<string>Terminate script execution on failed assertions.</string>
 		<key>default</key>
 		<false/>
 	</dict>
-	<key>assert.warning</key>
+	<key>assert_warning</key>
 	<dict>
 		<key>description</key>
 		<string>Issue a PHP warning for each failed assertion.</string>
 		<key>default</key>
 		<true/>
 	</dict>
-	<key>assert.callback</key>
+	<key>assert_callback</key>
 	<dict>
 		<key>description</key>
 		<string>user function to call on failed assertions</string>
 		<key>default</key>
 		<string></string>
 	</dict>
-	<key>assert.quiet_eval</key>
+	<key>assert_quiet_eval</key>
 	<dict>
 		<key>description</key>
 		<string>Use the current setting of error_reporting() during assertion expression evaluation. If enabled, no errors are shown (implicit error_reporting(0)) while evaluation. If disabled, errors are shown according to the settings of error_reporting()</string>
@@ -489,42 +489,42 @@ Your web server can have other timeout configurations that may also interrupt PH
 		<key>default</key>
 		<false/>
 	</dict>
-	<key>zend.enable_gc</key>
+	<key>zend_enable_gc</key>
 	<dict>
 		<key>description</key>
 		<string>Enables or disables the circular reference collector.</string>
 		<key>default</key>
 		<false/>
 	</dict>
-	<key>date.default_latitude</key>
+	<key>date_default_latitude</key>
 	<dict>
 		<key>description</key>
 		<string>The default latitude.</string>
 		<key>default</key>
 		<real>31.7667</real>
 	</dict>
-	<key>date.default_longitude</key>
+	<key>date_default_longitude</key>
 	<dict>
 		<key>description</key>
 		<string>The default longitude.</string>
 		<key>default</key>
 		<real>35.2333</real>
 	</dict>
-	<key>date.sunrise_zenith</key>
+	<key>date_sunrise_zenith</key>
 	<dict>
 		<key>description</key>
 		<string>The default sunrise zenith.</string>
 		<key>default</key>
 		<real>90.583333</real>
 	</dict>
-	<key>date.sunset_zenith</key>
+	<key>date_sunset_zenith</key>
 	<dict>
 		<key>description</key>
 		<string>The default sunset zenith.</string>
 		<key>default</key>
 		<real>90.583333</real>
 	</dict>
-	<key>date.timezone</key>
+	<key>date_timezone</key>
 	<dict>
 		<key>possible_values</key>
 		<array>

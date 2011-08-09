@@ -37,6 +37,21 @@
 		7E5A927613EB6246006498C3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5A925313EB6246006498C3 /* Cocoa.framework */; };
 		7E5A92E113EB639B006498C3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5A92E013EB639B006498C3 /* libz.dylib */; };
 		7E5AA21013EB7542006498C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */; };
+		7E5F30E613F0E0FC00BC9712 /* Nginx+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30CE13F0E0FC00BC9712 /* Nginx+GRMustache.m */; };
+		7E5F30E713F0E0FC00BC9712 /* Nginx.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30D013F0E0FC00BC9712 /* Nginx.m */; };
+		7E5F30E813F0E0FC00BC9712 /* NginxHTTP+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30D213F0E0FC00BC9712 /* NginxHTTP+GRMustache.m */; };
+		7E5F30E913F0E0FC00BC9712 /* NginxHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30D413F0E0FC00BC9712 /* NginxHTTP.m */; };
+		7E5F30EA13F0E0FC00BC9712 /* NginxLocation+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30D613F0E0FC00BC9712 /* NginxLocation+GRMustache.m */; };
+		7E5F30EB13F0E0FC00BC9712 /* NginxLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30D813F0E0FC00BC9712 /* NginxLocation.m */; };
+		7E5F30EC13F0E0FC00BC9712 /* NginxServer+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30DA13F0E0FC00BC9712 /* NginxServer+GRMustache.m */; };
+		7E5F30ED13F0E0FC00BC9712 /* NginxServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30DC13F0E0FC00BC9712 /* NginxServer.m */; };
+		7E5F30EE13F0E0FC00BC9712 /* PHP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30DF13F0E0FC00BC9712 /* PHP.m */; };
+		7E5F30EF13F0E0FC00BC9712 /* PHPFPM.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30E113F0E0FC00BC9712 /* PHPFPM.m */; };
+		7E5F30F013F0E0FC00BC9712 /* PHPFPMPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30E313F0E0FC00BC9712 /* PHPFPMPool.m */; };
+		7E5F30F113F0E0FC00BC9712 /* PHPXdebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30E513F0E0FC00BC9712 /* PHPXdebug.m */; };
+		7E5F30F413F0E11800BC9712 /* PHP+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30F313F0E11800BC9712 /* PHP+GRMustache.m */; };
+		7E5F30F713F0E45100BC9712 /* PHPFPM+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30F613F0E45100BC9712 /* PHPFPM+GRMustache.m */; };
+		7E5F30FA13F0E5AF00BC9712 /* PHPFPMPool+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F30F913F0E5AF00BC9712 /* PHPFPMPool+GRMustache.m */; };
 		7EAF17C513ECBFF1000B5375 /* NodeInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17C413ECBFF1000B5375 /* NodeInstaller.m */; };
 		7EAF17CB13ECC0BA000B5375 /* MongoDBInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17CA13ECC0BA000B5375 /* MongoDBInstaller.m */; };
 		7EAF17D413ED3808000B5375 /* MemcachedInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF17D313ED3808000B5375 /* MemcachedInstaller.m */; };
@@ -55,7 +70,11 @@
 		7EAF181013EE34FE000B5375 /* nginx-log-defauts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF180F13EE34FE000B5375 /* nginx-log-defauts.plist */; };
 		7EAF181413EE38FF000B5375 /* nginx-memcached-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF181313EE38FF000B5375 /* nginx-memcached-defaults.plist */; };
 		7EAF185713EE544F000B5375 /* MustacheModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF185613EE544D000B5375 /* MustacheModel.m */; };
-		7EEED72213EC8CAC0038E8B0 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = 7EEED72113EC8CAC0038E8B0 /* resources */; };
+		7EC48F4213F0AE1E0022EAB8 /* php-mysql-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4113F0AE1E0022EAB8 /* php-mysql-defaults.plist */; };
+		7EC48F4513F0B1AB0022EAB8 /* php-xdebug-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4413F0B1AB0022EAB8 /* php-xdebug-defaults.plist */; };
+		7EC48F4713F0B49A0022EAB8 /* php-zlib-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4613F0B49A0022EAB8 /* php-zlib-defaults.plist */; };
+		7EC48F4913F0C18E0022EAB8 /* php.xdebug.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4813F0C18E0022EAB8 /* php.xdebug.mustache */; };
+		7EC48F4B13F0C6740022EAB8 /* php-fpm-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4A13F0C6740022EAB8 /* php-fpm-defaults.plist */; };
 		7EF26CB913EE6204004E54EE /* GRBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C8D13EE6204004E54EE /* GRBoolean.m */; };
 		7EF26CBA13EE6204004E54EE /* GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C8F13EE6204004E54EE /* GRMustache.m */; };
 		7EF26CBB13EE6204004E54EE /* GRMustacheBundleTemplateLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C9113EE6204004E54EE /* GRMustacheBundleTemplateLoader.m */; };
@@ -78,14 +97,6 @@
 		7EF26CD913EE6FED004E54EE /* nginx.location.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26CD813EE6FED004E54EE /* nginx.location.mustache */; };
 		7EF26CDD13EE769B004E54EE /* nginx.base.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26CDC13EE769B004E54EE /* nginx.base.mustache */; };
 		7EF26CDF13EE76D7004E54EE /* nginx.http.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26CDE13EE76D7004E54EE /* nginx.http.mustache */; };
-		7EF26CFA13EE8A01004E54EE /* Nginx.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CF913EE8A01004E54EE /* Nginx.m */; };
-		7EF26CFD13EE8A01004E54EE /* NginxHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CFC13EE8A01004E54EE /* NginxHTTP.m */; };
-		7EF26D0013EE8A01004E54EE /* NginxLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26CFF13EE8A01004E54EE /* NginxLocation.m */; };
-		7EF26D0313EE8A01004E54EE /* NginxServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26D0213EE8A01004E54EE /* NginxServer.m */; };
-		7EF26D0613EF0EA4004E54EE /* Nginx+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26D0513EF0EA4004E54EE /* Nginx+GRMustache.m */; };
-		7EF26D0913EF131E004E54EE /* NginxHTTP+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26D0813EF131E004E54EE /* NginxHTTP+GRMustache.m */; };
-		7EF26D0C13EF13B4004E54EE /* NginxLocation+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26D0B13EF13B3004E54EE /* NginxLocation+GRMustache.m */; };
-		7EF26D0F13EF144B004E54EE /* NginxServer+GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26D0E13EF144B004E54EE /* NginxServer+GRMustache.m */; };
 		7EF26D1613F06AF6004E54EE /* php-fpm.conf.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26D1413F06AF6004E54EE /* php-fpm.conf.mustache */; };
 		7EF26D1713F06AF6004E54EE /* php.ini.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26D1513F06AF6004E54EE /* php.ini.mustache */; };
 		7EF26D1B13F06CD9004E54EE /* php-core-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26D1A13F06CD9004E54EE /* php-core-defaults.plist */; };
@@ -157,6 +168,36 @@
 		7E5A927413EB6246006498C3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		7E5A92E013EB639B006498C3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		7E5AA20F13EB7542006498C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7E5F30CD13F0E0FC00BC9712 /* Nginx+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nginx+GRMustache.h"; sourceTree = "<group>"; };
+		7E5F30CE13F0E0FC00BC9712 /* Nginx+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Nginx+GRMustache.m"; sourceTree = "<group>"; };
+		7E5F30CF13F0E0FC00BC9712 /* Nginx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nginx.h; sourceTree = "<group>"; };
+		7E5F30D013F0E0FC00BC9712 /* Nginx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nginx.m; sourceTree = "<group>"; };
+		7E5F30D113F0E0FC00BC9712 /* NginxHTTP+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NginxHTTP+GRMustache.h"; sourceTree = "<group>"; };
+		7E5F30D213F0E0FC00BC9712 /* NginxHTTP+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NginxHTTP+GRMustache.m"; sourceTree = "<group>"; };
+		7E5F30D313F0E0FC00BC9712 /* NginxHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxHTTP.h; sourceTree = "<group>"; };
+		7E5F30D413F0E0FC00BC9712 /* NginxHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxHTTP.m; sourceTree = "<group>"; };
+		7E5F30D513F0E0FC00BC9712 /* NginxLocation+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NginxLocation+GRMustache.h"; sourceTree = "<group>"; };
+		7E5F30D613F0E0FC00BC9712 /* NginxLocation+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NginxLocation+GRMustache.m"; sourceTree = "<group>"; };
+		7E5F30D713F0E0FC00BC9712 /* NginxLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxLocation.h; sourceTree = "<group>"; };
+		7E5F30D813F0E0FC00BC9712 /* NginxLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxLocation.m; sourceTree = "<group>"; };
+		7E5F30D913F0E0FC00BC9712 /* NginxServer+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NginxServer+GRMustache.h"; sourceTree = "<group>"; };
+		7E5F30DA13F0E0FC00BC9712 /* NginxServer+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NginxServer+GRMustache.m"; sourceTree = "<group>"; };
+		7E5F30DB13F0E0FC00BC9712 /* NginxServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxServer.h; sourceTree = "<group>"; };
+		7E5F30DC13F0E0FC00BC9712 /* NginxServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxServer.m; sourceTree = "<group>"; };
+		7E5F30DE13F0E0FC00BC9712 /* PHP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHP.h; sourceTree = "<group>"; };
+		7E5F30DF13F0E0FC00BC9712 /* PHP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHP.m; sourceTree = "<group>"; };
+		7E5F30E013F0E0FC00BC9712 /* PHPFPM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHPFPM.h; sourceTree = "<group>"; };
+		7E5F30E113F0E0FC00BC9712 /* PHPFPM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHPFPM.m; sourceTree = "<group>"; };
+		7E5F30E213F0E0FC00BC9712 /* PHPFPMPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHPFPMPool.h; sourceTree = "<group>"; };
+		7E5F30E313F0E0FC00BC9712 /* PHPFPMPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHPFPMPool.m; sourceTree = "<group>"; };
+		7E5F30E413F0E0FC00BC9712 /* PHPXdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHPXdebug.h; sourceTree = "<group>"; };
+		7E5F30E513F0E0FC00BC9712 /* PHPXdebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHPXdebug.m; sourceTree = "<group>"; };
+		7E5F30F213F0E11800BC9712 /* PHP+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHP+GRMustache.h"; sourceTree = "<group>"; };
+		7E5F30F313F0E11800BC9712 /* PHP+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHP+GRMustache.m"; sourceTree = "<group>"; };
+		7E5F30F513F0E45000BC9712 /* PHPFPM+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHPFPM+GRMustache.h"; sourceTree = "<group>"; };
+		7E5F30F613F0E45100BC9712 /* PHPFPM+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHPFPM+GRMustache.m"; sourceTree = "<group>"; };
+		7E5F30F813F0E5AF00BC9712 /* PHPFPMPool+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHPFPMPool+GRMustache.h"; sourceTree = "<group>"; };
+		7E5F30F913F0E5AF00BC9712 /* PHPFPMPool+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHPFPMPool+GRMustache.m"; sourceTree = "<group>"; };
 		7EAF17C313ECBFF1000B5375 /* NodeInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeInstaller.h; sourceTree = "<group>"; };
 		7EAF17C413ECBFF1000B5375 /* NodeInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeInstaller.m; sourceTree = "<group>"; };
 		7EAF17C913ECC0BA000B5375 /* MongoDBInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoDBInstaller.h; sourceTree = "<group>"; };
@@ -184,7 +225,11 @@
 		7EAF181313EE38FF000B5375 /* nginx-memcached-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "nginx-memcached-defaults.plist"; sourceTree = "<group>"; };
 		7EAF185513EE544D000B5375 /* MustacheModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MustacheModel.h; sourceTree = "<group>"; };
 		7EAF185613EE544D000B5375 /* MustacheModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MustacheModel.m; sourceTree = "<group>"; };
-		7EEED72113EC8CAC0038E8B0 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
+		7EC48F4113F0AE1E0022EAB8 /* php-mysql-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-mysql-defaults.plist"; sourceTree = "<group>"; };
+		7EC48F4413F0B1AB0022EAB8 /* php-xdebug-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-xdebug-defaults.plist"; sourceTree = "<group>"; };
+		7EC48F4613F0B49A0022EAB8 /* php-zlib-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-zlib-defaults.plist"; sourceTree = "<group>"; };
+		7EC48F4813F0C18E0022EAB8 /* php.xdebug.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = php.xdebug.mustache; sourceTree = "<group>"; };
+		7EC48F4A13F0C6740022EAB8 /* php-fpm-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-fpm-defaults.plist"; sourceTree = "<group>"; };
 		7EEED72513ECA9CD0038E8B0 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		7EF26C8C13EE6204004E54EE /* GRBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBoolean.h; sourceTree = "<group>"; };
 		7EF26C8D13EE6204004E54EE /* GRBoolean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBoolean.m; sourceTree = "<group>"; };
@@ -235,22 +280,6 @@
 		7EF26CD813EE6FED004E54EE /* nginx.location.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nginx.location.mustache; sourceTree = "<group>"; };
 		7EF26CDC13EE769B004E54EE /* nginx.base.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nginx.base.mustache; sourceTree = "<group>"; };
 		7EF26CDE13EE76D7004E54EE /* nginx.http.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nginx.http.mustache; sourceTree = "<group>"; };
-		7EF26CF813EE8A01004E54EE /* Nginx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nginx.h; sourceTree = "<group>"; };
-		7EF26CF913EE8A01004E54EE /* Nginx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nginx.m; sourceTree = "<group>"; };
-		7EF26CFB13EE8A01004E54EE /* NginxHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxHTTP.h; sourceTree = "<group>"; };
-		7EF26CFC13EE8A01004E54EE /* NginxHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxHTTP.m; sourceTree = "<group>"; };
-		7EF26CFE13EE8A01004E54EE /* NginxLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxLocation.h; sourceTree = "<group>"; };
-		7EF26CFF13EE8A01004E54EE /* NginxLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxLocation.m; sourceTree = "<group>"; };
-		7EF26D0113EE8A01004E54EE /* NginxServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NginxServer.h; sourceTree = "<group>"; };
-		7EF26D0213EE8A01004E54EE /* NginxServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NginxServer.m; sourceTree = "<group>"; };
-		7EF26D0413EF0EA4004E54EE /* Nginx+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nginx+GRMustache.h"; sourceTree = "<group>"; };
-		7EF26D0513EF0EA4004E54EE /* Nginx+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Nginx+GRMustache.m"; sourceTree = "<group>"; };
-		7EF26D0713EF131E004E54EE /* NginxHTTP+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NginxHTTP+GRMustache.h"; sourceTree = "<group>"; };
-		7EF26D0813EF131E004E54EE /* NginxHTTP+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NginxHTTP+GRMustache.m"; sourceTree = "<group>"; };
-		7EF26D0A13EF13B3004E54EE /* NginxLocation+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NginxLocation+GRMustache.h"; sourceTree = "<group>"; };
-		7EF26D0B13EF13B3004E54EE /* NginxLocation+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NginxLocation+GRMustache.m"; sourceTree = "<group>"; };
-		7EF26D0D13EF144A004E54EE /* NginxServer+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NginxServer+GRMustache.h"; sourceTree = "<group>"; };
-		7EF26D0E13EF144B004E54EE /* NginxServer+GRMustache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NginxServer+GRMustache.m"; sourceTree = "<group>"; };
 		7EF26D1413F06AF6004E54EE /* php-fpm.conf.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "php-fpm.conf.mustache"; sourceTree = "<group>"; };
 		7EF26D1513F06AF6004E54EE /* php.ini.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = php.ini.mustache; sourceTree = "<group>"; };
 		7EF26D1A13F06CD9004E54EE /* php-core-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-core-defaults.plist"; sourceTree = "<group>"; };
@@ -492,7 +521,6 @@
 				7E3CE83813EC702000EC69E8 /* db */,
 				7E3CE83B13EC702100EC69E8 /* doc */,
 				7E3CE83C13EC702100EC69E8 /* lib */,
-				7EEED72113EC8CAC0038E8B0 /* resources */,
 				7E3CE85413EC702100EC69E8 /* script */,
 				7E3C11C213EC78BF00EC69E8 /* test */,
 				7E3CE85B13EC702100EC69E8 /* vendor */,
@@ -532,6 +560,50 @@
 				7E5A925813EB6246006498C3 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7E5F30CC13F0E0FC00BC9712 /* Nginx */ = {
+			isa = PBXGroup;
+			children = (
+				7E5F30CD13F0E0FC00BC9712 /* Nginx+GRMustache.h */,
+				7E5F30CE13F0E0FC00BC9712 /* Nginx+GRMustache.m */,
+				7E5F30CF13F0E0FC00BC9712 /* Nginx.h */,
+				7E5F30D013F0E0FC00BC9712 /* Nginx.m */,
+				7E5F30D113F0E0FC00BC9712 /* NginxHTTP+GRMustache.h */,
+				7E5F30D213F0E0FC00BC9712 /* NginxHTTP+GRMustache.m */,
+				7E5F30D313F0E0FC00BC9712 /* NginxHTTP.h */,
+				7E5F30D413F0E0FC00BC9712 /* NginxHTTP.m */,
+				7E5F30D513F0E0FC00BC9712 /* NginxLocation+GRMustache.h */,
+				7E5F30D613F0E0FC00BC9712 /* NginxLocation+GRMustache.m */,
+				7E5F30D713F0E0FC00BC9712 /* NginxLocation.h */,
+				7E5F30D813F0E0FC00BC9712 /* NginxLocation.m */,
+				7E5F30D913F0E0FC00BC9712 /* NginxServer+GRMustache.h */,
+				7E5F30DA13F0E0FC00BC9712 /* NginxServer+GRMustache.m */,
+				7E5F30DB13F0E0FC00BC9712 /* NginxServer.h */,
+				7E5F30DC13F0E0FC00BC9712 /* NginxServer.m */,
+			);
+			path = Nginx;
+			sourceTree = "<group>";
+		};
+		7E5F30DD13F0E0FC00BC9712 /* PHP */ = {
+			isa = PBXGroup;
+			children = (
+				7E5F30DE13F0E0FC00BC9712 /* PHP.h */,
+				7E5F30DF13F0E0FC00BC9712 /* PHP.m */,
+				7E5F30E013F0E0FC00BC9712 /* PHPFPM.h */,
+				7E5F30E113F0E0FC00BC9712 /* PHPFPM.m */,
+				7E5F30E213F0E0FC00BC9712 /* PHPFPMPool.h */,
+				7E5F30E313F0E0FC00BC9712 /* PHPFPMPool.m */,
+				7E5F30E413F0E0FC00BC9712 /* PHPXdebug.h */,
+				7E5F30E513F0E0FC00BC9712 /* PHPXdebug.m */,
+				7E5F30F213F0E11800BC9712 /* PHP+GRMustache.h */,
+				7E5F30F313F0E11800BC9712 /* PHP+GRMustache.m */,
+				7E5F30F513F0E45000BC9712 /* PHPFPM+GRMustache.h */,
+				7E5F30F613F0E45100BC9712 /* PHPFPM+GRMustache.m */,
+				7E5F30F813F0E5AF00BC9712 /* PHPFPMPool+GRMustache.h */,
+				7E5F30F913F0E5AF00BC9712 /* PHPFPMPool+GRMustache.m */,
+			);
+			path = PHP;
 			sourceTree = "<group>";
 		};
 		7EAF17D113ED3808000B5375 /* memcached */ = {
@@ -601,24 +673,10 @@
 		7EAF182D13EE49F9000B5375 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				7E5F30CC13F0E0FC00BC9712 /* Nginx */,
+				7E5F30DD13F0E0FC00BC9712 /* PHP */,
 				7EAF185513EE544D000B5375 /* MustacheModel.h */,
 				7EAF185613EE544D000B5375 /* MustacheModel.m */,
-				7EF26D0113EE8A01004E54EE /* NginxServer.h */,
-				7EF26D0213EE8A01004E54EE /* NginxServer.m */,
-				7EF26CFE13EE8A01004E54EE /* NginxLocation.h */,
-				7EF26CFF13EE8A01004E54EE /* NginxLocation.m */,
-				7EF26CFB13EE8A01004E54EE /* NginxHTTP.h */,
-				7EF26CFC13EE8A01004E54EE /* NginxHTTP.m */,
-				7EF26CF813EE8A01004E54EE /* Nginx.h */,
-				7EF26CF913EE8A01004E54EE /* Nginx.m */,
-				7EF26D0413EF0EA4004E54EE /* Nginx+GRMustache.h */,
-				7EF26D0513EF0EA4004E54EE /* Nginx+GRMustache.m */,
-				7EF26D0713EF131E004E54EE /* NginxHTTP+GRMustache.h */,
-				7EF26D0813EF131E004E54EE /* NginxHTTP+GRMustache.m */,
-				7EF26D0A13EF13B3004E54EE /* NginxLocation+GRMustache.h */,
-				7EF26D0B13EF13B3004E54EE /* NginxLocation+GRMustache.m */,
-				7EF26D0D13EF144A004E54EE /* NginxServer+GRMustache.h */,
-				7EF26D0E13EF144B004E54EE /* NginxServer+GRMustache.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -698,6 +756,10 @@
 				7E15CED113F09794008D387E /* php-zendextension-defaults.plist */,
 				7E15CED313F097EE008D387E /* php-highlight-defaults.plist */,
 				7E15CED513F09E43008D387E /* php-memcache-defaults.plist */,
+				7EC48F4113F0AE1E0022EAB8 /* php-mysql-defaults.plist */,
+				7EC48F4413F0B1AB0022EAB8 /* php-xdebug-defaults.plist */,
+				7EC48F4613F0B49A0022EAB8 /* php-zlib-defaults.plist */,
+				7EC48F4A13F0C6740022EAB8 /* php-fpm-defaults.plist */,
 			);
 			name = php;
 			path = config/php;
@@ -708,6 +770,7 @@
 			children = (
 				7EF26D1413F06AF6004E54EE /* php-fpm.conf.mustache */,
 				7EF26D1513F06AF6004E54EE /* php.ini.mustache */,
+				7EC48F4813F0C18E0022EAB8 /* php.xdebug.mustache */,
 			);
 			path = templates;
 			sourceTree = "<group>";
@@ -784,7 +847,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EEED72213EC8CAC0038E8B0 /* resources in Resources */,
 				7E3CFD4B13EC704A00EC69E8 /* default.xib in Resources */,
 				7E3C118C13EC719400EC69E8 /* ServerController-show.xib in Resources */,
 				7EAF17FC13EDFE04000B5375 /* VhostController-show.xib in Resources */,
@@ -810,6 +872,11 @@
 				7E15CED213F09794008D387E /* php-zendextension-defaults.plist in Resources */,
 				7E15CED413F097EE008D387E /* php-highlight-defaults.plist in Resources */,
 				7E15CED613F09E43008D387E /* php-memcache-defaults.plist in Resources */,
+				7EC48F4213F0AE1E0022EAB8 /* php-mysql-defaults.plist in Resources */,
+				7EC48F4513F0B1AB0022EAB8 /* php-xdebug-defaults.plist in Resources */,
+				7EC48F4713F0B49A0022EAB8 /* php-zlib-defaults.plist in Resources */,
+				7EC48F4913F0C18E0022EAB8 /* php.xdebug.mustache in Resources */,
+				7EC48F4B13F0C6740022EAB8 /* php-fpm-defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,7 +916,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd resources/brew/bin\n#./brew update\ncd ../\nif [ ! -d \"etc\" ]; then\n    mkdir etc\nfi\nif [ ! -d \"lib\" ]; then\n    mkdir lib\nfi\nif [ ! -d \"sbin\" ]; then\n    mkdir sbin\nfi\nif [ ! -d \"share\" ]; then\n    mkdir share\nfi\nif [ ! -d \"var\" ]; then\n    mkdir var\nfi";
+			shellScript = "#cd resources/brew/bin\n#./brew update\n#cd ../\n#if [ ! -d \"etc\" ]; then\n#    mkdir etc\n#fi\n#if [ ! -d \"lib\" ]; then\n#    mkdir lib\n#fi\n#if [ ! -d \"sbin\" ]; then\n#    mkdir sbin\n#fi\n#if [ ! -d \"share\" ]; then\n#    mkdir share\n#fi\n#if [ ! -d \"var\" ]; then\n#    mkdir var\n#fi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -899,14 +966,21 @@
 				7EF26CC813EE6204004E54EE /* GRMustacheTokenizer.m in Sources */,
 				7EF26CC913EE6204004E54EE /* GRMustacheVariableElement.m in Sources */,
 				7EF26CCA13EE6204004E54EE /* GRMustacheVersion.m in Sources */,
-				7EF26CFA13EE8A01004E54EE /* Nginx.m in Sources */,
-				7EF26CFD13EE8A01004E54EE /* NginxHTTP.m in Sources */,
-				7EF26D0013EE8A01004E54EE /* NginxLocation.m in Sources */,
-				7EF26D0313EE8A01004E54EE /* NginxServer.m in Sources */,
-				7EF26D0613EF0EA4004E54EE /* Nginx+GRMustache.m in Sources */,
-				7EF26D0913EF131E004E54EE /* NginxHTTP+GRMustache.m in Sources */,
-				7EF26D0C13EF13B4004E54EE /* NginxLocation+GRMustache.m in Sources */,
-				7EF26D0F13EF144B004E54EE /* NginxServer+GRMustache.m in Sources */,
+				7E5F30E613F0E0FC00BC9712 /* Nginx+GRMustache.m in Sources */,
+				7E5F30E713F0E0FC00BC9712 /* Nginx.m in Sources */,
+				7E5F30E813F0E0FC00BC9712 /* NginxHTTP+GRMustache.m in Sources */,
+				7E5F30E913F0E0FC00BC9712 /* NginxHTTP.m in Sources */,
+				7E5F30EA13F0E0FC00BC9712 /* NginxLocation+GRMustache.m in Sources */,
+				7E5F30EB13F0E0FC00BC9712 /* NginxLocation.m in Sources */,
+				7E5F30EC13F0E0FC00BC9712 /* NginxServer+GRMustache.m in Sources */,
+				7E5F30ED13F0E0FC00BC9712 /* NginxServer.m in Sources */,
+				7E5F30EE13F0E0FC00BC9712 /* PHP.m in Sources */,
+				7E5F30EF13F0E0FC00BC9712 /* PHPFPM.m in Sources */,
+				7E5F30F013F0E0FC00BC9712 /* PHPFPMPool.m in Sources */,
+				7E5F30F113F0E0FC00BC9712 /* PHPXdebug.m in Sources */,
+				7E5F30F413F0E11800BC9712 /* PHP+GRMustache.m in Sources */,
+				7E5F30F713F0E45100BC9712 /* PHPFPM+GRMustache.m in Sources */,
+				7E5F30FA13F0E5AF00BC9712 /* PHPFPMPool+GRMustache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

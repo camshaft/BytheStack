@@ -102,18 +102,194 @@
         <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NginxLocation" inverseName="server" inverseEntity="NginxLocation"/>
     </entity>
     <entity name="PHP" representedClassName="PHP">
+        <attribute name="allow_call_time_pass_reference" optional="YES" attributeType="Boolean"/>
+        <attribute name="allow_url_fopen" optional="YES" attributeType="Boolean"/>
+        <attribute name="allow_url_include" optional="YES" attributeType="Boolean"/>
+        <attribute name="allow_webdav_methods" optional="YES" attributeType="Boolean"/>
+        <attribute name="always_populate_raw_post_data" optional="YES" attributeType="Boolean"/>
+        <attribute name="arg_separator_input" optional="YES" attributeType="String"/>
+        <attribute name="arg_separator_output" optional="YES" attributeType="String"/>
+        <attribute name="asp_tags" optional="YES" attributeType="Boolean"/>
+        <attribute name="assert_active" optional="YES" attributeType="Boolean"/>
+        <attribute name="assert_bail" optional="YES" attributeType="Boolean"/>
+        <attribute name="assert_callback" optional="YES" attributeType="String"/>
+        <attribute name="assert_quiet_eval" optional="YES" attributeType="Boolean"/>
+        <attribute name="assert_warning" optional="YES" attributeType="Boolean"/>
+        <attribute name="auto_append_file" optional="YES" attributeType="String"/>
+        <attribute name="auto_detect_line_endings" optional="YES" attributeType="Boolean"/>
+        <attribute name="auto_globals_jit" optional="YES" attributeType="Boolean"/>
+        <attribute name="auto_prepend_file" optional="YES" attributeType="String"/>
+        <attribute name="date_default_latitude" optional="YES" attributeType="Float" defaultValueString="0.0"/>
+        <attribute name="date_default_longitude" optional="YES" attributeType="Float" defaultValueString="0.0"/>
+        <attribute name="date_sunrise_zenith" optional="YES" attributeType="Float" defaultValueString="0.0"/>
+        <attribute name="date_sunset_zenith" optional="YES" attributeType="Float" defaultValueString="0.0"/>
+        <attribute name="date_timezone" optional="YES" attributeType="String"/>
+        <attribute name="default_charset" optional="YES" attributeType="String"/>
+        <attribute name="default_mimetype" optional="YES" attributeType="String"/>
+        <attribute name="default_socket_timeout" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="detect_unicode" optional="YES" attributeType="Boolean"/>
+        <attribute name="disable_classes" optional="YES" attributeType="String"/>
+        <attribute name="disable_functions" optional="YES" attributeType="String"/>
+        <attribute name="display_errors" optional="YES" attributeType="Boolean"/>
+        <attribute name="display_startup_errors" optional="YES" attributeType="Boolean"/>
+        <attribute name="doc_root" optional="YES" attributeType="String"/>
+        <attribute name="docref_ext" optional="YES" attributeType="String"/>
+        <attribute name="docref_root" optional="YES" attributeType="String"/>
+        <attribute name="enable_dl" optional="YES" attributeType="Boolean"/>
+        <attribute name="error_append_string" optional="YES" attributeType="String"/>
+        <attribute name="error_log" optional="YES" attributeType="String"/>
+        <attribute name="error_prepend_string" optional="YES" attributeType="String"/>
+        <attribute name="error_reporting" optional="YES" attributeType="Boolean"/>
+        <attribute name="expose_php" optional="YES" attributeType="Boolean"/>
+        <attribute name="extension_dir" optional="YES" attributeType="String"/>
+        <attribute name="extensions" optional="YES" attributeType="Transformable"/>
+        <attribute name="file_uploads" optional="YES" attributeType="Boolean"/>
+        <attribute name="from" optional="YES" attributeType="String"/>
+        <attribute name="gpc_order" optional="YES" attributeType="String"/>
+        <attribute name="html_errors" optional="YES" attributeType="Boolean"/>
+        <attribute name="ignore_repeated_errors" optional="YES" attributeType="Boolean"/>
+        <attribute name="ignore_repeated_source" optional="YES" attributeType="Boolean"/>
+        <attribute name="include_path" optional="YES" attributeType="Transformable"/>
+        <attribute name="log_errors" optional="YES" attributeType="Boolean"/>
+        <attribute name="log_errors_max_len" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="magic_quotes_gpc" optional="YES" attributeType="Boolean"/>
+        <attribute name="magic_quotes_runtime" optional="YES" attributeType="Boolean"/>
+        <attribute name="max_execution_time" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="max_file_uploads" optional="YES" attributeType="Integer 16"/>
+        <attribute name="max_input_nesting_level" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="max_input_time" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="memory_limit" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="version" optional="YES" attributeType="String"/>
+        <attribute name="open_basedir" optional="YES" attributeType="String"/>
+        <attribute name="post_max_size" optional="YES" attributeType="String"/>
+        <attribute name="precision" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="realpath_cache_size" optional="YES" attributeType="String"/>
+        <attribute name="realpath_cache_ttl" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="register_argc_argv" optional="YES" attributeType="Boolean"/>
+        <attribute name="register_globals" optional="YES" attributeType="Boolean"/>
+        <attribute name="register_long_arrays" optional="YES" attributeType="Boolean"/>
+        <attribute name="report_memleaks" optional="YES" attributeType="Boolean"/>
+        <attribute name="request_order" optional="YES" attributeType="String"/>
+        <attribute name="serialize_precision" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="short_open_tag" optional="YES" attributeType="Boolean"/>
+        <attribute name="sql_safe_mode" optional="YES" attributeType="Boolean"/>
+        <attribute name="track_errors" optional="YES" attributeType="Boolean"/>
+        <attribute name="upload_max_filesize" optional="YES" attributeType="String"/>
+        <attribute name="upload_tmp_dir" optional="YES" attributeType="String"/>
+        <attribute name="user_agent" optional="YES" attributeType="String"/>
+        <attribute name="user_dir" optional="YES" attributeType="String"/>
+        <attribute name="variables_order" optional="YES" attributeType="String"/>
+        <attribute name="xmlrpc_error_number" optional="YES" attributeType="Boolean"/>
+        <attribute name="xmlrpc_errors" optional="YES" attributeType="Boolean"/>
+        <attribute name="y2k_compliance" optional="YES" attributeType="Boolean" defaultValueString="0"/>
+        <attribute name="ze1_compatibility_mode" optional="YES" attributeType="Boolean"/>
+        <attribute name="zend_enable_gc" optional="YES" attributeType="String"/>
+        <attribute name="zend_extension_debug" optional="YES" attributeType="Transformable"/>
+        <attribute name="zend_extension_debug_ts" optional="YES" attributeType="Transformable"/>
+        <attribute name="zend_extension_ts" optional="YES" attributeType="Transformable"/>
+        <attribute name="zend_extensions" optional="YES" attributeType="Transformable"/>
+        <attribute name="zend_multibyte" optional="YES" attributeType="Boolean"/>
+        <relationship name="fpm" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHPFPM" inverseName="php" inverseEntity="PHPFPM"/>
+        <relationship name="xdebug" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHPXdebug" inverseName="php" inverseEntity="PHPXdebug"/>
+    </entity>
+    <entity name="PHPFPM" representedClassName="PHPFPM">
+        <attribute name="daemonize" optional="YES" attributeType="Boolean"/>
+        <attribute name="emergency_restart_interval" optional="YES" attributeType="String"/>
+        <attribute name="emergency_restart_threshold" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="error_log" optional="YES" attributeType="String"/>
+        <attribute name="log_level" optional="YES" attributeType="String"/>
+        <attribute name="pid" optional="YES" attributeType="String"/>
+        <attribute name="process_control_timeout" optional="YES" attributeType="String"/>
+        <relationship name="php" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHP" inverseName="fpm" inverseEntity="PHP"/>
+        <relationship name="pools" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PHPFPMPool" inverseName="fpm" inverseEntity="PHPFPMPool"/>
+    </entity>
+    <entity name="PHPFPMPool" representedClassName="PHPFPMPool">
+        <attribute name="catch_workers_output" optional="YES" attributeType="Boolean"/>
+        <attribute name="chdir" optional="YES" attributeType="String"/>
+        <attribute name="chroot" optional="YES" attributeType="String"/>
+        <attribute name="group" optional="YES" attributeType="String"/>
+        <attribute name="listen" optional="YES" attributeType="String"/>
+        <attribute name="listen_allowed_clients" optional="YES" attributeType="String"/>
+        <attribute name="listen_backlog" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="listen_group" optional="YES" attributeType="String"/>
+        <attribute name="listen_mode" optional="YES" attributeType="String"/>
+        <attribute name="listen_owner" optional="YES" attributeType="String"/>
+        <attribute name="ping_path" optional="YES" attributeType="String"/>
+        <attribute name="ping_response" optional="YES" attributeType="String"/>
+        <attribute name="pm" optional="YES" attributeType="String"/>
+        <attribute name="pm_max_children" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="pm_max_requests" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="pm_max_spare_servers" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="pm_min_spare_servers" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="pm_start_servers" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="pm_status_path" optional="YES" attributeType="String"/>
+        <attribute name="poolname" optional="YES" attributeType="String"/>
+        <attribute name="prefix" optional="YES" attributeType="String"/>
+        <attribute name="request_slowlog_timeout" optional="YES" attributeType="String"/>
+        <attribute name="request_terminate_timeout" optional="YES" attributeType="String"/>
+        <attribute name="rlimit_core" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="rlimit_files" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="slowlog" optional="YES" attributeType="String"/>
+        <attribute name="user" optional="YES" attributeType="String"/>
+        <relationship name="fpm" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHPFPM" inverseName="pools" inverseEntity="PHPFPM"/>
+    </entity>
+    <entity name="PHPXdebug" representedClassName="PHPXdebug">
+        <attribute name="xdebug_auto_profile" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_auto_profile_mode" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_auto_trace" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_collect_includes" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_collect_params" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_collect_return" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_collect_vars" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_default_enable" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_dump_COOKIE" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_dump_ENV" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_dump_FILES" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_dump_GET" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_dump_globals" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_dump_once" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_dump_POST" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_dump_REQUEST" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_dump_SERVER" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_dump_SESSION" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_dump_undefined" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_extended_info" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_idekey" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_manual_url" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_max_nesting_level" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="xdebug_output_dir" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_profiler_aggregate" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_profiler_append" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_profiler_enable" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_profiler_enable_trigger" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_profiler_output_dir" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_profiler_output_name" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_remote_autostart" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_remote_enable" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_remote_handler" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_remote_host" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_remote_log" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_remote_mode" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_remote_port" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="xdebug_show_exception_trace" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_show_local_vars" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_show_mem_delta" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_trace_format" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_trace_options" optional="YES" attributeType="Boolean"/>
+        <attribute name="xdebug_trace_output_dir" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_trace_output_name" optional="YES" attributeType="String"/>
+        <attribute name="xdebug_var_display_max_children" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="xdebug_var_display_max_data" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="xdebug_var_display_max_depth" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <relationship name="php" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHP" inverseName="xdebug" inverseEntity="PHP"/>
     </entity>
     <entity name="Server" representedClassName="Server">
-        <attribute name="group" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="startOnStartup" optional="YES" attributeType="Boolean"/>
-        <attribute name="user" optional="YES" attributeType="String"/>
-        <relationship name="ServerToMongoDB" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MongoDB"/>
-        <relationship name="ServerToMySQL" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MySQL"/>
-        <relationship name="ServerToNginx" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="NginxHTTP"/>
-        <relationship name="ServerToPHP" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHP"/>
+        <relationship name="mongoDB" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MongoDB"/>
+        <relationship name="mySQL" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MySQL"/>
+        <relationship name="nginx" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="NginxHTTP"/>
+        <relationship name="php" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PHP"/>
     </entity>
     <elements>
         <element name="MongoDB" positionX="160" positionY="192" width="128" height="75"/>
@@ -122,7 +298,10 @@
         <element name="NginxHTTP" positionX="-117" positionY="282" width="128" height="375"/>
         <element name="NginxLocation" positionX="-452" positionY="288" width="128" height="105"/>
         <element name="NginxServer" positionX="-299" positionY="279" width="128" height="255"/>
-        <element name="PHP" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="PHP" positionX="160" positionY="192" width="128" height="1380"/>
+        <element name="PHPFPM" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="PHPFPMPool" positionX="-279" positionY="414" width="128" height="90"/>
+        <element name="PHPXdebug" positionX="160" positionY="192" width="128" height="60"/>
         <element name="Server" positionX="160" positionY="192" width="128" height="195"/>
     </elements>
 </model>
