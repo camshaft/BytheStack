@@ -73,25 +73,23 @@
 {{/docref_ext}}{{#error_prepend_string}}error_prepend_string "{{error_prepend_string}}"
 {{/error_prepend_string}}{{#error_append_string}}error_append_string "{{error_append_string}}"
 {{/error_append_string}}{{#error_log}}error_log "{{error_log}}"
-{{/error_log}}
-[Date]
-{{#date_default_latitude}}date.default_latitude {{date_default_latitude}}
+{{/error_log}}{{#date_default_latitude}}date.default_latitude {{date_default_latitude}}
 {{/date_default_latitude}}{{#date_default_longitude}}date.default_longitude {{date_default_longitude}}
 {{/date_default_longitude}}{{#date_sunrise_zenith}}date.sunrise_zenith {{date_sunrise_zenith}}
 {{/date_sunrise_zenith}}{{#date_sunset_zenith}}date.sunset_zenith {{date_sunset_zenith}}
 {{/date_sunset_zenith}}{{#date_timezone}}date.timezone "{{date_timezone}}"
-{{/date_timezone}}
+{{/date_timezone}}{{#hasExtensions}}
 [Extensions]
-{{#hasExtensions}}{{#extensions}}extension {{.}}
+{{#extensions}}extension {{.}}
 {{/extensions}}{{/hasExtensions}}
-[ZendExtensions]
 {{#hasZendExtensions}}{{#zend_extensions}}zend_extension {{.}}
 {{/zend_extensions}}{{/hasZendExtensions}}
 {{#hasZendExtensionsDebug}}{{#zend_extension_debug}}zend_extension_debug {{.}}
 {{/zend_extension_debug}}{{/hasZendExtensionsDebug}}
 {{#hasZendExtensionsDebugTs}}{{#zend_extension_debug_ts}}zend_extension_debug_ts {{.}}
-{{/zend_extension_debug}}{{/hasZendExtensionsDebugTs}}
+{{/zend_extension_debug_ts}}{{/hasZendExtensionsDebugTs}}
 {{#hasZendExtensionsTs}}{{#zend_extension_ts}}zend_extension_ts {{.}}
 {{/zend_extension_ts}}{{/hasZendExtensionsTs}}
-[Xdebug]
+{{#xdebug}}
 {{>php.xdebug}}
+{{/xdebug}}

@@ -17,24 +17,18 @@
     NSFileHandle *f = [NSFileHandle fileHandleForWritingAtPath:@"/tmp/bythestack.log"];
     [[GTMLogger sharedLogger] setWriter:f];
     
-    NginxLocation *location = [[NginxLocation alloc] initWithEntity:[NSEntityDescription entityForName:@"NginxLocation" inManagedObjectContext:[self managedObjectContext]] insertIntoManagedObjectContext:[self managedObjectContext]];
+    PHPFPM *php = [[PHPFPM alloc] initWithEntity:[NSEntityDescription entityForName:@"PHPFPM" inManagedObjectContext:[self managedObjectContext]] insertIntoManagedObjectContext:[self managedObjectContext]];
     
-    [location setClient_body_buffer_size:[NSNumber numberWithInt:123]];
-    [location setDefault_type:@"text/html"];
+    PHPFPMPool *fpmpool = [[PHPFPMPool alloc] initWithEntity:[NSEntityDescription entityForName:@"PHPFPMPool" inManagedObjectContext:[self managedObjectContext]] insertIntoManagedObjectContext:[self managedObjectContext]];
     
-    NginxServer *server = [[NginxServer alloc] initWithEntity:[NSEntityDescription entityForName:@"NginxServer" inManagedObjectContext:[self managedObjectContext]] insertIntoManagedObjectContext:[self managedObjectContext]];
+    [fpmpool setPoolname:@"www"];
+    [fpmpool setPm:@"dynamic"];
     
-    [server addLocationsObject:location];
+    [php setDaemonize:[NSNumber numberWithBool:YES]];
     
-    [server setPort:[NSNumber numberWithInt:80]];
-    [server setIsPHPServer:[NSNumber numberWithBool:YES]];
-    [server setServer_name:@"test.localhost"];
-    [server setRoot:@"/srv/htdocs/test"];
-    [server setClient_header_buffer_size:[NSNumber numberWithInt:12]];
+    [php setPools:[NSSet setWithObjects:fpmpool, nil]];
     
-    [server setTypes:[NSArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"text/html",@"mime",@"json",@"expansion", nil], nil]];
-    
-    [server saveConfigToFile:@"/srv/nginx.conf"];
+    [php saveConfigToFile:@"testing"];
     
 }
 

@@ -133,28 +133,28 @@ dynamic - the number of child processes is set dynamically based on the followin
 
 This option sets the limit on the number of simultaneous requests that will be served. Equivalent to the ApacheMaxClients directive with mpm_prefork and to the PHP_FCGI_CHILDREN environment variable in the original PHP FastCGI.</string>
 		<key>default</key>
-		<integer>0</integer>
+		<integer>50</integer>
 	</dict>
 	<key>pm_start_servers</key>
 	<dict>
 		<key>description</key>
 		<string>The number of child processes created on startup. Used only when pm is set to dynamic. Default Value: min_spare_servers + (max_spare_servers - min_spare_servers) / 2.</string>
 		<key>default</key>
-		<string></string>
+		<integer>0</integer>
 	</dict>
 	<key>pm_min_spare_servers</key>
 	<dict>
 		<key>description</key>
 		<string>The desired minimum number of idle server processes. Used only when pm is set to dynamic. Also mandatory in this case.</string>
 		<key>default</key>
-		<string></string>
+		<integer>5</integer>
 	</dict>
 	<key>pm_max_spare_servers</key>
 	<dict>
 		<key>description</key>
 		<string>The desired maximum number of idle server processes. Used only when pm is set to dynamic. Also mandatory in this case.</string>
 		<key>default</key>
-		<string></string>
+		<integer>35</integer>
 	</dict>
 	<key>pm_max_requests</key>
 	<dict>

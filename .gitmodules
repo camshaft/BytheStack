@@ -1,9 +1,6 @@
 [submodule "vendor/asi-http-request"]
 	path = vendor/asi-http-request
 	url = git://github.com/pokeb/asi-http-request.git
-[submodule "resources/brew"]
-	path = resources/brew
-	url = git://github.com/mxcl/homebrew.git
 [submodule "vendor/google-toolbox-for-mac"]
 	path = vendor/google-toolbox-for-mac
 	url = git://github.com/innerfence/google-toolbox-for-mac.git
