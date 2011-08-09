@@ -75,6 +75,8 @@
 		7EC48F4713F0B49A0022EAB8 /* php-zlib-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4613F0B49A0022EAB8 /* php-zlib-defaults.plist */; };
 		7EC48F4913F0C18E0022EAB8 /* php.xdebug.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4813F0C18E0022EAB8 /* php.xdebug.mustache */; };
 		7EC48F4B13F0C6740022EAB8 /* php-fpm-defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EC48F4A13F0C6740022EAB8 /* php-fpm-defaults.plist */; };
+		7EF046CC13F0ED20002F46B0 /* install-brew.rb in Resources */ = {isa = PBXBuildFile; fileRef = 7EF046CB13F0ED20002F46B0 /* install-brew.rb */; };
+		7EF046D013F0EE51002F46B0 /* BrewInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF046CF13F0EE51002F46B0 /* BrewInstaller.m */; };
 		7EF26CB913EE6204004E54EE /* GRBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C8D13EE6204004E54EE /* GRBoolean.m */; };
 		7EF26CBA13EE6204004E54EE /* GRMustache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C8F13EE6204004E54EE /* GRMustache.m */; };
 		7EF26CBB13EE6204004E54EE /* GRMustacheBundleTemplateLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C9113EE6204004E54EE /* GRMustacheBundleTemplateLoader.m */; };
@@ -231,6 +233,9 @@
 		7EC48F4813F0C18E0022EAB8 /* php.xdebug.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = php.xdebug.mustache; sourceTree = "<group>"; };
 		7EC48F4A13F0C6740022EAB8 /* php-fpm-defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "php-fpm-defaults.plist"; sourceTree = "<group>"; };
 		7EEED72513ECA9CD0038E8B0 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		7EF046CB13F0ED20002F46B0 /* install-brew.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = "install-brew.rb"; sourceTree = "<group>"; };
+		7EF046CE13F0EE51002F46B0 /* BrewInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrewInstaller.h; sourceTree = "<group>"; };
+		7EF046CF13F0EE51002F46B0 /* BrewInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrewInstaller.m; sourceTree = "<group>"; };
 		7EF26C8C13EE6204004E54EE /* GRBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBoolean.h; sourceTree = "<group>"; };
 		7EF26C8D13EE6204004E54EE /* GRBoolean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBoolean.m; sourceTree = "<group>"; };
 		7EF26C8E13EE6204004E54EE /* GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustache.h; sourceTree = "<group>"; };
@@ -405,6 +410,7 @@
 		7E3CE83C13EC702100EC69E8 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				7EF046D113F0F516002F46B0 /* run */,
 				7EAF17DB13ED3F72000B5375 /* path */,
 				7E3CE83D13EC702100EC69E8 /* installer */,
 				7E3CE84A13EC702100EC69E8 /* task */,
@@ -420,6 +426,8 @@
 				7E3CE84313EC702100EC69E8 /* nginx */,
 				7E3CE84613EC702100EC69E8 /* node */,
 				7E3CE84713EC702100EC69E8 /* php */,
+				7EF046CE13F0EE51002F46B0 /* BrewInstaller.h */,
+				7EF046CF13F0EE51002F46B0 /* BrewInstaller.m */,
 				7E3CE83F13EC702100EC69E8 /* BaseInstaller.h */,
 				7E3CE84013EC702100EC69E8 /* BaseInstaller.m */,
 			);
@@ -474,6 +482,7 @@
 		7E3CE85413EC702100EC69E8 /* script */ = {
 			isa = PBXGroup;
 			children = (
+				7EF046CB13F0ED20002F46B0 /* install-brew.rb */,
 			);
 			path = script;
 			sourceTree = "<group>";
@@ -681,6 +690,13 @@
 			path = models;
 			sourceTree = "<group>";
 		};
+		7EF046D113F0F516002F46B0 /* run */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = run;
+			sourceTree = "<group>";
+		};
 		7EF26C8B13EE6204004E54EE /* mustache */ = {
 			isa = PBXGroup;
 			children = (
@@ -877,6 +893,7 @@
 				7EC48F4713F0B49A0022EAB8 /* php-zlib-defaults.plist in Resources */,
 				7EC48F4913F0C18E0022EAB8 /* php.xdebug.mustache in Resources */,
 				7EC48F4B13F0C6740022EAB8 /* php-fpm-defaults.plist in Resources */,
+				7EF046CC13F0ED20002F46B0 /* install-brew.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -981,6 +998,7 @@
 				7E5F30F413F0E11800BC9712 /* PHP+GRMustache.m in Sources */,
 				7E5F30F713F0E45100BC9712 /* PHPFPM+GRMustache.m in Sources */,
 				7E5F30FA13F0E5AF00BC9712 /* PHPFPMPool+GRMustache.m in Sources */,
+				7EF046D013F0EE51002F46B0 /* BrewInstaller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

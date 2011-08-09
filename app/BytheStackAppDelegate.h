@@ -13,11 +13,7 @@
 #import "NginxInstaller.h"
 #import "NodeInstaller.h"
 #import "PHPInstaller.h"
-
-#import "PHP.h"
-#import "PHPFPM.h"
-#import "PHPFPMPool.h"
-
+#import "BrewInstaller.h"
 
 @interface BytheStackAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;

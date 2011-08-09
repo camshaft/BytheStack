@@ -16,20 +16,6 @@
     // Insert code here to initialize your application    
     NSFileHandle *f = [NSFileHandle fileHandleForWritingAtPath:@"/tmp/bythestack.log"];
     [[GTMLogger sharedLogger] setWriter:f];
-    
-    PHPFPM *php = [[PHPFPM alloc] initWithEntity:[NSEntityDescription entityForName:@"PHPFPM" inManagedObjectContext:[self managedObjectContext]] insertIntoManagedObjectContext:[self managedObjectContext]];
-    
-    PHPFPMPool *fpmpool = [[PHPFPMPool alloc] initWithEntity:[NSEntityDescription entityForName:@"PHPFPMPool" inManagedObjectContext:[self managedObjectContext]] insertIntoManagedObjectContext:[self managedObjectContext]];
-    
-    [fpmpool setPoolname:@"www"];
-    [fpmpool setPm:@"dynamic"];
-    
-    [php setDaemonize:[NSNumber numberWithBool:YES]];
-    
-    [php setPools:[NSSet setWithObjects:fpmpool, nil]];
-    
-    [php saveConfigToFile:@"testing"];
-    
 }
 
 

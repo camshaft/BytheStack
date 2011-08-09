@@ -1,5 +1,5 @@
 //
-//  NginxInstaller.m
+//  BaseInstaller.m
 //  BytheStack
 //
 //  Created by Cameron Bytheway on 8/4/11.
@@ -22,7 +22,7 @@
 
 - (void)install {
     if (!brewInstall) {
-        [NSException raise:@"Unable to install formula" format:@"either brewInstall or brewRemote must be set"];
+        [NSException raise:@"Unable to install formula" format:@"brewRemote must be specified"];
     }
     
     NSMutableArray *_brewArgs = [NSMutableArray arrayWithObjects:@"install",@"-v",brewInstall, nil];
@@ -30,7 +30,7 @@
     [_brewArgs addObjectsFromArray:brewArgs];
     
     TaskWrapper *brewTask = [[TaskWrapper alloc] 
-                             initWithCommandPath:[[PathFinder applicationResourceDirectoryPath] stringByAppendingFormat:@"%@/brew",BREW_PATH]
+                             initWithCommandPath:BREW_PATH
                              workingDir:@"/"
                              arguments:_brewArgs
                              environment:[NSDictionary dictionary]

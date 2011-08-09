@@ -6,4 +6,4 @@
 //  Copyright 2011 Big Thumb Electronics. All rights reserved.
 //
 
-#define BREW_PATH @"/resources/brew/bin"
+#define BREW_PATH @"/srv/local/bin/brew"
